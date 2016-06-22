@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PUc-CC-pUV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--User Guid View Controller-->
+        <scene sceneID="G6L-3Y-HQz">
+            <objects>
+                <viewController id="PUc-CC-pUV" customClass="UserGuidViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LWh-62-wbE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cbq-Lr-wbG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AQv-ej-Ve6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-oD-6rT">
+                                <rect key="frame" x="50" y="451" width="275" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.28190524189999999" green="1" blue="0.79827990199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="PageValueChange:" destination="PUc-CC-pUV" eventType="valueChanged" id="1Vz-eq-bkd"/>
+                                </connections>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAD-44-otj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cbq-Lr-wbG" firstAttribute="top" secondItem="GAD-44-otj" secondAttribute="bottom" id="bdC-YT-lmQ"/>
+                            <constraint firstAttribute="trailing" secondItem="GAD-44-otj" secondAttribute="trailing" id="etz-UX-j0n"/>
+                            <constraint firstItem="GAD-44-otj" firstAttribute="leading" secondItem="AQv-ej-Ve6" secondAttribute="leading" id="o9W-4B-jDU"/>
+                            <constraint firstItem="GAD-44-otj" firstAttribute="top" secondItem="AQv-ej-Ve6" secondAttribute="top" id="otD-de-roC"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pageControl" destination="9kz-oD-6rT" id="3sO-Hz-atZ"/>
+                        <outlet property="pageScroll" destination="GAD-44-otj" id="CKk-2m-ZBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rq-SH-R71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499.5" y="413.5"/>
+        </scene>
+    </scenes>
+</document>

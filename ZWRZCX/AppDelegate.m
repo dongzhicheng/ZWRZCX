@@ -8,9 +8,12 @@
 
 #import "AppDelegate.h"
 #import <MapKit/MapKit.h>
- #import <SMS_SDK/SMSSDK.h>
+#import <SMS_SDK/SMSSDK.h>
 #import "MMZCViewController.h"
 #import "NewRecordScreen.h"
+#import "UserGuidViewController.h"
+#import "DZCTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,23 +22,39 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//    MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
-//    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
-//    [MKMapItem openMapsWithItems:@[currentItem,currentItem] launchOptions:nil];
+
+    CGFloat version = [[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"] floatValue];
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    //设置NavigationBar背景颜色
+    CGFloat oldVersion = [userDefaults floatForKey:@"version"];
+    
+
+    if (version > oldVersion) {
+
+        UIStoryboard * UserGuidStoryB = [UIStoryboard storyboardWithName:@"UserGuidViewController" bundle:nil];
+        
+        UserGuidViewController * vc = [UserGuidStoryB instantiateInitialViewController];
+        
+        self.window.rootViewController = vc;
+        
+        [userDefaults setFloat:version forKey:@"version"];
+        
+        [userDefaults synchronize];  //synchronize 同步
+        
+    }else {
+        
+        DZCTabBarController *tabBarC = [[DZCTabBarController alloc] init];  // 当前的版本号 <= 上一次的版本号  打开主界面
+        
+        self.window.rootViewController = tabBarC;
+        
+    }
+
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
-//    MMZCViewController *login=[[MMZCViewController alloc]init];
-//    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:login];
-//    self.window.rootViewController=nav;  //设置根控制器
-//    NSDictionary *attributes=[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1],NSForegroundColorAttributeName,nil];
-//    [nav.navigationBar setTitleTextAttributes:attributes];
     
     [SMSSDK registerApp:@"1386e8598b474"
              withSecret:@"4e0796c9089f7e07a9b16de613cc275a"];
 
-    
     return YES;
 }
 
@@ -60,5 +79,23 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+/*
+ // Override point for customization after application launch.
+ //    MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
+ //    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+ //    [MKMapItem openMapsWithItems:@[currentItem,currentItem] launchOptions:nil];
+ 
+ //设置NavigationBar背景颜色
+ [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+ //    MMZCViewController *login=[[MMZCViewController alloc]init];
+ //    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:login];
+ //    self.window.rootViewController=nav;  //设置根控制器
+ //    NSDictionary *attributes=[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1],NSForegroundColorAttributeName,nil];
+ //    [nav.navigationBar setTitleTextAttributes:attributes];
+ 
+ */
+
 
 @end
