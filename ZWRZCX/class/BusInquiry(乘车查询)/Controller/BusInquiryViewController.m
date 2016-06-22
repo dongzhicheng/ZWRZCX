@@ -12,13 +12,103 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
-@interface BusInquiryViewController ()<AVPlayerViewControllerDelegate>
+@interface BusInquiryViewController ()<AVPlayerViewControllerDelegate,UIPrintInteractionControllerDelegate>
 
 @property(nonatomic,strong)UIButton * btn;
 @property (nonatomic,strong)MPMoviePlayerController *playerVc;
 @end
 
 @implementation BusInquiryViewController
+
+- (IBAction)TextPrintClick:(id)sender {
+    
+    [self printActionsbutton2:nil];
+    
+}
+
+-(void)printActionsbutton2:(id)sender{
+    
+    UIImage * printImage = [UIImage imageNamed:@"1.png"]; //获取要打印的图片
+    //        剪切原图（824 * 2235）  （789 960）                     不成功
+    //        UIImage * scanImage = [self scaleToSize:printImage size:CGSizeMake(595, 1660)];
+    //        UIImage *jietuImage2 = [self imageFromImage:scanImage inRect:CGRectMake(0, 880, 595, 824)];
+    //
+    UIPrintInteractionController *printC = [UIPrintInteractionController sharedPrintController]; //显示出打印的用户界面。
+    
+    printC.delegate = self;
+    
+    if (!printC) {
+        
+        NSLog(@"打印机不存在"); // [self showAlertView:@"初始化失败"];
+        
+    }
+    
+    printC.showsNumberOfCopies = YES;
+    
+    printC.showsPageRange = YES;
+    
+    NSData *imgDate = UIImagePNGRepresentation(printImage);
+    
+    NSData *data = [NSData dataWithData:imgDate];
+    
+    if (printC && [UIPrintInteractionController canPrintData:data]) {
+        
+        UIPrintInfo *printInfo = [UIPrintInfo printInfo]; //准备打印信息以预设值初始化的对象。
+        
+        printInfo.outputType = UIPrintInfoOutputGeneral; //设置输出类型。
+        
+        printC.showsPageRange = YES; //显示的页面范围
+        
+        printC.printInfo = printInfo; // printInfo.jobName = @"my.job";
+        
+        printC.printingItem = data; //single NSData, NSURL, UIImage, ALAsset
+        
+        
+        void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) =
+        ^(UIPrintInteractionController *printController, BOOL completed, NSError *error) { // 等待完成
+            
+            if (!completed && error) {
+                NSLog(@"可能无法完成，因为印刷错误: %@", error);
+            }
+            
+        };
+        
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            
+            UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:sender];//调用方法的时候，要注意参数的类型－下面presentFromBarButtonItem:的参数类型是 UIBarButtonItem..如果你是在系统的UIToolbar or UINavigationItem上放的一个打印button，就不需要转换了。
+            [printC presentFromBarButtonItem:item animated:YES completionHandler:completionHandler];//在ipad上弹出打印那个页面
+            
+        } else {
+            
+            [printC presentAnimated:YES completionHandler:completionHandler];//在iPhone上弹出打印那个页面
+            
+        }
+    }
+}
+
+
+- (void)printInteractionControllerWillStartJob:(UIPrintInteractionController *)printInteractionController{
+    
+    NSLog(@"printInteractionControllerWillStartJob");
+}
+- (void)printInteractionControllerDidFinishJob:(UIPrintInteractionController *)printInteractionController{
+    
+    NSLog(@"printInteractionControllerDidFinishJob");
+}
+
+- (UIViewController *)printInteractionControllerParentViewController:(UIPrintInteractionController *)printInteractionController{
+    
+    UIViewController * vc  = [UIViewController new];
+    
+    vc.view.backgroundColor = [UIColor redColor];
+    
+    NSLog(@"11");
+    
+    return vc;
+    
+}
+
+
 //测试成功播放视频
 - (IBAction)textViodPlayer:(id)sender {
    

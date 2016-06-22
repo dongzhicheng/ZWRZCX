@@ -89,6 +89,9 @@
 		C8E5989F1D0FEBD300D58C64 /* PlayBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E598921D0FEBD300D58C64 /* PlayBackViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C8E598A01D0FEBD300D58C64 /* PlayBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E598931D0FEBD300D58C64 /* PlayBackViewController.xib */; };
 		C8E598A11D0FEBD300D58C64 /* ScreenCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E598961D0FEBD300D58C64 /* ScreenCaptureView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8E5B7AE1D1A1E2E00350FB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E5B7AD1D1A1E2E00350FB9 /* CoreGraphics.framework */; };
+		C8E5B7B01D1A1E4000350FB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E5B7AF1D1A1E4000350FB9 /* Foundation.framework */; };
+		C8E5B7B61D1A209400350FB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E5B7B51D1A209400350FB9 /* UIKit.framework */; };
 		C8E9B38A1D02572500B57DB9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E9B3741D02572500B57DB9 /* Info.plist */; };
 		C8E9B38B1D02572500B57DB9 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B3771D02572500B57DB9 /* MJExtensionConst.m */; };
 		C8E9B38C1D02572500B57DB9 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B3791D02572500B57DB9 /* MJFoundation.m */; };
@@ -320,6 +323,9 @@
 		C8E598931D0FEBD300D58C64 /* PlayBackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayBackViewController.xib; sourceTree = "<group>"; };
 		C8E598951D0FEBD300D58C64 /* ScreenCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCaptureView.h; sourceTree = "<group>"; };
 		C8E598961D0FEBD300D58C64 /* ScreenCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCaptureView.m; sourceTree = "<group>"; };
+		C8E5B7AD1D1A1E2E00350FB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C8E5B7AF1D1A1E4000350FB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8E5B7B51D1A209400350FB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C8E9B3741D02572500B57DB9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8E9B3751D02572500B57DB9 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		C8E9B3761D02572500B57DB9 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
@@ -403,6 +409,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E5B7B61D1A209400350FB9 /* UIKit.framework in Frameworks */,
+				C8E5B7B01D1A1E4000350FB9 /* Foundation.framework in Frameworks */,
+				C8E5B7AE1D1A1E2E00350FB9 /* CoreGraphics.framework in Frameworks */,
 				C8FC2B4F1D0EB7D200C561C0 /* AVKit.framework in Frameworks */,
 				C8E5986C1D0FDCE600D58C64 /* MediaPlayer.framework in Frameworks */,
 				C8E5986A1D0FDCDA00D58C64 /* AssetsLibrary.framework in Frameworks */,
@@ -445,6 +454,9 @@
 		78B36CBF6486C15CDDDFE4C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8E5B7B51D1A209400350FB9 /* UIKit.framework */,
+				C8E5B7AF1D1A1E4000350FB9 /* Foundation.framework */,
+				C8E5B7AD1D1A1E2E00350FB9 /* CoreGraphics.framework */,
 				C8E5986B1D0FDCE600D58C64 /* MediaPlayer.framework */,
 				C8E598691D0FDCDA00D58C64 /* AssetsLibrary.framework */,
 				C8E598671D0FDCCB00D58C64 /* CoreMedia.framework */,
