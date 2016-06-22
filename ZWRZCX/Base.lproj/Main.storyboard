@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4CN-Tx-9W7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bzY-q1-Klh">
+            <objects>
+                <tabBarController id="4CN-Tx-9W7" customClass="DZCTabBarController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6dm-5j-y0f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6vJ-GL-7Ni" kind="show" id="ECE-VB-FbM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRf-dP-ZhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1277.5" y="-172.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PAD-7w-UlJ">
+            <objects>
+                <viewController id="6vJ-GL-7Ni" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MKS-xB-nac"/>
+                        <viewControllerLayoutGuide type="bottom" id="4gO-9o-qUY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zez-CC-VTh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.79285301600000002" green="1" blue="0.56147644630000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PgD-Lk-CmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757" y="-347"/>
+        </scene>
+        <!--乘车查询-->
+        <scene sceneID="YMO-4q-ZLW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wmk-WK-cEe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="乘车查询" id="5DW-la-46E"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cro-IK-OWu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmx-hk-CMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3924" y="322"/>
+        </scene>
+    </scenes>
+</document>

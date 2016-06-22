@@ -1,0 +1,44 @@
+//
+// Prefix header for all source files of the 'RecordMyApp' target in the 'RecordMyApp' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+    #define kRowHeight 48.0f
+    #define kRowLineHeight 0.5f
+    #define kSeparatorHeight 5.0f
+
+    #define kTitleFontSize 13.0f
+    #define kButtonTitleFontSize 17.0f
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "ScreenCaptureView.h"
+
+    #import "CCFScreenRecorderConsts.h"
+    #import <AVFoundation/AVFoundation.h>
+    #import "PlayBackViewController.h"
+
+
+    #import "NewRecordScreen.h"
+    #import "PlayBackRecordedScreen.h"
+
+    #import  <MediaPlayer/MediaPlayer.h>
+
+    #import <QuartzCore/QuartzCore.h>
+    #import <MobileCoreServices/UTCoreTypes.h>
+    #import <AssetsLibrary/AssetsLibrary.h>
+
+    #import "LVRecordView.h"
+    #import "LVRecordTool.h"
+
+
+
+
+#endif
