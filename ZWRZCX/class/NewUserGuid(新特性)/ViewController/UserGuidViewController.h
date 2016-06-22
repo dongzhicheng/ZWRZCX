@@ -10,6 +10,7 @@
 
 @interface UserGuidViewController : UIViewController<UIScrollViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) IBOutlet UIScrollView *pageScroll;
 @property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (strong, nonatomic) NSArray *photoList;

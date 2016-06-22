@@ -29,8 +29,7 @@
     
     CGFloat oldVersion = [userDefaults floatForKey:@"version"];
     
-
-    if (version > oldVersion) {
+    if (version == oldVersion) {
 
         UIStoryboard * UserGuidStoryB = [UIStoryboard storyboardWithName:@"UserGuidViewController" bundle:nil];
         

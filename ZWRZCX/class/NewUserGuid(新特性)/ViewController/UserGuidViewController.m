@@ -7,7 +7,7 @@
 //
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
+#import "DZCTabBarController.h"
 #import "UserGuidViewController.h"
 
 @interface UserGuidViewController ()
@@ -17,6 +17,25 @@
 @implementation UserGuidViewController
 
 
+- (void)awakeFromNib {
+    self.startButton.hidden = YES;
+}
+
+
+- (void)setStartButtonHidden:(BOOL)hidden { //控制按钮的显示或者隐藏
+    
+    self.startButton.hidden = hidden;
+}
+
+
+- (IBAction)startClick:(id)sender {
+    
+    DZCTabBarController *vc = [[DZCTabBarController alloc] init];
+    
+    [UIApplication sharedApplication].keyWindow.rootViewController = vc;
+    
+}
+
 @synthesize photoList = _photoList;
 @synthesize pageScroll = _pageScroll;
 @synthesize pageControl = _pageControl;
@@ -24,7 +43,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.startButton.hidden = YES;
+    
+    self.pageScroll.pagingEnabled = YES;
     
     NSString *img1 = [[NSBundle mainBundle] pathForResource:@"welcome1"
                                                      ofType:@"png"];
@@ -95,21 +117,21 @@
 
 -(void) scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    
+     [self setStartButtonHidden:YES];
+    
     CGFloat pageWidth = _pageScroll.frame.size.width;
-    // 在滚动超过页面宽度的50%的时候，切换到新的页面
-    int page = floor((_pageScroll.contentOffset.x + pageWidth/2)/pageWidth) ;
+   
+    int page = floor((_pageScroll.contentOffset.x + pageWidth/2)/pageWidth);  // 在滚动超过页面宽度的50%的时候，切换到新的页面
+    
     _pageControl.currentPage = page;
     
+    if ( page == 9 ) {
+        
+        [self setStartButtonHidden:NO];
+        
+    }
     
-    //这里可以判断是否跳转到主页
-//    if (page >= 3)
-//    {
-//        //点击登陆按钮后切换到storyboard界面
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboardIOS7Iphone5" bundle:nil];
-//        [self presentViewController:[storyboard instantiateInitialViewController]
-//                           animated:YES
-//                         completion:nil];
-//    }
 }
 
 - (IBAction)PageValueChange:(id)sender
