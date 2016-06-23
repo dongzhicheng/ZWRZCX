@@ -1861,7 +1861,7 @@
 					"$(PROJECT_DIR)/SMS_SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/ZWRZCX/RecordMyApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/智慧交通/ZWRZCX/RecordMyApp-Prefix.pch";
 				INFOPLIST_FILE = ZWRZCX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZWRCX.ZWRZCX;
@@ -1883,7 +1883,7 @@
 					"$(PROJECT_DIR)/SMS_SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/ZWRZCX/RecordMyApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/智慧交通/ZWRZCX/RecordMyApp-Prefix.pch";
 				INFOPLIST_FILE = ZWRZCX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZWRCX.ZWRZCX;
