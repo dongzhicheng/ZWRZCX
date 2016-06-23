@@ -6,9 +6,6 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
-#import "DZCTabBar.h"
-#import "UIView+Ex.h"
-#import "DZCTabBarButton.h"
 
 @interface DZCTabBar ()
 
@@ -19,14 +16,19 @@
 
 + (instancetype)tabBarWithSBNames:(NSArray *)sbNames {
     DZCTabBar *tabBar = [[DZCTabBar alloc] init];
+    
     for (NSString *sbName in sbNames) { //创建图片对应的按钮 -- tabBarItem
         UIButton *btn = [DZCTabBarButton buttonWithType:UIButtonTypeCustom];
         btn.tag = tabBar.subviews.count;  //记录按钮的索引
         [tabBar addSubview:btn];
-        NSString *imgName = [NSString stringWithFormat:@"TabBar_%@_new",sbName]; //加载按钮中显示的图片
-        NSString *selectedImgName = [NSString stringWithFormat:@"TabBar_%@_selected_new",sbName];
-        [btn setImage:[UIImage imageNamed:imgName] forState:UIControlStateNormal]; //设置按钮的图片
-        [btn setImage:[UIImage imageNamed:selectedImgName] forState:UIControlStateSelected]; //下一步设置按钮的大小和位置
+//        NSString *imgName = [NSString stringWithFormat:@"TabBar_%@_new",sbName]; //加载按钮中显示的图片
+//        NSString *selectedImgName = [NSString stringWithFormat:@"TabBar_%@_selected_new",sbName];
+        
+        UIImage * imgName= [UIImage imageNamed:@"txtTabar"];
+        [btn setImage:imgName forState:UIControlStateNormal];
+        
+//        [btn setImage:[UIImage imageNamed:imgName] forState:UIControlStateNormal]; //设置按钮的图片
+//        [btn setImage:[UIImage imageNamed:selectedImgName] forState:UIControlStateSelected]; //下一步设置按钮的大小和位置
         [btn sizeToFit]; //让按钮和图片的大小保持一致
         [btn addTarget:tabBar action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];  //给按钮注册点击事件
     }

@@ -1,6 +1,5 @@
 
-#import "settinhHeaderViewController.h"
-#import "MMZCViewController.h"
+
 @interface settinhHeaderViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate>
 {
     UIView *bgView;

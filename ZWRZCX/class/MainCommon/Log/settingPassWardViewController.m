@@ -1,7 +1,5 @@
 
-#import "settingPassWardViewController.h"
-#import "settinhHeaderViewController.h"
-#import "SVProgressHUD.h"
+
 
 @interface settingPassWardViewController ()
 {

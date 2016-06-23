@@ -9,9 +9,7 @@
 //当调用tabBarController的viewControllers一次性设置tabBarController的所有子控制器，此时会自动生成子控制器对应的UITabBarButton
 
 
-#import "DZCTabBarController.h"
-#import "UIImage+Ex.h"
-#import "DZCTabBar.h"
+
 @interface DZCTabBarController ()<CZTabBarDelegate>
 @property (nonatomic, strong) NSMutableArray *array;
 @end
@@ -45,6 +43,8 @@
     DZCTabBar *tabBar = [DZCTabBar tabBarWithSBNames:sbNames];  //设置自定义tabBar
     tabBar.delegate = self; //设置代理
     [self.tabBar addSubview:tabBar];
+    
+    tabBar.backgroundColor = [UIColor whiteColor];
     tabBar.frame = self.tabBar.bounds;
 }
 - (void)viewDidLayoutSubviews {

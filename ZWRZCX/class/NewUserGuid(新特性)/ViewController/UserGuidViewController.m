@@ -50,22 +50,28 @@
     
     NSString *img1 = [[NSBundle mainBundle] pathForResource:@"welcome1"
                                                      ofType:@"png"];
+    
     NSString *img2 = [[NSBundle mainBundle] pathForResource:@"welcome2"
                                                      ofType:@"png"];
+    
     NSString *img3 = [[NSBundle mainBundle] pathForResource:@"welcome3"
                                                      ofType:@"png"];
     
     NSString *img4 = [[NSBundle mainBundle] pathForResource:@"welcome4"
                                                      ofType:@"png"];
+    
     NSString *img5 = [[NSBundle mainBundle] pathForResource:@"welcome5"
                                                      ofType:@"png"];
+    
     NSString *img6 = [[NSBundle mainBundle] pathForResource:@"welcome6"
                                                      ofType:@"png"];
     
     NSString *img7 = [[NSBundle mainBundle] pathForResource:@"welcome7"
                                                      ofType:@"png"];
+    
     NSString *img8 = [[NSBundle mainBundle] pathForResource:@"welcome8"
                                                      ofType:@"png"];
+    
     NSString *img9 = [[NSBundle mainBundle] pathForResource:@"welcome9"
                                                      ofType:@"png"];
     
@@ -78,8 +84,8 @@
                   [UIImage imageWithContentsOfFile:img6],
                   [UIImage imageWithContentsOfFile:img7],
                   [UIImage imageWithContentsOfFile:img8],
-                  [UIImage imageWithContentsOfFile:img9],
-                  [self getEmptyUIImage],nil];
+                  [UIImage imageWithContentsOfFile:img9], nil
+                  ];
     
     NSInteger pageCount = [_photoList count];
     _pageControl.currentPage = 0;
@@ -101,7 +107,6 @@
         pageView.frame = frame;
         [_pageScroll addSubview:pageView];
     }
-    
 }
 
 -(void) viewWillAppear:(BOOL)animated
@@ -112,11 +117,10 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
--(void) scrollViewDidScroll:(UIScrollView *)scrollView
-{
+-(void) scrollViewDidScroll:(UIScrollView *)scrollView{
     
      [self setStartButtonHidden:YES];
     
@@ -126,12 +130,12 @@
     
     _pageControl.currentPage = page;
     
-    if ( page == 9 ) {
+    if ( page == 8 ) {
         
         [self setStartButtonHidden:NO];
         
     }
-    
+  
 }
 
 - (IBAction)PageValueChange:(id)sender

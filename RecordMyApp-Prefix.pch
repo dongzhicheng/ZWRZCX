@@ -13,32 +13,62 @@
     #define kRowHeight 48.0f
     #define kRowLineHeight 0.5f
     #define kSeparatorHeight 5.0f
-
     #define kTitleFontSize 13.0f
     #define kButtonTitleFontSize 17.0f
 
-    #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "ScreenCaptureView.h"
-
     #import "CCFScreenRecorderConsts.h"
     #import <AVFoundation/AVFoundation.h>
     #import "PlayBackViewController.h"
-
-
     #import "NewRecordScreen.h"
     #import "PlayBackRecordedScreen.h"
-
     #import  <MediaPlayer/MediaPlayer.h>
-
     #import <QuartzCore/QuartzCore.h>
     #import <MobileCoreServices/UTCoreTypes.h>
     #import <AssetsLibrary/AssetsLibrary.h>
-
     #import "LVRecordView.h"
     #import "LVRecordTool.h"
-
-
-
+    #import "MLSelectPhotoAssets.h"
+    #import "MLSelectPhotoPickerAssetsViewController.h"
+    #import "MLSelectPhotoBrowserViewController.h"
+    #import "SCPhotoHelper.h"
+    #import "carOwnerInterfaceVC.h"
+    #import "MLSelectPhotoPickerViewController.h"
+    #import "carOwnerInterfaceTableViewCell.h"
+    #import <UIKit/UIKit.h>
+    #import "BusInquiryViewController.h"
+    #import "SaomiaoController.h"
+    #import "DOPScrollableActionSheet.h"
+    #import <MediaPlayer/MediaPlayer.h>
+    #import <AVKit/AVKit.h>
+    #import <MapKit/MapKit.h>
+    #import "breakRulusNotesViewController.h"
+    #import "MainDiTuViewController.h"
+    #import "cunlabelModel.h"
+    #import "traveIInformationTableVC.h"
+    #import "travelInformationTableCell.h"
+    #import "travelInformationTableCellModel.h"
+    #import "webViewController.h"
+    #import "NetWorkTool.h"
+//公共分类
+    #import "DZCNavigationController.h"
+    #import "UIImage+Ex.h"
+    #import "DZCTabBarController.h"
+    #import "DZCTabBar.h"
+    #import "UIView+Ex.h"
+    #import "DZCTabBarButton.h"
+//登录
+    #import "forgetPassWardViewController.h"
+    #import "newPassWardViewController.h"
+    #import "MMZCHMViewController.h"
+    #import <SMS_SDK/SMSSDK.h>
+    #import "AppDelegate.h"
+    #import "MMZCHMViewController.h"
+    #import "logWinDiTuViewController.h"
+    #import "settingPassWardViewController.h"
+    #import "settinhHeaderViewController.h"
+    #import "SVProgressHUD.h"
+    #import "MMZCViewController.h"
 
 #endif

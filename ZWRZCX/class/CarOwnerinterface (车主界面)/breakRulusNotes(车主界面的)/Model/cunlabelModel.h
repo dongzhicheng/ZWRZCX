@@ -6,8 +6,6 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
 @interface cunlabelModel : NSObject
 

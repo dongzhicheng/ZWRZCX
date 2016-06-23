@@ -6,8 +6,7 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
-#import "DZCNavigationController.h"
-#import "UIImage+Ex.h"
+
 
 @interface DZCNavigationController ()
 
@@ -26,7 +25,7 @@
 }
 + (void)initialize {
     UINavigationBar *bar = [UINavigationBar appearance]; //获取到当前所有显示的导航条
-    [bar setBackgroundImage:[UIImage imageNamed:@" "] forBarMetrics:UIBarMetricsDefault]; //UIBarMetricsCompact横屏显示的图片；UIBarMetricsDefault  设置横屏和竖屏显示的图片
+    [bar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault]; //UIBarMetricsCompact横屏显示的图片；UIBarMetricsDefault  设置横屏和竖屏显示的图片
     [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}]; //设置标题的字体颜色
     bar.translucent = NO; //去掉导航条的半透明效果   如果有透明度，控制器的view有穿透效果。如果没有透明度，控制器的view没有穿透效果
     UIBarButtonItem *item = [UIBarButtonItem appearance]; // 导航按钮的样式
@@ -39,7 +38,7 @@
 - (void)addBackButton:(UIViewController *)viewController { //设置自定义后退按钮
     self.interactivePopGestureRecognizer.delegate = (id)self; //设置后退的手势
     viewController.hidesBottomBarWhenPushed = YES; //当push的时候隐藏底部的tabBar
-    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@" "] orginalImage] style:UIBarButtonItemStylePlain target:self action:@selector(backClick)]; //自定义后退按钮
+    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"NavBack"] orginalImage] style:UIBarButtonItemStylePlain target:self action:@selector(backClick)]; //自定义后退按钮
     UIBarButtonItem *fixed = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     fixed.width = -10; //固定的fixed  固定的间距
     viewController.navigationItem.leftBarButtonItems = @[fixed,back];

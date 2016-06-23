@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome9" translatesAutoresizingMaskIntoConstraints="NO" id="oMN-C0-Be1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击进入高德去导航会产生数据流量的使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-Dx-PeF">
                                 <rect key="frame" x="36" y="265" width="304" height="21"/>
                                 <constraints>
@@ -76,4 +79,7 @@
             <point key="canvasLocation" x="-152.5" y="263.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="welcome9" width="320" height="568"/>
+    </resources>
 </document>

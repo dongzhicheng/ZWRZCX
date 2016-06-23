@@ -21,14 +21,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9i-i1-wyQ">
-                                <rect key="frame" x="41" y="398" width="272" height="30"/>
+                                <rect key="frame" x="33" y="398" width="272" height="30"/>
                                 <state key="normal" title="立即进入"/>
                                 <connections>
                                     <action selector="startClick:" destination="PUc-CC-pUV" eventType="touchUpInside" id="9bf-Zs-OgX"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-oD-6rT">
-                                <rect key="frame" x="40" y="451" width="275" height="37"/>
+                                <rect key="frame" x="33" y="451" width="275" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.28190524189999999" green="1" blue="0.79827990199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>

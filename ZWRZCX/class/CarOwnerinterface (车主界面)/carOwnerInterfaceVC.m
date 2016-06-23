@@ -5,18 +5,7 @@
 //  Created by 董志成 on 16/6/3.
 //  Copyright © 2016年 董志成. All rights reserved.
 //
-#import <UIKit/UIKit.h>
-#import <AssetsLibrary/AssetsLibrary.h>
-#import "MLSelectPhotoAssets.h"
-#import "MLSelectPhotoPickerAssetsViewController.h"
-#import "MLSelectPhotoBrowserViewController.h"
-#import "SCPhotoHelper.h"
-#import "MLSelectPhotoBrowserViewController.h"
 
-#import "carOwnerInterfaceVC.h"
-#import "MLSelectPhotoAssets.h"
-#import "MLSelectPhotoPickerViewController.h"
-#import "carOwnerInterfaceTableViewCell.h"
 
 
 @interface carOwnerInterfaceVC ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate>
@@ -67,7 +56,14 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.backgroundColor = [UIColor grayColor];
+    
+//    self.tableView.backgroundColor = [UIColor grayColor];
+
+//    UIView * BackGroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width , [UIScreen mainScreen].bounds.size.height)];
+//
+  
+    
+//    self.tableView.backgroundView = imageView;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selectPhotos) name:@"breakRulusNotesViewController" object:nil];
     

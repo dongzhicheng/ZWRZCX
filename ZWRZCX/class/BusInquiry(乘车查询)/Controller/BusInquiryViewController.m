@@ -5,13 +5,7 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //  屏幕
 
-#import "BusInquiryViewController.h"
-#import "SaomiaoController.h"
 
-#import "DOPScrollableActionSheet.h"
-#import <MediaPlayer/MediaPlayer.h>
-#import <AVFoundation/AVFoundation.h>
-#import <AVKit/AVKit.h>
 @interface BusInquiryViewController ()<AVPlayerViewControllerDelegate,UIPrintInteractionControllerDelegate>
 
 @property(nonatomic,strong)UIButton * btn;
@@ -137,18 +131,18 @@
     [self.view addSubview:_btn];
     
     
-    NSString *path = [[NSBundle mainBundle]pathForResource:@"Alizee_La_Isla_Bonita.mp4" ofType:nil];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    
-    AVPlayerViewController *playerVc = [[AVPlayerViewController alloc]init];
-    self.playerVc = playerVc;
-    playerVc.showsPlaybackControls = YES;
-    playerVc.player = [[AVPlayer alloc]initWithURL:url];
-    playerVc.allowsPictureInPicturePlayback = YES;
-    [[AVAudioSession sharedInstance]setActive:YES error:nil];
-    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:nil];
-    
-    playerVc.delegate = self;
+//    NSString *path = [[NSBundle mainBundle]pathForResource:@"Alizee_La_Isla_Bonita.mp4" ofType:nil];
+//    NSURL *url = [NSURL fileURLWithPath:path];
+//    
+//    AVPlayerViewController *playerVc = [[AVPlayerViewController alloc]init];
+//    self.playerVc = playerVc;
+//    playerVc.showsPlaybackControls = YES;
+//    playerVc.player = [[AVPlayer alloc]initWithURL:url];
+//    playerVc.allowsPictureInPicturePlayback = YES;
+//    [[AVAudioSession sharedInstance]setActive:YES error:nil];
+//    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:nil];
+//    
+//    playerVc.delegate = self;
 
 
     

@@ -6,9 +6,6 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
-#import "travelInformationTableCellModel.h"
-#import "NetWorkTool.h"
-
 @implementation travelInformationTableCellModel
 
 + (instancetype)traveCellWithDict:(NSDictionary *)dict{

@@ -23,21 +23,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    CGFloat version = [[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"] floatValue];
+    CGFloat version = [[NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"] floatValue]; //从info.plust中加载app安装的Version
 
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; //创建沙盒对象
     
-    CGFloat oldVersion = [userDefaults floatForKey:@"version"];
+    CGFloat oldVersion = [userDefaults floatForKey:@"version"]; //获取存储的上一个版本
     
-    if (version == oldVersion) {
+    if (version >oldVersion) { //判断是否是第一次安装
 
         UIStoryboard * UserGuidStoryB = [UIStoryboard storyboardWithName:@"UserGuidViewController" bundle:nil];
         
-        UserGuidViewController * vc = [UserGuidStoryB instantiateInitialViewController];
+        UserGuidViewController * vc = [UserGuidStoryB instantiateInitialViewController]; //用storB来来创建控制器
         
-        self.window.rootViewController = vc;
+        self.window.rootViewController = vc; //设置根控制器
         
-        [userDefaults setFloat:version forKey:@"version"];
+        [userDefaults setFloat:version forKey:@"version"]; //保存数据
         
         [userDefaults synchronize];  //synchronize 同步
         
@@ -45,17 +45,19 @@
         
         DZCTabBarController *tabBarC = [[DZCTabBarController alloc] init];  // 当前的版本号 <= 上一次的版本号  打开主界面
         
-        self.window.rootViewController = tabBarC;
+        self.window.rootViewController = tabBarC; //设置根控制器为tabBarC
         
     }
 
-    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]]; //统一设置Bar的颜色
     
     [SMSSDK registerApp:@"1386e8598b474"
-             withSecret:@"4e0796c9089f7e07a9b16de613cc275a"];
+             withSecret:@"4e0796c9089f7e07a9b16de613cc275a"];  //处理短信验证码
 
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -10,10 +10,7 @@
 //    NSString * heardNameStr = self.travelCellModelArray[indexPath.row].cellImageNameText;
 
 
-#import "traveIInformationTableVC.h"
-#import "travelInformationTableCell.h"
-#import "travelInformationTableCellModel.h"
-#import "webViewController.h"
+
 
 @interface traveIInformationTableVC ()<UITableViewDataSource,UITableViewDelegate>
 

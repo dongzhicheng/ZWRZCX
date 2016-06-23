@@ -14,7 +14,6 @@
 		C80A885C1D0CECAE003801CB /* settingPassWardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88561D0CECAE003801CB /* settingPassWardViewController.m */; };
 		C80A885D1D0CECAE003801CB /* settinhHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88581D0CECAE003801CB /* settinhHeaderViewController.m */; };
 		C80A88601D0CECCF003801CB /* forgetPassWardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A885F1D0CECCF003801CB /* forgetPassWardViewController.m */; };
-		C82422601D11474B00800C84 /* Alizee_La_Isla_Bonita.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C824225F1D11474B00800C84 /* Alizee_La_Isla_Bonita.mp4 */; };
 		C8400CB61CFED340008A8952 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8400CB51CFED340008A8952 /* MapKit.framework */; };
 		C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */; };
 		C84A74231D01042000CA4CFD /* breakRulusNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */; };
@@ -169,7 +168,6 @@
 		C8FC2B4A1D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B491D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m */; };
 		C8FC2B4D1D0EA38E00C561C0 /* cunlabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */; };
 		C8FC2B4F1D0EB7D200C561C0 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FC2B4E1D0EB7D200C561C0 /* AVKit.framework */; };
-		C8FC2B511D0EB7F800C561C0 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FC2B501D0EB7F800C561C0 /* AVKit.framework */; };
 		F192629CBAC827ECD5DBE301 /* libPods-ZWRZCX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F126B11BD236215B95FDAF9 /* libPods-ZWRZCX.a */; };
 /* End PBXBuildFile section */
 
@@ -207,7 +205,6 @@
 		C80A88581D0CECAE003801CB /* settinhHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settinhHeaderViewController.m; sourceTree = "<group>"; };
 		C80A885E1D0CECCF003801CB /* forgetPassWardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forgetPassWardViewController.h; sourceTree = "<group>"; };
 		C80A885F1D0CECCF003801CB /* forgetPassWardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forgetPassWardViewController.m; sourceTree = "<group>"; };
-		C824225F1D11474B00800C84 /* Alizee_La_Isla_Bonita.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Alizee_La_Isla_Bonita.mp4; path = "ZWRZCX/class/CarOwnerinterface (车主界面)/breakRulusNotes(车主界面的)/Controller/Alizee_La_Isla_Bonita.mp4"; sourceTree = "<group>"; };
 		C8400CB51CFED340008A8952 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapKit.framework; sourceTree = "<group>"; };
 		C84A741E1D01039B00CA4CFD /* BusInquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusInquiryViewController.h; sourceTree = "<group>"; };
 		C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusInquiryViewController.m; sourceTree = "<group>"; };
@@ -441,7 +438,6 @@
 		C8FC2B4B1D0EA38E00C561C0 /* cunlabelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cunlabelModel.h; sourceTree = "<group>"; };
 		C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cunlabelModel.m; sourceTree = "<group>"; };
 		C8FC2B4E1D0EB7D200C561C0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		C8FC2B501D0EB7F800C561C0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVKit.framework; sourceTree = "<group>"; };
 		F406251E67B72781736F84C5 /* Pods-ZWRZCX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWRZCX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWRZCX/Pods-ZWRZCX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -463,7 +459,6 @@
 				C8E9B3F31D02C5CC00B57DB9 /* AddressBookUI.framework in Frameworks */,
 				C8E9B3F71D02D30600B57DB9 /* MOBFoundation.framework in Frameworks */,
 				C8E9B3F11D02C5C800B57DB9 /* AddressBook.framework in Frameworks */,
-				C8FC2B511D0EB7F800C561C0 /* AVKit.framework in Frameworks */,
 				C8E9B3EF1D02C59B00B57DB9 /* libstdc++.tbd in Frameworks */,
 				C8E9B3ED1D02C59100B57DB9 /* JavaScriptCore.framework in Frameworks */,
 				C8E9B3E91D02C57D00B57DB9 /* libicucore.tbd in Frameworks */,
@@ -550,7 +545,7 @@
 			path = class/MainCommon;
 			sourceTree = "<group>";
 		};
-		C84A74411D01595900CA4CFD /* Log */ = {
+		C84A74411D01595900CA4CFD /* Log(登录界面VC含地图stor) */ = {
 			isa = PBXGroup;
 			children = (
 				C80A885E1D0CECCF003801CB /* forgetPassWardViewController.h */,
@@ -569,8 +564,8 @@
 				C893F2691D05195E00E96398 /* LogModel */,
 				C893F2681D05193A00E96398 /* LogView */,
 			);
-			name = Log;
-			path = ../MainCommon/Log;
+			name = "Log(登录界面VC含地图stor)";
+			path = MainCommon/Log;
 			sourceTree = "<group>";
 		};
 		C8536D4C1D06A7360044BEC8 /* LuYin(录音) */ = {
@@ -758,9 +753,7 @@
 		C8A3C4A01CFE5D2100E741BC = {
 			isa = PBXGroup;
 			children = (
-				C824225F1D11474B00800C84 /* Alizee_La_Isla_Bonita.mp4 */,
 				C8BD2ACC1D17EA8100D3E944 /* RecordMyApp-Prefix.pch */,
-				C8FC2B501D0EB7F800C561C0 /* AVKit.framework */,
 				C8E9B3F41D02D30600B57DB9 /* SMS_SDK */,
 				C84A743F1D01247000CA4CFD /* AVFoundation.framework */,
 				C8400CB51CFED340008A8952 /* MapKit.framework */,
@@ -832,8 +825,9 @@
 		C8A3C4E51CFEB4C500E741BC /* class */ = {
 			isa = PBXGroup;
 			children = (
+				C84A74411D01595900CA4CFD /* Log(登录界面VC含地图stor) */,
 				C8E5B7B71D1A646E00350FB9 /* NewUserGuid(新特性) */,
-				C8E598881D0FEBD300D58C64 /* RecordScreen(频幕录制） */,
+				C8E598881D0FEBD300D58C64 /* RecordScreen(频幕录制busIn） */,
 				C8536D4C1D06A7360044BEC8 /* LuYin(录音) */,
 				C893F26D1D055D8100E96398 /* MLSelectPhoto(用来图片选择) */,
 				C8A3C5061CFEB4C500E741BC /* MainDiTu(地图) */,
@@ -1147,7 +1141,6 @@
 			isa = PBXGroup;
 			children = (
 				C893F2BF1D05792D00E96398 /* Category */,
-				C84A74411D01595900CA4CFD /* Log */,
 				C8E9B3951D0258EE00B57DB9 /* NetWorkTool */,
 				C8E9B3731D02572500B57DB9 /* MJExtension */,
 			);
@@ -1229,7 +1222,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C8E598881D0FEBD300D58C64 /* RecordScreen(频幕录制） */ = {
+		C8E598881D0FEBD300D58C64 /* RecordScreen(频幕录制busIn） */ = {
 			isa = PBXGroup;
 			children = (
 				C8E598891D0FEBD300D58C64 /* CCFScreenRecorderConsts.h */,
@@ -1243,6 +1236,7 @@
 				C8E598951D0FEBD300D58C64 /* ScreenCaptureView.h */,
 				C8E598961D0FEBD300D58C64 /* ScreenCaptureView.m */,
 			);
+			name = "RecordScreen(频幕录制busIn）";
 			path = "RecordScreen(频幕录制）";
 			sourceTree = "<group>";
 		};
@@ -1507,7 +1501,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C82422601D11474B00800C84 /* Alizee_La_Isla_Bonita.mp4 in Resources */,
 				C8A3C5181CFEB4C500E741BC /* carOwnerInterfaceStoryBoard.storyboard in Resources */,
 				C8E5B7DD1D1A7EA000350FB9 /* welcome4@2x.png in Resources */,
 				C8E5B7E41D1A7EA000350FB9 /* welcome8.png in Resources */,

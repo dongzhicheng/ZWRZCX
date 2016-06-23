@@ -41,21 +41,5 @@
             </objects>
             <point key="canvasLocation" x="-757" y="-347"/>
         </scene>
-        <!--乘车查询-->
-        <scene sceneID="YMO-4q-ZLW">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wmk-WK-cEe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="乘车查询" id="5DW-la-46E"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cro-IK-OWu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rmx-hk-CMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3924" y="322"/>
-        </scene>
     </scenes>
 </document>

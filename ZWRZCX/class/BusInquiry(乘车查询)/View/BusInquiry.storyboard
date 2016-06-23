@@ -18,11 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome7.png" translatesAutoresizingMaskIntoConstraints="NO" id="mGy-MI-ydV">
+                                <rect key="frame" x="0.0" y="-53" width="375" height="720"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFf-w9-WY1">
                                 <rect key="frame" x="43" y="220" width="229" height="28"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="查询(认证)"/>
+                                <state key="normal" title="查询(认证)">
+                                    <color key="titleColor" red="0.991843213" green="1" blue="0.40147542200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Vhf-tg-w4m" kind="show" id="V9g-5p-C02">
                                         <nil key="action"/>
@@ -36,16 +41,6 @@
                                 <state key="normal" title="二维码扫一扫"/>
                                 <connections>
                                     <action selector="SaoMiaoBtn:" destination="9VM-i3-MfR" eventType="touchUpInside" id="U9q-am-2qF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isC-pk-cQG">
-                                <rect key="frame" x="43" y="325" width="229" height="33"/>
-                                <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="测试视频播放">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="textViodPlayer:" destination="9VM-i3-MfR" eventType="touchUpInside" id="iud-2c-cEl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="双击屏幕实现录屏和播放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRM-LH-LxA">
@@ -62,13 +57,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u36-Ml-p9h">
-                                <rect key="frame" x="43" y="387" width="229" height="30"/>
+                                <rect key="frame" x="43" y="328" width="229" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="点击三次确认打印图片">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TextPrintClick:" destination="9VM-i3-MfR" eventType="touchUpInside" id="hwP-Zp-6Nl"/>
+                                    <action selector="TextPrintClick:" destination="9VM-i3-MfR" eventType="touchUpInside" id="SrA-OP-zeb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,6 +82,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HWf-0S-MnU" customClass="DZCNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="乘车查询" id="Ehj-YM-hvA"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eaQ-Gr-t2A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -98,7 +94,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRT-R4-w4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3707.5" y="313.5"/>
+            <point key="canvasLocation" x="-3581.5" y="312.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xpd-zQ-HJV">
@@ -112,6 +108,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome3.png" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-j6-bOb">
+                                <rect key="frame" x="-1" y="31" width="377" height="605"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEu-qq-K69">
                                 <rect key="frame" x="0.0" y="64" width="335" height="181"/>
                                 <subviews>
@@ -267,4 +266,8 @@
             <point key="canvasLocation" x="-2818.5" y="1324.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="welcome3.png" width="320" height="568"/>
+        <image name="welcome7.png" width="320" height="568"/>
+    </resources>
 </document>

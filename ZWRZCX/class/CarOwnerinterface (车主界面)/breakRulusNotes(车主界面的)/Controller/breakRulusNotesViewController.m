@@ -6,14 +6,9 @@
 //  Created by 董志成 on 16/6/3.
 //  Copyright © 2016年 董志成. All rights reserved.
 //
-#import <MapKit/MapKit.h>
-#import "breakRulusNotesViewController.h"
-#import "MainDiTuViewController.h"
-#import <AVFoundation/AVFoundation.h>
-#import "cunlabelModel.h"
-#import <AVKit/AVKit.h>
 
-@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate>
+
+@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *carOwnerInterfaceLabel;
 
@@ -35,35 +30,7 @@
     [super viewDidLoad];
     
     self.breakRulusTextFiled.delegate = self;
-    
     self.carOwnerInterfaceLabel.numberOfLines = 0;
-
-    NSString *path  = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]stringByAppendingPathComponent:@"RZCX.mov" ];
-    
-    NSURL *url = [NSURL fileURLWithPath:path];
-    
-    AVPlayerViewController *playerVc = [[AVPlayerViewController alloc]init];
-    
-    self.playerVc = playerVc;
-    
-    playerVc.showsPlaybackControls = YES;
-    
-    playerVc.player = [[AVPlayer alloc]initWithURL:url];
-    
-    playerVc.allowsPictureInPicturePlayback = YES;
-    
-    [[AVAudioSession sharedInstance]setActive:YES error:nil];
-    
-    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:nil];
-    
-    playerVc.delegate = self;
-    
-    playerVc.delegate = self;
-    
-}
-- (IBAction)shipingBoFang:(id)sender {
-    
-     [self presentViewController:self.playerVc animated:YES completion:nil];
     
 }
 - (IBAction)sureInputAndshow:(id)sender {
@@ -105,7 +72,6 @@
     
 }
 - (IBAction)vidoButton:(id)sender {
-    
     AVCaptureDevice *deviceC = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     self.inputC = [AVCaptureDeviceInput deviceInputWithDevice:deviceC error:nil];
     AVCaptureDevice *deviceM = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeAudio];
@@ -138,6 +104,21 @@
         NSLog(@"%@",path);
     }
 }
+
+- (IBAction)shipingBoFang:(id)sender {
+    NSString *path  = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]stringByAppendingPathComponent:@"RZCX.mov" ];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    AVPlayerViewController *playerVc = [[AVPlayerViewController alloc]init];
+    self.playerVc = playerVc;
+    playerVc.showsPlaybackControls = YES;
+    playerVc.player = [[AVPlayer alloc]initWithURL:url];
+    playerVc.allowsPictureInPicturePlayback = YES;
+    [[AVAudioSession sharedInstance]setActive:YES error:nil];
+    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:nil];
+    playerVc.delegate = self;
+    [self presentViewController:self.playerVc animated:YES completion:nil];
+}
+
 - (void)captureOutput:(AVCaptureFileOutput *)captureOutput didStartRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray *)connections;{
     NSLog(@"didStartRecordingToOutputFileAtURL");
 }

@@ -108,6 +108,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome9" translatesAutoresizingMaskIntoConstraints="NO" id="6al-wX-ijR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqT-At-ndj">
                                 <rect key="frame" x="81" y="152" width="212" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -779,6 +782,9 @@
             <point key="canvasLocation" x="2064.5" y="3171.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="welcome9" width="320" height="568"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fkx-49-vgl"/>
     </inferredMetricsTieBreakers>
