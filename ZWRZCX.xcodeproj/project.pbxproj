@@ -32,6 +32,7 @@
 		C8536D561D06A7360044BEC8 /* LuYinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8536D4F1D06A7360044BEC8 /* LuYinViewController.m */; };
 		C8536D581D06A7360044BEC8 /* LVRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8536D541D06A7360044BEC8 /* LVRecordView.m */; };
 		C8536D591D06A7360044BEC8 /* LVRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8536D551D06A7360044BEC8 /* LVRecordView.xib */; };
+		C853FB3A1D1D166500ECF8D2 /* CylViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C853FB391D1D166500ECF8D2 /* CylViewController.m */; };
 		C883469A1D0D104800E5ABE9 /* logWinDiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */; };
 		C883469C1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C883469B1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard */; };
 		C893F2501D050D7B00E96398 /* DZCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F24F1D050D7B00E96398 /* DZCNavigationController.m */; };
@@ -237,6 +238,8 @@
 		C8536D531D06A7360044BEC8 /* LVRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRecordView.h; sourceTree = "<group>"; };
 		C8536D541D06A7360044BEC8 /* LVRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRecordView.m; sourceTree = "<group>"; };
 		C8536D551D06A7360044BEC8 /* LVRecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVRecordView.xib; sourceTree = "<group>"; };
+		C853FB381D1D166500ECF8D2 /* CylViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylViewController.h; sourceTree = "<group>"; };
+		C853FB391D1D166500ECF8D2 /* CylViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CylViewController.m; sourceTree = "<group>"; };
 		C88346981D0D104800E5ABE9 /* logWinDiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logWinDiTuViewController.h; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.h; sourceTree = "<group>"; };
 		C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = logWinDiTuViewController.m; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.m; sourceTree = "<group>"; };
 		C883469B1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = logWinDiTuViewController.storyboard; sourceTree = "<group>"; };
@@ -622,6 +625,8 @@
 			children = (
 				C84A742A1D01096B00CA4CFD /* carOwnerInterfaceVC.h */,
 				C84A742B1D01096B00CA4CFD /* carOwnerInterfaceVC.m */,
+				C853FB381D1D166500ECF8D2 /* CylViewController.h */,
+				C853FB391D1D166500ECF8D2 /* CylViewController.m */,
 			);
 			name = CarOwnerVC;
 			path = CarOwnerinterfaceVC;
@@ -1646,6 +1651,7 @@
 				C893F2561D050E0700E96398 /* DZCTabBar.m in Sources */,
 				C8A3C51A1CFEB4C500E741BC /* UIView+Ex.m in Sources */,
 				C893F2A41D055D8100E96398 /* MLSelectPhotoPickerAssetsViewController.m in Sources */,
+				C853FB3A1D1D166500ECF8D2 /* CylViewController.m in Sources */,
 				C8E5989E1D0FEBD300D58C64 /* PlayBackRecordedScreen.m in Sources */,
 				C893F29C1D055D8100E96398 /* UIImage+MLTint.m in Sources */,
 				C8A3C4B41CFE5D2100E741BC /* ViewController.m in Sources */,

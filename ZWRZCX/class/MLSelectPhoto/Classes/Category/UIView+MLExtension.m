@@ -82,7 +82,6 @@
     alertLabel.backgroundColor = [UIColor colorWithRed:25/255.0 green:25/255.0 blue:25/255.0 alpha:1.0];
     alertLabel.layer.cornerRadius = 10.0f;
     [[UIApplication sharedApplication].keyWindow addSubview:alertLabel];
-
     [UIView animateWithDuration:KHUDShowDuration animations:^{
         alertLabel.alpha = 0.0;
     } completion:^(BOOL finished) {

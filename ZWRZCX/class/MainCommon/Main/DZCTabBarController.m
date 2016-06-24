@@ -17,7 +17,6 @@
 @implementation DZCTabBarController
 
 - (NSMutableArray *)array {
-    
     if (!_array) {
         _array = [NSMutableArray arrayWithCapacity:5];
     }

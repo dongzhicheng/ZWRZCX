@@ -6,8 +6,6 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
-
-
 @interface DZCNavigationController ()
 
 @end
@@ -20,7 +18,6 @@
     
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {
-    
     return UIStatusBarStyleLightContent;
 }
 + (void)initialize {
