@@ -70,6 +70,7 @@ static NSString * const reuseIdentifier = @"APP";
 
     //正常是传模型对象，现在没有接口数据
     
+    
     return cell;
 }
 

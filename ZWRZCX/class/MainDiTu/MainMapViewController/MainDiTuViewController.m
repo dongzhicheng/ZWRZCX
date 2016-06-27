@@ -28,7 +28,11 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.startNameField resignFirstResponder];
     [self.destinationField resignFirstResponder];
+    
+    
 }
+
+
 #pragma mark --地理编码，实现导航
 -(void)textDiLiCoder{
     MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation]; //当前的位置

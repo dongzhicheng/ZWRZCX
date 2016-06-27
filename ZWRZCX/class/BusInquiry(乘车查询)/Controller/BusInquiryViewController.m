@@ -4,8 +4,8 @@
 //  Created by 董志成 on 16/6/3.
 //  Copyright © 2016年 董志成. All rights reserved.
 //  屏幕
-
-
+#import <MapKit/MapKit.h>
+#import "MainDiTuViewController.h"
 @interface BusInquiryViewController ()<AVPlayerViewControllerDelegate,UIPrintInteractionControllerDelegate>
 
 @property(nonatomic,strong)UIButton * btn;
@@ -13,6 +13,13 @@
 @end
 
 @implementation BusInquiryViewController
+- (IBAction)safePositionColle:(id)sender {
+    
+    MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
+    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    [MKMapItem openMapsWithItems:@[currentItem,currentItem] launchOptions:nil];
+
+}
 
 - (IBAction)TextPrintClick:(id)sender {
     

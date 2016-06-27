@@ -99,7 +99,7 @@
         <!--查询界面-->
         <scene sceneID="Xpd-zQ-HJV">
             <objects>
-                <viewController id="Vhf-tg-w4m" sceneMemberID="viewController">
+                <viewController id="Vhf-tg-w4m" customClass="BusInquiryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ljf-W5-7Ah"/>
                         <viewControllerLayoutGuide type="bottom" id="wM7-GA-pOV"/>
@@ -187,6 +187,9 @@
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="安全定位"/>
+                                <connections>
+                                    <action selector="safePositionColle:" destination="Vhf-tg-w4m" eventType="touchUpInside" id="FXW-Fn-0KR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc1-ZI-EYR">
                                 <rect key="frame" x="13" y="466" width="275" height="31"/>
