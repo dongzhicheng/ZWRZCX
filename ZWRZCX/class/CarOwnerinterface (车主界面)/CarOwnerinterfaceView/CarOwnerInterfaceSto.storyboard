@@ -579,7 +579,7 @@
             </objects>
             <point key="canvasLocation" x="-2408.5" y="1324.5"/>
         </scene>
-        <!--Text Home Record ScrenVC-->
+        <!--车主界面-->
         <scene sceneID="8rg-sz-pLb">
             <objects>
                 <viewController id="oQk-Eo-tHE" customClass="textHomeRecordScrenVC" sceneMemberID="viewController">
@@ -595,7 +595,7 @@
                                 <rect key="frame" x="0.0" y="-31" width="449" height="707"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-0n-bsG">
-                                <rect key="frame" x="59" y="227" width="212" height="30"/>
+                                <rect key="frame" x="59" y="186" width="212" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="运营资格申请">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -606,20 +606,8 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-y5-uXw">
-                                <rect key="frame" x="59" y="341" width="212" height="30"/>
-                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="签署协议">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="O3g-Zb-rsN" kind="show" id="6pt-m2-9hE">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3K-ap-Os1">
-                                <rect key="frame" x="59" y="379" width="212" height="30"/>
+                                <rect key="frame" x="59" y="387" width="212" height="30"/>
                                 <color key="backgroundColor" red="0.47450980390000003" green="0.1325372423" blue="0.067524278029999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="举报">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -631,7 +619,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9Y-Ce-o8L">
-                                <rect key="frame" x="59" y="303" width="212" height="30"/>
+                                <rect key="frame" x="59" y="289" width="212" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="被投诉举报记录">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -643,7 +631,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF2-cz-AmP">
-                                <rect key="frame" x="59" y="265" width="212" height="30"/>
+                                <rect key="frame" x="59" y="240" width="212" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="违章记录">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -660,10 +648,22 @@
                                     <segue destination="A2g-r2-lJs" kind="embed" id="92h-Rr-HVi"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-y5-uXw">
+                                <rect key="frame" x="59" y="340" width="212" height="30"/>
+                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="签署协议">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O3g-Zb-rsN" kind="show" id="6pt-m2-9hE">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.79285301600000002" green="1" blue="0.56147644630000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6IH-0o-KN5"/>
+                    <navigationItem key="navigationItem" title="车主界面" id="6IH-0o-KN5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dxs-L9-AWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -712,6 +712,10 @@
         <scene sceneID="J56-L6-7de">
             <objects>
                 <viewController id="A2g-r2-lJs" customClass="CylViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w3r-jZ-VUz"/>
+                        <viewControllerLayoutGuide type="bottom" id="FOi-oc-ihF"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JFf-QK-HVc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

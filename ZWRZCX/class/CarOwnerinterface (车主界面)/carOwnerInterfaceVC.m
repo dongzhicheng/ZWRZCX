@@ -60,14 +60,10 @@
 //    self.tableView.backgroundColor = [UIColor grayColor];
 
 //    UIView * BackGroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width , [UIScreen mainScreen].bounds.size.height)];
-//
-  
-    
+
 //    self.tableView.backgroundView = imageView;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selectPhotos) name:@"breakRulusNotesViewController" object:nil];
-    
-    
     
 }
 
@@ -89,6 +85,7 @@
     static NSString *ID = @"carOwnerInterfaceVCCell";
     
     carOwnerInterfaceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
     if (cell == nil) {
         cell = [[carOwnerInterfaceTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
@@ -127,8 +124,6 @@
     
 }
 
-
-
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     MLSelectPhotoBrowserViewController *browserVc = [[MLSelectPhotoBrowserViewController alloc] init];
     browserVc.currentPage = indexPath.row;
@@ -141,7 +136,6 @@
     };
     [self.navigationController pushViewController:browserVc animated:YES];
 }
-
 
 //每个UICollectionView展示的内容
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -192,8 +186,6 @@
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

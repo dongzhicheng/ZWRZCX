@@ -9,6 +9,7 @@
 #import "CylViewController.h"
 
 @interface CylViewController ()<UIScrollViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
 @property(nonatomic,strong)NSTimer *timer;
@@ -24,7 +25,7 @@
     CGFloat scanViewH = self.scrollView.frame.size.height;
     
     for (int i = 0; i<5; i++) {
-        
+
         UIImageView *scanView = [UIImageView new];
         scanView.frame = CGRectMake(i* scanViewW, 0, scanViewW, scanViewH);
         [self.scrollView insertSubview:scanView atIndex:0];
@@ -46,6 +47,8 @@
     CGFloat offsetX = scrollView.contentOffset.x;
     NSInteger pageCount = (offsetX + scrollView.frame.size.width * 0.5)/ scrollView.frame.size.width;
     self.pageControl.currentPage = pageCount;
+    
+    
 
 }
 
@@ -58,6 +61,7 @@
 
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     [self addTimer];
+    [self nextImage];
 }
 
 -(void)nextImage{
@@ -73,7 +77,6 @@
     CGFloat scrollViewW = self.scrollView.frame.size.width ;
     [self.scrollView setContentOffset:CGPointMake(pageCount *scrollViewW, 0) animated:YES];
 }
-
 
 -(void)addTimer{
 

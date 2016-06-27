@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Bus Inquiry View Controller-->
+        <!--功能菜单-->
         <scene sceneID="xJG-7M-xmT">
             <objects>
                 <viewController id="9VM-i3-MfR" customClass="BusInquiryViewController" sceneMemberID="viewController">
@@ -21,19 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome7.png" translatesAutoresizingMaskIntoConstraints="NO" id="mGy-MI-ydV">
                                 <rect key="frame" x="0.0" y="-53" width="375" height="720"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFf-w9-WY1">
-                                <rect key="frame" x="43" y="220" width="229" height="28"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="查询(认证)">
-                                    <color key="titleColor" red="0.991843213" green="1" blue="0.40147542200000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Vhf-tg-w4m" kind="show" id="V9g-5p-C02">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3p-NT-f39">
                                 <rect key="frame" x="43" y="266" width="229" height="33"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,7 +31,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="双击屏幕实现录屏和播放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRM-LH-LxA">
-                                <rect key="frame" x="43" y="168" width="229" height="30"/>
+                                <rect key="frame" x="43" y="158" width="229" height="30"/>
                                 <color key="backgroundColor" red="0.991843213" green="1" blue="0.40147542200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -66,10 +53,23 @@
                                     <action selector="TextPrintClick:" destination="9VM-i3-MfR" eventType="touchUpInside" id="SrA-OP-zeb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFf-w9-WY1">
+                                <rect key="frame" x="43" y="214" width="229" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="查询(认证)">
+                                    <color key="titleColor" red="0.991843213" green="1" blue="0.40147542200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Vhf-tg-w4m" kind="show" id="V9g-5p-C02">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.28190524189999999" green="1" blue="0.79827990199999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7zh-2e-5Pr"/>
+                    <navigationItem key="navigationItem" title="功能菜单" id="7zh-2e-5Pr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNP-Qz-oWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="-3581.5" y="312.5"/>
         </scene>
-        <!--View Controller-->
+        <!--查询界面-->
         <scene sceneID="Xpd-zQ-HJV">
             <objects>
                 <viewController id="Vhf-tg-w4m" sceneMemberID="viewController">
@@ -109,7 +109,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome3.png" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-j6-bOb">
-                                <rect key="frame" x="-1" y="31" width="377" height="605"/>
+                                <rect key="frame" x="-1" y="64" width="376" height="572"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEu-qq-K69">
                                 <rect key="frame" x="0.0" y="64" width="335" height="181"/>
@@ -197,6 +197,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="查询界面" id="COy-Xb-zcU"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psp-hX-xIy" userLabel="First Responder" sceneMemberID="firstResponder"/>

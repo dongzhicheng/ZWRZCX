@@ -29,7 +29,7 @@
     
     CGFloat oldVersion = [userDefaults floatForKey:@"version"]; //获取存储的上一个版本
     
-    if (version >oldVersion) { //判断是否是第一次安装
+    if (version < oldVersion) { //判断是否是第一次安装
 
         UIStoryboard * UserGuidStoryB = [UIStoryboard storyboardWithName:@"UserGuidViewController" bundle:nil];
         

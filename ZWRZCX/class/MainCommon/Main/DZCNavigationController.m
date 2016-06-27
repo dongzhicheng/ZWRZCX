@@ -19,6 +19,8 @@
 }
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
+    
+    
 }
 + (void)initialize {
     UINavigationBar *bar = [UINavigationBar appearance]; //获取到当前所有显示的导航条
@@ -27,6 +29,8 @@
     bar.translucent = NO; //去掉导航条的半透明效果   如果有透明度，控制器的view有穿透效果。如果没有透明度，控制器的view没有穿透效果
     UIBarButtonItem *item = [UIBarButtonItem appearance]; // 导航按钮的样式
     [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal]; //设置导航按钮的文字颜色和大小
+
+   
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated { //重写导航控制器的push方法，viewController要跳转到的控制器
     [self addBackButton:viewController];

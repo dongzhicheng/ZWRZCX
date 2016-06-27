@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--TraveI Information TableVC-->
+        <!--旅行信息-->
         <scene sceneID="e1B-cH-ewJ">
             <objects>
                 <tableViewController id="1G2-nW-SAA" customClass="traveIInformationTableVC" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="1G2-nW-SAA" id="F7c-pG-jba"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qga-7n-1YX"/>
+                    <navigationItem key="navigationItem" title="旅行信息" id="qga-7n-1YX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tH-XK-ERf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,9 +60,10 @@
         <!--出行信息-->
         <scene sceneID="pNE-Of-KUk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJf-uK-v23" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJf-uK-v23" customClass="DZCNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="出行信息" id="pOX-CJ-nHV"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TqX-wb-ApC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -74,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06j-MQ-1zD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1151" y="327"/>
+            <point key="canvasLocation" x="-998.5" y="332.5"/>
         </scene>
     </scenes>
 </document>

@@ -50,28 +50,20 @@
     
     NSString *img1 = [[NSBundle mainBundle] pathForResource:@"welcome1"
                                                      ofType:@"png"];
-    
     NSString *img2 = [[NSBundle mainBundle] pathForResource:@"welcome2"
                                                      ofType:@"png"];
-    
     NSString *img3 = [[NSBundle mainBundle] pathForResource:@"welcome3"
                                                      ofType:@"png"];
-    
     NSString *img4 = [[NSBundle mainBundle] pathForResource:@"welcome4"
                                                      ofType:@"png"];
-    
     NSString *img5 = [[NSBundle mainBundle] pathForResource:@"welcome5"
                                                      ofType:@"png"];
-    
     NSString *img6 = [[NSBundle mainBundle] pathForResource:@"welcome6"
                                                      ofType:@"png"];
-    
     NSString *img7 = [[NSBundle mainBundle] pathForResource:@"welcome7"
                                                      ofType:@"png"];
-    
     NSString *img8 = [[NSBundle mainBundle] pathForResource:@"welcome8"
                                                      ofType:@"png"];
-    
     NSString *img9 = [[NSBundle mainBundle] pathForResource:@"welcome9"
                                                      ofType:@"png"];
     

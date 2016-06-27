@@ -22,6 +22,8 @@
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9i-i1-wyQ">
                                 <rect key="frame" x="33" y="398" width="272" height="30"/>
+                                <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" red="0.991843213" green="1" blue="0.40147542200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="立即进入"/>
                                 <connections>
                                     <action selector="startClick:" destination="PUc-CC-pUV" eventType="touchUpInside" id="9bf-Zs-OgX"/>

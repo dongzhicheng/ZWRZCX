@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Main Di Tu View Controller-->
+        <!--地图界面-->
         <scene sceneID="Cc2-ck-M7W">
             <objects>
                 <viewController id="lkg-mx-fFF" customClass="MainDiTuViewController" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             <constraint firstItem="TEw-hS-Kwh" firstAttribute="centerY" secondItem="W0P-Bh-MR2" secondAttribute="centerY" id="k4F-gk-4HC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Qn1-ed-KI0"/>
+                    <navigationItem key="navigationItem" title="地图界面" id="Qn1-ed-KI0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-JP-lON" userLabel="First Responder" sceneMemberID="firstResponder"/>
