@@ -33,14 +33,6 @@
     }];
     
     
-//    CGFloat viewW = [UIScreen mainScreen].bounds.size.width;
-//    CGFloat viewH = 64;
-//    UIView * viewN = [[UIView alloc] initWithFrame:CGRectMake(viewW*0.5, 32, viewW, viewH)];
-//
-//    self.navigationController.navigationItem.titleView = viewN;
-    
-    
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

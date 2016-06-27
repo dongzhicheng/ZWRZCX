@@ -2,7 +2,7 @@
 //  NetWorkTool.m
 //  ZWRZCX
 //
-//  Created by 董志成 on 16/6/4.
+//  Created by 董志成 on 16/6/27.
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
@@ -13,12 +13,14 @@ static NSString * const NewsBaseURLString = @"http://www.baidu.com/nc/"; //需�
 @implementation NetWorkTool
 
 static NetWorkTool *_instance = nil;
+
 + (instancetype)sharedNetWorkTool{
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
         _instance = [[self alloc] initWithBaseURL:[NSURL URLWithString:NewsBaseURLString]];
+        
         _instance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
         
     });
