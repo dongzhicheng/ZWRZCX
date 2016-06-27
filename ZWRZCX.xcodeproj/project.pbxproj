@@ -28,6 +28,9 @@
 		C8000A6D1D21042A00A527C0 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8000A571D21042A00A527C0 /* UIScrollView+MJExtension.m */; };
 		C8000A6E1D21042A00A527C0 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C8000A591D21042A00A527C0 /* UIScrollView+MJRefresh.m */; };
 		C8000A6F1D21042A00A527C0 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8000A5B1D21042A00A527C0 /* UIView+MJExtension.m */; };
+		C8000A731D21154400A527C0 /* horizontalCollecVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8000A711D21154400A527C0 /* horizontalCollecVC.m */; };
+		C8000A781D21163100A527C0 /* horizontalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8000A771D21163100A527C0 /* horizontalCell.m */; };
+		C8000A7B1D21165500A527C0 /* horizontalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8000A7A1D21165500A527C0 /* horizontalModel.m */; };
 		C807A25F1D128E8D00482FA6 /* DOPScrollableActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C807A25E1D128E8D00482FA6 /* DOPScrollableActionSheet.m */; };
 		C80A88591D0CECAE003801CB /* MMZCHMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88501D0CECAE003801CB /* MMZCHMViewController.m */; };
 		C80A885A1D0CECAE003801CB /* MMZCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88521D0CECAE003801CB /* MMZCViewController.m */; };
@@ -55,7 +58,6 @@
 		C8536D591D06A7360044BEC8 /* LVRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8536D551D06A7360044BEC8 /* LVRecordView.xib */; };
 		C853FB3A1D1D166500ECF8D2 /* CylViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C853FB391D1D166500ECF8D2 /* CylViewController.m */; };
 		C883469A1D0D104800E5ABE9 /* logWinDiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */; };
-		C883469C1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C883469B1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard */; };
 		C893F2501D050D7B00E96398 /* DZCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F24F1D050D7B00E96398 /* DZCNavigationController.m */; };
 		C893F2561D050E0700E96398 /* DZCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F2551D050E0700E96398 /* DZCTabBar.m */; };
 		C893F2591D050E3500E96398 /* DZCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F2581D050E3500E96398 /* DZCTabBarButton.m */; };
@@ -255,6 +257,12 @@
 		C8000A591D21042A00A527C0 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		C8000A5A1D21042A00A527C0 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		C8000A5B1D21042A00A527C0 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		C8000A701D21154400A527C0 /* horizontalCollecVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = horizontalCollecVC.h; sourceTree = "<group>"; };
+		C8000A711D21154400A527C0 /* horizontalCollecVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = horizontalCollecVC.m; sourceTree = "<group>"; };
+		C8000A761D21163100A527C0 /* horizontalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = horizontalCell.h; sourceTree = "<group>"; };
+		C8000A771D21163100A527C0 /* horizontalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = horizontalCell.m; sourceTree = "<group>"; };
+		C8000A791D21165500A527C0 /* horizontalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = horizontalModel.h; sourceTree = "<group>"; };
+		C8000A7A1D21165500A527C0 /* horizontalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = horizontalModel.m; sourceTree = "<group>"; };
 		C807A25D1D128E8D00482FA6 /* DOPScrollableActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPScrollableActionSheet.h; sourceTree = "<group>"; };
 		C807A25E1D128E8D00482FA6 /* DOPScrollableActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPScrollableActionSheet.m; sourceTree = "<group>"; };
 		C80A884F1D0CECAE003801CB /* MMZCHMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMZCHMViewController.h; sourceTree = "<group>"; };
@@ -305,7 +313,6 @@
 		C853FB391D1D166500ECF8D2 /* CylViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CylViewController.m; sourceTree = "<group>"; };
 		C88346981D0D104800E5ABE9 /* logWinDiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logWinDiTuViewController.h; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.h; sourceTree = "<group>"; };
 		C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = logWinDiTuViewController.m; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.m; sourceTree = "<group>"; };
-		C883469B1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = logWinDiTuViewController.storyboard; sourceTree = "<group>"; };
 		C893F24E1D050D7B00E96398 /* DZCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZCNavigationController.h; path = Main/DZCNavigationController.h; sourceTree = "<group>"; };
 		C893F24F1D050D7B00E96398 /* DZCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DZCNavigationController.m; path = Main/DZCNavigationController.m; sourceTree = "<group>"; };
 		C893F2541D050E0700E96398 /* DZCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZCTabBar.h; path = Main/DZCTabBar.h; sourceTree = "<group>"; };
@@ -794,7 +801,8 @@
 			isa = PBXGroup;
 			children = (
 				C893F26B1D05197800E96398 /* LogSto.storyboard */,
-				C883469B1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard */,
+				C8000A761D21163100A527C0 /* horizontalCell.h */,
+				C8000A771D21163100A527C0 /* horizontalCell.m */,
 			);
 			path = LogView;
 			sourceTree = "<group>";
@@ -802,6 +810,8 @@
 		C893F2691D05195E00E96398 /* LogModel */ = {
 			isa = PBXGroup;
 			children = (
+				C8000A791D21165500A527C0 /* horizontalModel.h */,
+				C8000A7A1D21165500A527C0 /* horizontalModel.m */,
 			);
 			path = LogModel;
 			sourceTree = "<group>";
@@ -813,6 +823,8 @@
 				C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */,
 				C8E9B3E31D02C46500B57DB9 /* LoginViewController.h */,
 				C8E9B3E41D02C46500B57DB9 /* LoginViewController.m */,
+				C8000A701D21154400A527C0 /* horizontalCollecVC.h */,
+				C8000A711D21154400A527C0 /* horizontalCollecVC.m */,
 			);
 			path = LogController;
 			sourceTree = "<group>";
@@ -1675,7 +1687,6 @@
 				C8E5B7D91D1A7EA000350FB9 /* welcome2@2x.png in Resources */,
 				C893F25E1D0516A800E96398 /* BusInquiry.storyboard in Resources */,
 				C8E5B7E11D1A7EA000350FB9 /* welcome6@2x.png in Resources */,
-				C883469C1D0D106500E5ABE9 /* logWinDiTuViewController.storyboard in Resources */,
 				C893F2671D0518E500E96398 /* MainMapSto.storyboard in Resources */,
 				C8A3C4B91CFE5D2200E741BC /* Assets.xcassets in Resources */,
 				C8E9B38A1D02572500B57DB9 /* Info.plist in Resources */,
@@ -1838,6 +1849,7 @@
 				C80A885C1D0CECAE003801CB /* settingPassWardViewController.m in Sources */,
 				C84A74321D010A6100CA4CFD /* writeAgreementVC.m in Sources */,
 				C8E9B39F1D02A94F00B57DB9 /* webViewController.m in Sources */,
+				C8000A7B1D21165500A527C0 /* horizontalModel.m in Sources */,
 				C893F29F1D055D8100E96398 /* MLSelectPhotoPickerBrowserPhoto.m in Sources */,
 				C84A743B1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m in Sources */,
 				C893F2A71D055D8100E96398 /* MLPhotoPickerImageView.m in Sources */,
@@ -1885,6 +1897,7 @@
 				C8E9B3911D02572500B57DB9 /* NSObject+MJCoding.m in Sources */,
 				C8A3C4AE1CFE5D2100E741BC /* main.m in Sources */,
 				C893F2591D050E3500E96398 /* DZCTabBarButton.m in Sources */,
+				C8000A731D21154400A527C0 /* horizontalCollecVC.m in Sources */,
 				C893F2A21D055D8100E96398 /* MLSelectPhotoBrowserViewController.m in Sources */,
 				C893F2B51D055DD400E96398 /* SCPhotoHelper.m in Sources */,
 				C8000A671D21042A00A527C0 /* MJRefreshGifHeader.m in Sources */,
@@ -1896,6 +1909,7 @@
 				C84A743E1D01109900CA4CFD /* SaomiaoController.m in Sources */,
 				C8E9B3901D02572500B57DB9 /* NSObject+MJClass.m in Sources */,
 				C807A25F1D128E8D00482FA6 /* DOPScrollableActionSheet.m in Sources */,
+				C8000A781D21163100A527C0 /* horizontalCell.m in Sources */,
 				C8E5989F1D0FEBD300D58C64 /* PlayBackViewController.m in Sources */,
 				C893F2AC1D055D8100E96398 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */,
 				C8000A631D21042A00A527C0 /* MJRefreshAutoStateFooter.m in Sources */,
