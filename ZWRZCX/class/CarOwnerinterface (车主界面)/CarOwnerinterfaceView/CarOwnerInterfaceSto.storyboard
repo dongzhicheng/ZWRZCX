@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="-1057.5" y="1224.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Qualifications ApplicationVC-->
         <scene sceneID="gsq-ni-C2K">
             <objects>
-                <tableViewController id="jfi-UE-mpI" sceneMemberID="viewController">
+                <tableViewController id="jfi-UE-mpI" customClass="QualificationsApplicationVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lV9-EP-iP8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,7 +10,7 @@
 //    NSString * heardNameStr = self.travelCellModelArray[indexPath.row].cellImageNameText;
 
 
-
+#import "MJRefresh.h"
 
 @interface traveIInformationTableVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -32,6 +32,15 @@
         
     }];
     
+    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+    }];
+    
+    [self.tableView.header beginRefreshing];
+    
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        
+    }];
     
 }
 

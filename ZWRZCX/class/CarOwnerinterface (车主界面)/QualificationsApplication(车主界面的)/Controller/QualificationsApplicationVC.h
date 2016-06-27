@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QualificationsApplicationVC : UIViewController
+@interface QualificationsApplicationVC : UITableViewController
 
 @end

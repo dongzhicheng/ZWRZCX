@@ -70,5 +70,6 @@
     #import "settinhHeaderViewController.h"
     #import "SVProgressHUD.h"
     #import "MMZCViewController.h"
+    #import "MJRefresh.h"
 
 #endif
