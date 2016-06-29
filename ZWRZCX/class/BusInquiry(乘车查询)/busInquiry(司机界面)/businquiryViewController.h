@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "businquiryViewController.h"
+#import "AFNetworking.h"
 
 @interface businquiryViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *businquiryImageView;
