@@ -21,16 +21,24 @@
 +(void)travesArrayInfCellWithCompletion:(void (^)(NSArray *))completion{
     NetWorkTool *netWorkTol = [NetWorkTool sharedNetWorkTool];
     [netWorkTol GET:@"ad/headline/0-4.html" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * responseObject) {
+        
         NSString *key = responseObject.keyEnumerator.nextObject;
+        
         NSArray *dictArray = responseObject[key];
-        NSMutableArray *arrayM = [NSMutableArray array];
+        
+        NSMutableArray * arrayM  =  [[NSMutableArray alloc] init];
+        
         for (NSDictionary * dict in dictArray) {
+            
             [arrayM addObject:[travelInformationTableCellModel traveCellWithDict:dict]];
+        
         }
         NSMutableArray *travelCellModelDataArray = [NSMutableArray array];
+        
         completion(travelCellModelDataArray.copy);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"NetWorkTool中的错误:%@",error);
     }];
+    
 }
 @end

@@ -112,21 +112,21 @@
                                 <rect key="frame" x="-1" y="64" width="376" height="572"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEu-qq-K69">
-                                <rect key="frame" x="0.0" y="64" width="335" height="181"/>
+                                <rect key="frame" x="0.0" y="-31" width="330" height="276"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYc-dK-l4m">
-                                        <rect key="frame" x="8" y="14" width="106" height="106"/>
+                                        <rect key="frame" x="8" y="109" width="106" height="106"/>
                                         <color key="backgroundColor" red="0.4424598978" green="0.4230057726" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="司机信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjf-5v-6Ol">
-                                        <rect key="frame" x="128" y="19" width="69" height="18"/>
+                                        <rect key="frame" x="128" y="114" width="69" height="18"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0W-WU-Kqi">
-                                        <rect key="frame" x="128" y="63" width="172" height="22"/>
+                                        <rect key="frame" x="128" y="158" width="172" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

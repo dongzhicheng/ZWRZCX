@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Break Rulus Notes View Controller-->
+        <!--违章记录-->
         <scene sceneID="a0k-ZG-HAS">
             <objects>
                 <viewController id="JeN-bC-0Kj" customClass="breakRulusNotesViewController" sceneMemberID="viewController">
@@ -108,7 +108,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="szj-px-MbZ"/>
+                    <navigationItem key="navigationItem" title="违章记录" id="szj-px-MbZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="breakRulusTextFiled" destination="BGD-In-4XJ" id="pL4-6S-Rnj"/>
@@ -156,9 +156,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0L9-EC-eh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1057.5" y="1224.5"/>
+            <point key="canvasLocation" x="-1021.5" y="1324.5"/>
         </scene>
-        <!--Qualifications ApplicationVC-->
+        <!--运营资格申请-->
         <scene sceneID="gsq-ni-C2K">
             <objects>
                 <tableViewController id="jfi-UE-mpI" customClass="QualificationsApplicationVC" sceneMemberID="viewController">
@@ -463,14 +463,14 @@
                             <outlet property="delegate" destination="jfi-UE-mpI" id="7yA-nl-v2C"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AJT-WY-NSi"/>
+                    <navigationItem key="navigationItem" title="运营资格申请" id="AJT-WY-NSi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvl-zW-vv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1997.5" y="1324.5"/>
         </scene>
-        <!--View Controller-->
+        <!--举报界面-->
         <scene sceneID="0TY-1m-WB6">
             <objects>
                 <viewController id="44o-9a-fOU" sceneMemberID="viewController">
@@ -526,13 +526,14 @@
                             <constraint firstItem="e2y-xn-Wwf" firstAttribute="leading" secondItem="1J3-WH-9wq" secondAttribute="leadingMargin" constant="-5" id="eM7-XJ-c4N"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="举报界面" id="DMo-8D-HMl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8l-gI-CyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2818.5" y="1324.5"/>
         </scene>
-        <!--View Controller-->
+        <!--签署协议-->
         <scene sceneID="ppM-vc-XDf">
             <objects>
                 <viewController id="O3g-Zb-rsN" sceneMemberID="viewController">
@@ -573,6 +574,7 @@
                             <constraint firstItem="B9r-ME-GBN" firstAttribute="top" secondItem="TSQ-qw-l2F" secondAttribute="bottom" constant="10" id="YJY-g1-TMJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="签署协议" id="nPO-i0-wQa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgS-Vp-JBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -595,8 +597,8 @@
                                 <rect key="frame" x="0.0" y="-31" width="449" height="707"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-0n-bsG">
-                                <rect key="frame" x="59" y="186" width="212" height="30"/>
-                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="59" y="167" width="212" height="30"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.087339491539999994" blue="0.0402090409" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="运营资格申请">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -619,8 +621,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9Y-Ce-o8L">
-                                <rect key="frame" x="59" y="289" width="212" height="30"/>
-                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="59" y="279" width="212" height="30"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.1325372423" blue="0.067524278029999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="被投诉举报记录">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -631,7 +633,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF2-cz-AmP">
-                                <rect key="frame" x="59" y="240" width="212" height="30"/>
+                                <rect key="frame" x="59" y="225" width="212" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="违章记录">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -643,13 +645,13 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nL-m4-Dnb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="159"/>
                                 <connections>
                                     <segue destination="A2g-r2-lJs" kind="embed" id="92h-Rr-HVi"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-y5-uXw">
-                                <rect key="frame" x="59" y="340" width="212" height="30"/>
+                                <rect key="frame" x="59" y="333" width="212" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="签署协议">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -676,6 +678,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jtc-oj-F8i" customClass="DZCNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="车主界面" id="5jy-w5-Rd9"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVb-AE-sPh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -687,7 +690,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="py6-ER-Gfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2837" y="313"/>
+            <point key="canvasLocation" x="-2769.5" y="312.5"/>
         </scene>
         <!--Lu Yin View Controller-->
         <scene sceneID="TDl-jB-NYl">
@@ -706,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvp-Pz-90u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1057.5" y="2152.5"/>
+            <point key="canvasLocation" x="-1542.5" y="2150.5"/>
         </scene>
         <!--Cyl View Controller-->
         <scene sceneID="J56-L6-7de">
@@ -717,14 +720,14 @@
                         <viewControllerLayoutGuide type="bottom" id="FOi-oc-ihF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JFf-QK-HVc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="159"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ChL-Zl-can">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="159"/>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-L3-0Ur">
-                                <rect key="frame" x="138" y="85" width="100" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-L3-0Ur">
+                                <rect key="frame" x="128" y="121" width="100" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.28190524189999999" green="1" blue="0.79827990199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                             </pageControl>
@@ -732,13 +735,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="pageControl" destination="Sfk-L3-0Ur" id="k1v-RQ-fv1"/>
-                        <outlet property="scrollView" destination="ChL-Zl-can" id="QaA-4O-AdZ"/>
+                        <outlet property="pageControl" destination="Sfk-L3-0Ur" id="fsR-X3-WEx"/>
+                        <outlet property="scrollView" destination="ChL-Zl-can" id="uNQ-TK-nLK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fi-pg-qru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1670.5" y="136"/>
+            <point key="canvasLocation" x="-1565" y="253.5"/>
         </scene>
     </scenes>
     <resources>

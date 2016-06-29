@@ -69,8 +69,6 @@ static NSString * const reuseIdentifier = @"APP";
     horizontalCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
 
     //正常是传模型对象，现在没有接口数据
-    
-    
     return cell;
 }
 
@@ -84,9 +82,6 @@ static NSString * const reuseIdentifier = @"APP";
     
     [self.navigationController pushViewController:viewController animated:YES];
 
-    
-    
-    
 }
 
 

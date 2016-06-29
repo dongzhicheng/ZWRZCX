@@ -149,10 +149,15 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+    self.title = @"二维码扫描";
     self.view.autoresizingMask = YES;
     self.view.backgroundColor = [UIColor grayColor];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];//处理navigationBar的颜色
     [self initUiConfig];
+    
+    
+    
 }
 - (void)initUI:(CGRect)previewFrame{
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];

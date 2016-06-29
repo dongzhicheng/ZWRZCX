@@ -36,8 +36,8 @@
                                     <constraint firstAttribute="height" constant="51" id="RM0-X0-Ut2"/>
                                     <constraint firstAttribute="width" constant="226" id="ewJ-Qf-6eS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="进入高德去导航">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="进入高德点击左下角图标定位">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

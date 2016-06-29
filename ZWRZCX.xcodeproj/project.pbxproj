@@ -397,7 +397,7 @@
 		C8A3C50E1CFEB4C500E741BC /* UIView+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Ex.m"; path = "../class/other/UIView+Ex.m"; sourceTree = "<group>"; };
 		C8A3C51B1CFEB60500E741BC /* MainDiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDiTuViewController.h; sourceTree = "<group>"; };
 		C8A3C51C1CFEB60500E741BC /* MainDiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDiTuViewController.m; sourceTree = "<group>"; };
-		C8BD2ACC1D17EA8100D3E944 /* RecordMyApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecordMyApp-Prefix.pch"; sourceTree = "<group>"; };
+		C8BD2ACC1D17EA8100D3E944 /* ZWRZCX.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRZCX.pch; sourceTree = "<group>"; };
 		C8E598631D0FDCBA00D58C64 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C8E598651D0FDCC100D58C64 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		C8E598671D0FDCCB00D58C64 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -928,7 +928,7 @@
 		C8A3C4A01CFE5D2100E741BC = {
 			isa = PBXGroup;
 			children = (
-				C8BD2ACC1D17EA8100D3E944 /* RecordMyApp-Prefix.pch */,
+				C8BD2ACC1D17EA8100D3E944 /* ZWRZCX.pch */,
 				C8E9B3F41D02D30600B57DB9 /* SMS_SDK */,
 				C84A743F1D01247000CA4CFD /* AVFoundation.framework */,
 				C8400CB51CFED340008A8952 /* MapKit.framework */,
@@ -2063,7 +2063,7 @@
 					"$(PROJECT_DIR)/SMS_SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/智慧交通/ZWRZCX/RecordMyApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/智慧交通/ZWRZCX/ZWRZCX.pch";
 				INFOPLIST_FILE = ZWRZCX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZWRCX.ZWRZCX;
@@ -2085,7 +2085,7 @@
 					"$(PROJECT_DIR)/SMS_SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/智慧交通/ZWRZCX/RecordMyApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/dongzhicheng/Desktop/智慧交通/ZWRZCX/ZWRZCX.pch";
 				INFOPLIST_FILE = ZWRZCX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZWRCX.ZWRZCX;

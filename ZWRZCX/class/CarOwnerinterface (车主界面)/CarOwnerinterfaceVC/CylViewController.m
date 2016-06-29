@@ -21,84 +21,94 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGFloat scanViewW = self.scrollView.frame.size.width;
-    CGFloat scanViewH = self.scrollView.frame.size.height;
+    CGRect frame = self.scrollView.frame;
     
-    for (int i = 0; i<5; i++) {
+    int numOfImages = 5;
+    
+    for (int i = 0; i < numOfImages; ++i) {
+        
+        UIImageView *imageView = [[UIImageView alloc] init];
 
-        UIImageView *scanView = [UIImageView new];
-        scanView.frame = CGRectMake(i* scanViewW, 0, scanViewW, scanViewH);
-        [self.scrollView insertSubview:scanView atIndex:0];
-        scanView.image = [UIImage imageNamed:[NSString stringWithFormat:@"img_0%d",i+1]];
+        [self.scrollView addSubview:imageView];
+
+        NSString *imageName = [NSString stringWithFormat:@"%02d",i+1];
+ 
+        imageView.image = [UIImage imageNamed:imageName];
+ 
+        frame.origin.x = frame.size.width * i;
+   
+        imageView.frame = frame;
+        
     }
     
-    self.scrollView.contentSize = CGSizeMake(scanViewW *9, 0);
+    self.scrollView.contentSize = CGSizeMake(frame.size.width * numOfImages, 0);
+
     self.scrollView.pagingEnabled = YES;
-    self.pageControl.numberOfPages = 5;
-    self.pageControl.currentPage = 0;
+
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    
     self.scrollView.delegate = self;
     
-    [self addTimer];
+  
+
+    [self startTimer];
  
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+- (void) nextImage
+{
 
-    CGFloat offsetX = scrollView.contentOffset.x;
-    NSInteger pageCount = (offsetX + scrollView.frame.size.width * 0.5)/ scrollView.frame.size.width;
-    self.pageControl.currentPage = pageCount;
-    
-    
+    NSInteger page = self.pageControl.currentPage;
 
-}
-
--(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
-
-    [self.timer invalidate];
-    self.timer = nil;
-
-}
-
--(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    [self addTimer];
-    [self nextImage];
-}
-
--(void)nextImage{
-    
-    NSInteger pageCount = self.pageControl.currentPage;
-    if (pageCount == 4) {
-        pageCount = 0;
-    }
-    else{
-        pageCount ++;
+    if (page == self.pageControl.numberOfPages - 1) {
+        page = 0;
+    }else{
+        page++;
     }
     
-    CGFloat scrollViewW = self.scrollView.frame.size.width ;
-    [self.scrollView setContentOffset:CGPointMake(pageCount *scrollViewW, 0) animated:YES];
+    [UIView animateWithDuration:1 animations:^{
+        
+        self.scrollView.contentOffset = CGPointMake(page * self.scrollView.frame.size.width, 0);
+        
+    }];
+    
 }
 
--(void)addTimer{
+- (void) startTimer
+{
 
-    NSTimer * timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+    NSTimer *timer  = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+
     self.timer = timer;
-
 }
 
+#pragma mark - 代理方法
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//停止定时器 让定时器失效，一旦失效就不能在使用了。
+- (void) scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+ 
+    [self.timer invalidate];
+}
+/**
+ *  当用户的手指从scrollViwew上抬起的时候执行这个方法
+ */
+- (void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    //  重新开始调度
+    [self startTimer];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//当scrollView的contentOffset发生改变都会调用该方法
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    // round 函数可以进行四舍五入
+    int page = round(scrollView.contentOffset.x / scrollView.frame.size.width) ;
+    
+    self.pageControl.currentPage = page;
 }
-*/
+
 
 @end

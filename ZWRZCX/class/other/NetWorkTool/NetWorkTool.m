@@ -22,7 +22,6 @@ static NetWorkTool *_instance = nil;
         _instance = [[self alloc] initWithBaseURL:[NSURL URLWithString:NewsBaseURLString]];
         
         _instance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
-        
     });
 
     return _instance;

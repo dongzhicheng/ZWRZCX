@@ -5,7 +5,9 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //  屏幕
 #import <MapKit/MapKit.h>
+
 #import "MainDiTuViewController.h"
+
 @interface BusInquiryViewController ()<AVPlayerViewControllerDelegate,UIPrintInteractionControllerDelegate>
 
 @property(nonatomic,strong)UIButton * btn;
@@ -151,9 +153,6 @@
 //    
 //    playerVc.delegate = self;
 
-
-    
-
 }
 
 -(void)TextClick{
@@ -161,22 +160,64 @@
     DOPAction *action1 = [[DOPAction alloc] initWithName:@"Wechat" iconName:@"weixin" handler:^{
         //
         NSLog(@"测试点击了cell对应的qq按钮");
+        
+        
+        UIViewController * viewVC = [UIViewController new];
+        
+        viewVC.title = @"测试跳转Wechat界面";
+        
+        viewVC.view.backgroundColor = [UIColor blueColor];
+        
+        [self.navigationController pushViewController:viewVC animated:YES];
+        
 
     }];
     DOPAction *action2 = [[DOPAction alloc] initWithName:@"QQ" iconName:@"qq" handler:^{
         //
+        
+        UIViewController * viewVC = [UIViewController new];
+        
+        viewVC.view.backgroundColor = [UIColor grayColor];
+        
+        viewVC.title = @"测试跳转QQ界面";
+        [self.navigationController pushViewController:viewVC animated:YES];
+        
     }];
     DOPAction *action3 = [[DOPAction alloc] initWithName:@"WxFriends" iconName:@"wxFriends" handler:^{
         //
+        UIViewController * viewVC = [UIViewController new];
+        
+        viewVC.view.backgroundColor = [UIColor yellowColor];
+        
+        viewVC.title = @"测试跳转WxFriends界面";
+        
+        [self.navigationController pushViewController:viewVC animated:YES];
     }];
     DOPAction *action4 = [[DOPAction alloc] initWithName:@"Qzone" iconName:@"qzone" handler:^{
+        
+        UIViewController * viewVC = [UIViewController new];
+        
+        viewVC.view.backgroundColor = [UIColor yellowColor];
+        
+        viewVC.title = @"测试跳转Qzone界面";
+        
+        [self.navigationController pushViewController:viewVC animated:YES];
         //
     }];
     DOPAction *action5 = [[DOPAction alloc] initWithName:@"Weibo" iconName:@"weibo" handler:^{
+        
+        UIViewController * viewVC = [UIViewController new];
+        
+        viewVC.view.backgroundColor = [UIColor yellowColor];
+        
+        viewVC.title = @"测试跳转Weibo界面";
+        
+        [self.navigationController pushViewController:viewVC animated:YES];
         //
     }];
     DOPAction *action6 = [[DOPAction alloc] initWithName:@"Twitter" iconName:@"twitter" handler:^{
         //
+        
     }];
     DOPAction *action7 = [[DOPAction alloc] initWithName:@"Facebook" iconName:@"fb" handler:^{
         //
