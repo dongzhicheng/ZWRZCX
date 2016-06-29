@@ -114,8 +114,18 @@
     
   }
 
+-(void)viewWillAppear:(BOOL)animated{
+
+    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    [userDefaults setObject:[NSString stringWithFormat:@"%@",self.BusinquirynameLabel.text] forKey:@"busInquiry"];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
     
     newRecordObj = [[NewRecordScreen alloc]initWithView:self.view andViewController:self];
     myTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doubleTapHandle:)];
@@ -154,7 +164,16 @@
 
 
 
-//- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;        // return NO to disallow editing.
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; //创建沙盒对象
+    
+    [userDefaults setValue:[NSString stringWithFormat:@"%@",textField.text] forKey:@"busInquiry"];
+    
+    
+    return YES;
+
+}        // return NO to disallow editing.
 //- (void)textFieldDidBeginEditing:(UITextField *)textField;           // became first responder
 //- (BOOL)textFieldShouldEndEditing:(UITextField *)textField;          // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
 - (void)textFieldDidEndEditing:(UITextField *)textField{
