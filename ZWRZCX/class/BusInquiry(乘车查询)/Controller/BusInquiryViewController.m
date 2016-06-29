@@ -5,23 +5,18 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //  屏幕
 #import <MapKit/MapKit.h>
-
+#import "BusInquiryViewController.h"
 #import "MainDiTuViewController.h"
 
-@interface BusInquiryViewController ()<AVPlayerViewControllerDelegate,UIPrintInteractionControllerDelegate>
+
+@interface BusInquiryViewController ()<AVPlayerViewControllerDelegate,UIPrintInteractionControllerDelegate,UITextFieldDelegate>
 
 @property(nonatomic,strong)UIButton * btn;
 @property (nonatomic,strong)MPMoviePlayerController *playerVc;
 @end
 
 @implementation BusInquiryViewController
-- (IBAction)safePositionColle:(id)sender {
-    
-    MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
-    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
-    [MKMapItem openMapsWithItems:@[currentItem,currentItem] launchOptions:nil];
 
-}
 
 - (IBAction)TextPrintClick:(id)sender {
     
@@ -139,6 +134,8 @@
     [_btn addTarget:self action:@selector(TextClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_btn];
     
+    self.BusinquirynameLabel.delegate = self;
+    
     
 //    NSString *path = [[NSBundle mainBundle]pathForResource:@"Alizee_La_Isla_Bonita.mp4" ofType:nil];
 //    NSURL *url = [NSURL fileURLWithPath:path];
@@ -150,11 +147,31 @@
 //    playerVc.allowsPictureInPicturePlayback = YES;
 //    [[AVAudioSession sharedInstance]setActive:YES error:nil];
 //    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:nil];
-//    
+    
 //    playerVc.delegate = self;
 
 }
 
+
+
+//- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;        // return NO to disallow editing.
+//- (void)textFieldDidBeginEditing:(UITextField *)textField;           // became first responder
+//- (BOOL)textFieldShouldEndEditing:(UITextField *)textField;          // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+
+
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; //创建沙盒对象
+    
+    [userDefaults setValue:[NSString stringWithFormat:@"%@",textField.text] forKey:@"busInquiry"];
+    
+
+}            // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
+//
+//- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;   // return NO to not change text
+//
+//- (BOOL)textFieldShouldClear:(UITextField *)textField;               // called when clear button pressed. return NO to ignore (no notifications)
+//- (BOOL)textFieldShouldReturn:(UITextField *)textField;              // called when 'return' key pressed. return NO to ignore.
 -(void)TextClick{
     
     DOPAction *action1 = [[DOPAction alloc] initWithName:@"Wechat" iconName:@"weixin" handler:^{
@@ -309,6 +326,12 @@
     }
 }
 
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    [self.BusinquirynameLabel resignFirstResponder];
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

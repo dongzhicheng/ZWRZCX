@@ -71,6 +71,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="功能菜单" id="7zh-2e-5Pr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BusinquirynameLabel" destination="YqL-CE-GEH" id="riQ-Pw-btQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNP-Qz-oWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +102,7 @@
         <!--查询界面-->
         <scene sceneID="Xpd-zQ-HJV">
             <objects>
-                <viewController id="Vhf-tg-w4m" customClass="BusInquiryViewController" sceneMemberID="viewController">
+                <viewController id="Vhf-tg-w4m" customClass="businquiryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ljf-W5-7Ah"/>
                         <viewControllerLayoutGuide type="bottom" id="wM7-GA-pOV"/>
@@ -118,16 +121,22 @@
                                         <rect key="frame" x="8" y="109" width="106" height="106"/>
                                         <color key="backgroundColor" red="0.4424598978" green="0.4230057726" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="司机信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjf-5v-6Ol">
-                                        <rect key="frame" x="128" y="114" width="69" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="司机名字:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjf-5v-6Ol">
+                                        <rect key="frame" x="117" y="114" width="69" height="18"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0W-WU-Kqi">
-                                        <rect key="frame" x="128" y="158" width="172" height="22"/>
+                                        <rect key="frame" x="117" y="159" width="172" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVn-sZ-kcL">
+                                        <rect key="frame" x="182" y="114" width="107" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -188,7 +197,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="安全定位"/>
                                 <connections>
-                                    <action selector="safePositionColle:" destination="Vhf-tg-w4m" eventType="touchUpInside" id="FXW-Fn-0KR"/>
+                                    <action selector="safePositionColle:" destination="Vhf-tg-w4m" eventType="touchUpInside" id="U1M-gY-bGg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc1-ZI-EYR">
@@ -202,6 +211,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="查询界面" id="COy-Xb-zcU"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="CarInfoLabel" destination="RYc-JY-RBB" id="d9O-vc-V3t"/>
+                        <outlet property="ToSuRecordLabel" destination="CGu-iu-RXi" id="MmQ-2V-Ixu"/>
+                        <outlet property="businquiryDetailLabel" destination="q0W-WU-Kqi" id="89L-Yy-Ik2"/>
+                        <outlet property="businquiryImageView" destination="JYc-dK-l4m" id="Vc3-Gt-XxU"/>
+                        <outlet property="businquiryName" destination="VVn-sZ-kcL" id="46q-bD-C5X"/>
+                        <outlet property="businquiryNameLabel" destination="Bjf-5v-6Ol" id="PgM-Eh-K43"/>
+                        <outlet property="safeINFOlabel" destination="0GE-Cp-vGw" id="0Ep-Js-YWK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psp-hX-xIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

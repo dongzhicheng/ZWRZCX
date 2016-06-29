@@ -57,6 +57,7 @@
 		C8536D581D06A7360044BEC8 /* LVRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8536D541D06A7360044BEC8 /* LVRecordView.m */; };
 		C8536D591D06A7360044BEC8 /* LVRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8536D551D06A7360044BEC8 /* LVRecordView.xib */; };
 		C853FB3A1D1D166500ECF8D2 /* CylViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C853FB391D1D166500ECF8D2 /* CylViewController.m */; };
+		C85A262B1D23651C008FAC98 /* businquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85A262A1D23651C008FAC98 /* businquiryViewController.m */; };
 		C883469A1D0D104800E5ABE9 /* logWinDiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */; };
 		C893F2501D050D7B00E96398 /* DZCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F24F1D050D7B00E96398 /* DZCNavigationController.m */; };
 		C893F2561D050E0700E96398 /* DZCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F2551D050E0700E96398 /* DZCTabBar.m */; };
@@ -311,6 +312,8 @@
 		C8536D551D06A7360044BEC8 /* LVRecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVRecordView.xib; sourceTree = "<group>"; };
 		C853FB381D1D166500ECF8D2 /* CylViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylViewController.h; sourceTree = "<group>"; };
 		C853FB391D1D166500ECF8D2 /* CylViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CylViewController.m; sourceTree = "<group>"; };
+		C85A26291D23651C008FAC98 /* businquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = businquiryViewController.h; sourceTree = "<group>"; };
+		C85A262A1D23651C008FAC98 /* businquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = businquiryViewController.m; sourceTree = "<group>"; };
 		C88346981D0D104800E5ABE9 /* logWinDiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logWinDiTuViewController.h; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.h; sourceTree = "<group>"; };
 		C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = logWinDiTuViewController.m; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.m; sourceTree = "<group>"; };
 		C893F24E1D050D7B00E96398 /* DZCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZCNavigationController.h; path = Main/DZCNavigationController.h; sourceTree = "<group>"; };
@@ -766,6 +769,15 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		C85A26281D2364F5008FAC98 /* busInquiry(司机界面) */ = {
+			isa = PBXGroup;
+			children = (
+				C85A26291D23651C008FAC98 /* businquiryViewController.h */,
+				C85A262A1D23651C008FAC98 /* businquiryViewController.m */,
+			);
+			path = "busInquiry(司机界面)";
+			sourceTree = "<group>";
+		};
 		C893F25F1D0517D000E96398 /* CarOwnerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1016,6 +1028,7 @@
 		C8A3C4E61CFEB4C500E741BC /* BusInquiry(乘车查询) */ = {
 			isa = PBXGroup;
 			children = (
+				C85A26281D2364F5008FAC98 /* busInquiry(司机界面) */,
 				C807A25C1D128A2200482FA6 /* text(桌面图标手势) */,
 				C8A3C4E71CFEB4C500E741BC /* Controller(含录屏) */,
 				C8A3C4E81CFEB4C500E741BC /* Model */,
@@ -1910,6 +1923,7 @@
 				C8E9B3901D02572500B57DB9 /* NSObject+MJClass.m in Sources */,
 				C807A25F1D128E8D00482FA6 /* DOPScrollableActionSheet.m in Sources */,
 				C8000A781D21163100A527C0 /* horizontalCell.m in Sources */,
+				C85A262B1D23651C008FAC98 /* businquiryViewController.m in Sources */,
 				C8E5989F1D0FEBD300D58C64 /* PlayBackViewController.m in Sources */,
 				C893F2AC1D055D8100E96398 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */,
 				C8000A631D21042A00A527C0 /* MJRefreshAutoStateFooter.m in Sources */,
