@@ -7,8 +7,9 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 #import "breakRulusPicker.h"
-
-@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+#import <UIKit/UIKit.h>
+#import "MainDiTuViewController.h"
+@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *carOwnerInterfaceLabel;
 
@@ -37,7 +38,7 @@
     self.carOwnerInterfaceLabel.numberOfLines = 0;
     self.pickView.dataSource = self;
     self.pickView.delegate = self;
-    
+    [self pickerView:[UIPickerView new] didSelectRow:1 inComponent:0];
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -54,7 +55,11 @@
 
     breakRulusPicker *breakRulusPickerView = [breakRulusPicker flagView];
     
-    breakRulusPickerView.nameLabel.text = @"违规选项功能测试";
+ 
+    NSString * str = [NSString stringWithFormat:@"违规选项功能测试%d",row+1];
+
+    
+    breakRulusPickerView.nameLabel.text = str;
     
     return breakRulusPickerView;
 
@@ -62,7 +67,9 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
 
-    self.breakRulusTextFiled.text = @"违规选项功能测试";
+    NSString * str = [NSString stringWithFormat:@"违规选项功能测试%d",row];
+    
+    self.breakRulusTextFiled.text = str;
 
 }
 
@@ -159,8 +166,40 @@
     
 }
 - (IBAction)currentlocationButton:(id)sender {
-    MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
-    [MKMapItem openMapsWithItems:@[currentItem,currentItem] launchOptions:nil];
+    UIStoryboard* stor = [UIStoryboard storyboardWithName:@"MainMapSto" bundle:nil];
+    MainDiTuViewController *mainDiTu = [stor instantiateInitialViewController];
+
+    [self presentViewController:mainDiTu animated:YES completion:^{
+    
+        CGFloat btnX = [UIScreen mainScreen].bounds.size.width/2.0;
+        
+        CGFloat btnY = [UIScreen mainScreen].bounds.size.height/2.0 +100;
+        
+        UIButton  * btn = [[UIButton alloc] initWithFrame:CGRectMake(0 , 111 , 40, 30)];
+     
+        [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        
+        [btn setTitle:@"返回" forState:UIControlStateNormal];
+        
+        btn.backgroundColor = [UIColor redColor];
+        
+        [btn addTarget:self action:@selector(mainDiTuClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        [mainDiTu.view addSubview:btn];
+        
+        
+        UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"goback_back_orange_on"] style:UIBarButtonItemStylePlain target:self action:@selector(mainDiTuClick)];
+        self.navigationController.navigationItem.leftBarButtonItem = btnItem;
+
+        
+    }];
+    
+}
+
+-(void)mainDiTuClick{
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"mainDiTuClickBtn" object:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {

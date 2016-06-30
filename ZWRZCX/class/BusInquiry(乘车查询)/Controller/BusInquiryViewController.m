@@ -7,7 +7,7 @@
 #import <MapKit/MapKit.h>
 #import "BusInquiryViewController.h"
 #import "MainDiTuViewController.h"
-
+#import "QRViewController.h"
 
 @interface BusInquiryViewController ()<AVPlayerViewControllerDelegate,UIPrintInteractionControllerDelegate,UITextFieldDelegate>
 
@@ -347,8 +347,12 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)SaoMiaoBtn:(id)sender {
-    SaomiaoController *saoMiaoVC = [[SaomiaoController alloc] init];
-    [self.navigationController pushViewController:saoMiaoVC animated:YES];
+    QRViewController *qrView = [[QRViewController alloc] init];
+    
+    qrView.view.frame = self.view.bounds;
+    
+    [self.view addSubview:qrView.view];
+    [self.navigationController pushViewController:qrView animated:YES];
     
 }
 

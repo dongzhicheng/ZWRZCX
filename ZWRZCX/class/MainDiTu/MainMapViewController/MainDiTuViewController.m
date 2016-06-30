@@ -9,7 +9,7 @@
 #import "MainDiTuViewController.h"
 #import <MapKit/MapKit.h>
 #import <MapKit/MKMapCamera.h>
-
+#import <UIKit/UIKit.h>
 @interface MainDiTuViewController ()
 @property (nonatomic,strong) CLLocationManager *locationManager;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
@@ -40,6 +40,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(BreakDiTuClick) name:@"mainDiTuClickBtn" object:nil];
+    
     self.locationManager = [[CLLocationManager alloc] init];
    
     [self.locationManager requestWhenInUseAuthorization];
@@ -61,9 +63,17 @@
     self.mapView.delegate = self;
    
 }
+-(void)BreakDiTuClick{
+
+
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        
+    }];
+}
+
 - (IBAction)guidanceStation:(id)sender {
 
-    
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
     NSMutableDictionary *options = [NSMutableDictionary dictionary];

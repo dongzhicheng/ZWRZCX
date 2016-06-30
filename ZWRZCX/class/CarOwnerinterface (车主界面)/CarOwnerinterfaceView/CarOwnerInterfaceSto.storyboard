@@ -35,8 +35,8 @@
                                     <action selector="sureInputAndshow:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="XbL-lC-1PN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeB-bl-7ai">
-                                <rect key="frame" x="152" y="416" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeB-bl-7ai">
+                                <rect key="frame" x="184" y="416" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.69104734040000004" green="0.695455661" blue="0.28362118190000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="语音"/>
@@ -45,8 +45,8 @@
                                     <segue destination="MZa-if-kYs" kind="show" id="ch6-ya-nTc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJI-Qw-qG7">
-                                <rect key="frame" x="230" y="416" width="71" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJI-Qw-qG7">
+                                <rect key="frame" x="282" y="416" width="63" height="30"/>
                                 <color key="backgroundColor" red="0.4612811879" green="0.53763765900000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="定位"/>
@@ -54,8 +54,8 @@
                                     <action selector="currentlocationButton:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="CEE-Vg-nYv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fes-YQ-JYP">
-                                <rect key="frame" x="69" y="416" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fes-YQ-JYP">
+                                <rect key="frame" x="94" y="416" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="视频录制"/>
@@ -68,9 +68,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-zv-W9N">
-                                <rect key="frame" x="4" y="416" width="57" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-zv-W9N">
+                                <rect key="frame" x="4" y="416" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zbx-gs-ivu"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="图片"/>
                                 <connections>
@@ -90,13 +93,16 @@
                                 <color key="highlightedColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV4-xG-ILA">
-                                <rect key="frame" x="165" y="313" width="136" height="100"/>
+                                <rect key="frame" x="165" y="311" width="142" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-qB-fKE">
-                                <rect key="frame" x="67" y="447" width="64" height="28"/>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-8q-QJM">
+                                <rect key="frame" x="165" y="145" width="142" height="166"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-qB-fKE">
+                                <rect key="frame" x="97" y="449" width="63" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="视频播放">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,11 +111,30 @@
                                     <action selector="shipingBoFang:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="Ghe-bh-4pf"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-8q-QJM">
-                                <rect key="frame" x="165" y="145" width="142" height="166"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4nc-qB-fKE" firstAttribute="height" secondItem="fes-YQ-JYP" secondAttribute="height" id="0dw-dY-6uK"/>
+                            <constraint firstItem="4nc-qB-fKE" firstAttribute="top" secondItem="fes-YQ-JYP" secondAttribute="bottom" constant="3" id="32l-lR-z1X"/>
+                            <constraint firstItem="jJI-Qw-qG7" firstAttribute="height" secondItem="ZeB-bl-7ai" secondAttribute="height" id="E3m-XY-BY2"/>
+                            <constraint firstItem="fes-YQ-JYP" firstAttribute="height" secondItem="Sss-zv-W9N" secondAttribute="height" id="FSB-kI-YZH"/>
+                            <constraint firstItem="jJI-Qw-qG7" firstAttribute="width" secondItem="ZeB-bl-7ai" secondAttribute="width" id="FYF-Yp-Osn"/>
+                            <constraint firstItem="fes-YQ-JYP" firstAttribute="top" secondItem="sGV-Sp-ksJ" secondAttribute="top" constant="416" id="JHh-kd-vr0"/>
+                            <constraint firstItem="ZeB-bl-7ai" firstAttribute="width" secondItem="fes-YQ-JYP" secondAttribute="width" id="Sq7-yO-ZV6"/>
+                            <constraint firstItem="jJI-Qw-qG7" firstAttribute="top" secondItem="sGV-Sp-ksJ" secondAttribute="top" constant="416" id="TOi-mv-pBC"/>
+                            <constraint firstItem="fes-YQ-JYP" firstAttribute="leading" secondItem="Sss-zv-W9N" secondAttribute="trailing" constant="30" id="a8M-n9-Qrz"/>
+                            <constraint firstItem="ZeB-bl-7ai" firstAttribute="top" secondItem="sGV-Sp-ksJ" secondAttribute="top" constant="416" id="cbn-Ij-8Vk"/>
+                            <constraint firstItem="ZeB-bl-7ai" firstAttribute="height" secondItem="fes-YQ-JYP" secondAttribute="height" id="ccZ-sJ-MgH"/>
+                            <constraint firstItem="4nc-qB-fKE" firstAttribute="width" secondItem="fes-YQ-JYP" secondAttribute="width" id="chm-su-3Fl"/>
+                            <constraint firstItem="fes-YQ-JYP" firstAttribute="width" secondItem="Sss-zv-W9N" secondAttribute="width" id="dYb-iH-ayG"/>
+                            <constraint firstItem="ZeB-bl-7ai" firstAttribute="leading" secondItem="fes-YQ-JYP" secondAttribute="trailing" constant="30" id="e6M-th-78W"/>
+                            <constraint firstItem="4nc-qB-fKE" firstAttribute="trailing" secondItem="fes-YQ-JYP" secondAttribute="trailing" id="iy7-qU-ps0"/>
+                            <constraint firstItem="jJI-Qw-qG7" firstAttribute="leading" secondItem="ZeB-bl-7ai" secondAttribute="trailing" constant="30" id="jKR-4W-FYt"/>
+                            <constraint firstAttribute="trailing" secondItem="jJI-Qw-qG7" secondAttribute="trailing" constant="30" id="n4c-12-zfE"/>
+                            <constraint firstItem="Sss-zv-W9N" firstAttribute="top" secondItem="sGV-Sp-ksJ" secondAttribute="top" constant="416" id="odd-Es-tJr"/>
+                            <constraint firstItem="4nc-qB-fKE" firstAttribute="leading" secondItem="fes-YQ-JYP" secondAttribute="leading" id="uqj-NL-HZN"/>
+                            <constraint firstItem="Sss-zv-W9N" firstAttribute="leading" secondItem="sGV-Sp-ksJ" secondAttribute="leading" constant="4" id="yVW-Bq-xE4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="违章记录" id="szj-px-MbZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -121,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-OF-sac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1542.5" y="1324.5"/>
+            <point key="canvasLocation" x="-1561.5" y="1330.5"/>
         </scene>
         <!--Car Owner InterfaceVC-->
         <scene sceneID="VXw-xx-AKn">
