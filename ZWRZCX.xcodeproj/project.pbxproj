@@ -193,6 +193,9 @@
 		C8FC2B4A1D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B491D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m */; };
 		C8FC2B4D1D0EA38E00C561C0 /* cunlabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */; };
 		C8FC2B4F1D0EB7D200C561C0 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FC2B4E1D0EB7D200C561C0 /* AVKit.framework */; };
+		C8FCFA831D24B7EF004FBADE /* breakRulusPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA821D24B7EF004FBADE /* breakRulusPicker.m */; };
+		C8FCFA851D24B80C004FBADE /* breakRulusPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */; };
+		C8FCFA881D24B8F2004FBADE /* breakRulusPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */; };
 		F192629CBAC827ECD5DBE301 /* libPods-ZWRZCX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F126B11BD236215B95FDAF9 /* libPods-ZWRZCX.a */; };
 /* End PBXBuildFile section */
 
@@ -514,6 +517,11 @@
 		C8FC2B4B1D0EA38E00C561C0 /* cunlabelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cunlabelModel.h; sourceTree = "<group>"; };
 		C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cunlabelModel.m; sourceTree = "<group>"; };
 		C8FC2B4E1D0EB7D200C561C0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		C8FCFA811D24B7EF004FBADE /* breakRulusPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = breakRulusPicker.h; sourceTree = "<group>"; };
+		C8FCFA821D24B7EF004FBADE /* breakRulusPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = breakRulusPicker.m; sourceTree = "<group>"; };
+		C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = breakRulusPicker.xib; sourceTree = "<group>"; };
+		C8FCFA861D24B8F2004FBADE /* breakRulusPickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = breakRulusPickerModel.h; sourceTree = "<group>"; };
+		C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = breakRulusPickerModel.m; sourceTree = "<group>"; };
 		F406251E67B72781736F84C5 /* Pods-ZWRZCX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWRZCX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWRZCX/Pods-ZWRZCX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1099,6 +1107,9 @@
 			children = (
 				C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */,
 				C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */,
+				C8FCFA811D24B7EF004FBADE /* breakRulusPicker.h */,
+				C8FCFA821D24B7EF004FBADE /* breakRulusPicker.m */,
+				C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1108,6 +1119,8 @@
 			children = (
 				C8FC2B4B1D0EA38E00C561C0 /* cunlabelModel.h */,
 				C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */,
+				C8FCFA861D24B8F2004FBADE /* breakRulusPickerModel.h */,
+				C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1724,6 +1737,7 @@
 				C8E5B7DF1D1A7EA000350FB9 /* welcome5@2x.png in Resources */,
 				C8E5B7DB1D1A7EA000350FB9 /* welcome3@2x.png in Resources */,
 				C8E5B7E51D1A7EA000350FB9 /* welcome8@2x.png in Resources */,
+				C8FCFA851D24B80C004FBADE /* breakRulusPicker.xib in Resources */,
 				C893F26C1D05197800E96398 /* LogSto.storyboard in Resources */,
 				C8E5B7E31D1A7EA000350FB9 /* welcome7@2x.png in Resources */,
 			);
@@ -1880,6 +1894,7 @@
 				C8A3C51D1CFEB60500E741BC /* MainDiTuViewController.m in Sources */,
 				C80A88601D0CECCF003801CB /* forgetPassWardViewController.m in Sources */,
 				C8000A611D21042A00A527C0 /* MJRefreshAutoGifFooter.m in Sources */,
+				C8FCFA881D24B8F2004FBADE /* breakRulusPickerModel.m in Sources */,
 				C893F29D1D055D8100E96398 /* UIView+MLExtension.m in Sources */,
 				C8000A6B1D21042A00A527C0 /* MJRefreshConst.m in Sources */,
 				C8FC2B4D1D0EA38E00C561C0 /* cunlabelModel.m in Sources */,
@@ -1890,6 +1905,7 @@
 				C893F2A81D055D8100E96398 /* MLSelectPhotoPickerBrowserPhotoImageView.m in Sources */,
 				C8000A5E1D21042A00A527C0 /* MJRefreshComponent.m in Sources */,
 				C80A885D1D0CECAE003801CB /* settinhHeaderViewController.m in Sources */,
+				C8FCFA831D24B7EF004FBADE /* breakRulusPicker.m in Sources */,
 				C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */,
 				C893F2A61D055D8100E96398 /* MLSelectPhotoPickerViewController.m in Sources */,
 				C8536D561D06A7360044BEC8 /* LuYinViewController.m in Sources */,

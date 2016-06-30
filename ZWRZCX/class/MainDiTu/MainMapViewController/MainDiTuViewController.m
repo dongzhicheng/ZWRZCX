@@ -8,10 +8,12 @@
 
 #import "MainDiTuViewController.h"
 #import <MapKit/MapKit.h>
+#import <MapKit/MKMapCamera.h>
 
 @interface MainDiTuViewController ()
 @property (nonatomic,strong) CLLocationManager *locationManager;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
 @property (weak, nonatomic) IBOutlet UITextField *destinationField;
 @property (weak, nonatomic) IBOutlet UITextField *startNameField;
 @property (strong ,nonatomic) MKMapItem * startMapItemNameField;
@@ -21,9 +23,11 @@
 @implementation MainDiTuViewController
 
 - (IBAction)start:(UIButton *)sender {
+    
     MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
     CLGeocoder *geocoder = [[CLGeocoder alloc]init];
     [MKMapItem openMapsWithItems:@[currentItem,currentItem] launchOptions:nil];
+    
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.startNameField resignFirstResponder];
@@ -32,12 +36,10 @@
     
 }
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   
+    
     self.locationManager = [[CLLocationManager alloc] init];
    
     [self.locationManager requestWhenInUseAuthorization];
@@ -55,19 +57,12 @@
    
     self.mapView.showsTraffic = YES;
     
-    // 3.设置代理
+    // 设置代理
     self.mapView.delegate = self;
    
 }
 - (IBAction)guidanceStation:(id)sender {
-    //配置参数
-    //     MKLaunchOptionsDirectionsModeKey  导航模式
-    //     MKLaunchOptionsMapTypeKey         地图类型
-    //     MKLaunchOptionsShowsTrafficKey    显示实时路况
-    //     MKLaunchOptionsDirectionsModeDriving  驾车
-    //     MKLaunchOptionsDirectionsModeWalking  步行
-    //     MKLaunchOptionsDirectionsModeTransit  交通
-    //  
+
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
@@ -100,7 +95,14 @@
         userLocation.subtitle = placemark.name;
     }];
 }
-
+//配置参数mapItem
+//     MKLaunchOptionsDirectionsModeKey  导航模式
+//     MKLaunchOptionsMapTypeKey         地图类型
+//     MKLaunchOptionsShowsTrafficKey    显示实时路况
+//     MKLaunchOptionsDirectionsModeDriving  驾车
+//     MKLaunchOptionsDirectionsModeWalking  步行
+//     MKLaunchOptionsDirectionsModeTransit  交通
+//
 
 
 

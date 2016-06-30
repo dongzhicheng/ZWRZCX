@@ -90,7 +90,7 @@
                                 <color key="highlightedColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV4-xG-ILA">
-                                <rect key="frame" x="165" y="169" width="136" height="244"/>
+                                <rect key="frame" x="165" y="313" width="136" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -105,6 +105,9 @@
                                     <action selector="shipingBoFang:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="Ghe-bh-4pf"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-8q-QJM">
+                                <rect key="frame" x="165" y="145" width="142" height="166"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -113,6 +116,7 @@
                     <connections>
                         <outlet property="breakRulusTextFiled" destination="BGD-In-4XJ" id="pL4-6S-Rnj"/>
                         <outlet property="carOwnerInterfaceLabel" destination="uV4-xG-ILA" id="hsa-Pn-ah4"/>
+                        <outlet property="pickView" destination="CK9-8q-QJM" id="0M5-wJ-lUj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-OF-sac" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -6,9 +6,9 @@
 //  Created by 董志成 on 16/6/3.
 //  Copyright © 2016年 董志成. All rights reserved.
 //
+#import "breakRulusPicker.h"
 
-
-@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate>
+@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *carOwnerInterfaceLabel;
 
@@ -18,6 +18,8 @@
 @property (nonatomic,strong)AVCaptureSession *session;
 @property (nonatomic,strong)AVCaptureVideoPreviewLayer *layer;
 @property (strong, nonatomic) IBOutlet UILabel *Textbouds;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *pickView;
 @property (strong, nonatomic) IBOutlet UITextField *breakRulusTextFiled;
 @property (strong,nonatomic)cunlabelModel *cunlabelModel;
 @property (nonatomic, strong) AVPlayerViewController *playerVc;
@@ -26,13 +28,44 @@
 
 @implementation breakRulusNotesViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.breakRulusTextFiled.delegate = self;
     self.carOwnerInterfaceLabel.numberOfLines = 0;
+    self.pickView.dataSource = self;
+    self.pickView.delegate = self;
     
 }
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+
+}
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+
+    return  40;
+
+}
+
+-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+
+    breakRulusPicker *breakRulusPickerView = [breakRulusPicker flagView];
+    
+    breakRulusPickerView.nameLabel.text = @"违规选项功能测试";
+    
+    return breakRulusPickerView;
+
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+
+    self.breakRulusTextFiled.text = @"违规选项功能测试";
+
+}
+
 - (IBAction)sureInputAndshow:(id)sender {
     
     

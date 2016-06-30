@@ -94,8 +94,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV3-HC-zHD">
-                                <rect key="frame" x="108" y="411" width="128" height="25"/>
+                                <rect key="frame" x="106" y="407" width="149" height="42"/>
                                 <color key="backgroundColor" red="1" green="0.30981695739999998" blue="0.1031784815" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="点击进入导航界面">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

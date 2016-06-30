@@ -118,6 +118,7 @@
 
     NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
     
+    
     [userDefaults setObject:[NSString stringWithFormat:@"%@",self.BusinquirynameLabel.text] forKey:@"busInquiry"];
 
 }
@@ -126,6 +127,8 @@
     [super viewDidLoad];
     
     NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    
     
     newRecordObj = [[NewRecordScreen alloc]initWithView:self.view andViewController:self];
     myTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doubleTapHandle:)];
@@ -173,24 +176,16 @@
     
     return YES;
 
-}        // return NO to disallow editing.
-//- (void)textFieldDidBeginEditing:(UITextField *)textField;           // became first responder
-//- (BOOL)textFieldShouldEndEditing:(UITextField *)textField;          // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-
-
 
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; //创建沙盒对象
     
     [userDefaults setValue:[NSString stringWithFormat:@"%@",textField.text] forKey:@"busInquiry"];
     
+}
 
-}            // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
-//
-//- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;   // return NO to not change text
-//
-//- (BOOL)textFieldShouldClear:(UITextField *)textField;               // called when clear button pressed. return NO to ignore (no notifications)
-//- (BOOL)textFieldShouldReturn:(UITextField *)textField;              // called when 'return' key pressed. return NO to ignore.
 -(void)TextClick{
     
     DOPAction *action1 = [[DOPAction alloc] initWithName:@"Wechat" iconName:@"weixin" handler:^{
@@ -314,11 +309,7 @@
     DOPScrollableActionSheet *as = [[DOPScrollableActionSheet alloc] initWithActionArray:actions];
     [as show];
     
-    
-    
 }
-
-
 
 - (void)handlePan:(UIPanGestureRecognizer*) recognizer
 {
