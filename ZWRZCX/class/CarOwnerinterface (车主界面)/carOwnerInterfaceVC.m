@@ -93,7 +93,6 @@
     MLSelectPhotoAssets *asset = self.carOwnerassets[indexPath.row];
     cell.hearImageView.image = [MLSelectPhotoPickerViewController getImageWithImageObj:asset];
     
-     
     return cell;
 }
 
@@ -140,6 +139,7 @@
 //每个UICollectionView展示的内容
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * CellIdentifier = @"NewShowCell";
+    
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     MLSelectPhotoAssets *asset = self.carOwnerassets[indexPath.row];
     [cell.contentView setBackgroundColor:[UIColor greenColor]];
@@ -156,19 +156,19 @@
     return UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
-//定义展示的UICollectionViewCell的个数
+
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.carOwnerassets.count;
 }
 
-//定义展示的Section的个数
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
 }
 
-//UICollectionView被选中时调用的方法
+
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     MLSelectPhotoBrowserViewController *browserVc = [[MLSelectPhotoBrowserViewController alloc] init];
     browserVc.currentPage = indexPath.row;
@@ -182,7 +182,7 @@
     [self.navigationController pushViewController:browserVc animated:YES];
 }
 
-//返回这个UICollectionView是否可以被选择
+
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
 }

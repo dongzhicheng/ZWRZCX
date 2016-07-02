@@ -49,7 +49,6 @@
 		C84A74351D010AA300CA4CFD /* QualificationsApplicationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74341D010AA300CA4CFD /* QualificationsApplicationVC.m */; };
 		C84A74381D010AE000CA4CFD /* complaintNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74371D010AE000CA4CFD /* complaintNotesViewController.m */; };
 		C84A743B1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A743A1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m */; };
-		C84A743E1D01109900CA4CFD /* SaomiaoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A743D1D01109900CA4CFD /* SaomiaoController.m */; };
 		C84A74401D01247000CA4CFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84A743F1D01247000CA4CFD /* AVFoundation.framework */; };
 		C84A74441D016A1C00CA4CFD /* travelInformationTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74431D016A1C00CA4CFD /* travelInformationTableCell.m */; };
 		C8536CF31D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8536CF21D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard */; };
@@ -196,6 +195,8 @@
 		C8FCFA831D24B7EF004FBADE /* breakRulusPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA821D24B7EF004FBADE /* breakRulusPicker.m */; };
 		C8FCFA851D24B80C004FBADE /* breakRulusPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */; };
 		C8FCFA881D24B8F2004FBADE /* breakRulusPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */; };
+		C8FCFA8D1D24C791004FBADE /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA8A1D24C791004FBADE /* QRView.m */; };
+		C8FCFA8E1D24C791004FBADE /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA8C1D24C791004FBADE /* QRViewController.m */; };
 		F192629CBAC827ECD5DBE301 /* libPods-ZWRZCX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F126B11BD236215B95FDAF9 /* libPods-ZWRZCX.a */; };
 /* End PBXBuildFile section */
 
@@ -302,8 +303,6 @@
 		C84A74371D010AE000CA4CFD /* complaintNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = complaintNotesViewController.m; sourceTree = "<group>"; };
 		C84A74391D010B2500CA4CFD /* EvidenceCollectionComplainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvidenceCollectionComplainVC.h; sourceTree = "<group>"; };
 		C84A743A1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvidenceCollectionComplainVC.m; sourceTree = "<group>"; };
-		C84A743C1D01109900CA4CFD /* SaomiaoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaomiaoController.h; sourceTree = "<group>"; };
-		C84A743D1D01109900CA4CFD /* SaomiaoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaomiaoController.m; sourceTree = "<group>"; };
 		C84A743F1D01247000CA4CFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C84A74421D016A1C00CA4CFD /* travelInformationTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = travelInformationTableCell.h; path = ../Controller/travelInformationTableCell.h; sourceTree = "<group>"; };
 		C84A74431D016A1C00CA4CFD /* travelInformationTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = travelInformationTableCell.m; path = ../Controller/travelInformationTableCell.m; sourceTree = "<group>"; };
@@ -522,6 +521,10 @@
 		C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = breakRulusPicker.xib; sourceTree = "<group>"; };
 		C8FCFA861D24B8F2004FBADE /* breakRulusPickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = breakRulusPickerModel.h; sourceTree = "<group>"; };
 		C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = breakRulusPickerModel.m; sourceTree = "<group>"; };
+		C8FCFA891D24C791004FBADE /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		C8FCFA8A1D24C791004FBADE /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
+		C8FCFA8B1D24C791004FBADE /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		C8FCFA8C1D24C791004FBADE /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 		F406251E67B72781736F84C5 /* Pods-ZWRZCX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWRZCX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWRZCX/Pods-ZWRZCX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1050,8 +1053,10 @@
 			children = (
 				C84A741E1D01039B00CA4CFD /* BusInquiryViewController.h */,
 				C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */,
-				C84A743C1D01109900CA4CFD /* SaomiaoController.h */,
-				C84A743D1D01109900CA4CFD /* SaomiaoController.m */,
+				C8FCFA891D24C791004FBADE /* QRView.h */,
+				C8FCFA8A1D24C791004FBADE /* QRView.m */,
+				C8FCFA8B1D24C791004FBADE /* QRViewController.h */,
+				C8FCFA8C1D24C791004FBADE /* QRViewController.m */,
 			);
 			name = "Controller(含录屏)";
 			path = Controller;
@@ -1883,6 +1888,7 @@
 				C84A74261D01047100CA4CFD /* traveIInformationTableVC.m in Sources */,
 				C893F2BB1D05773C00E96398 /* UIBarButtonItem+Extension.m in Sources */,
 				C8E9B3921D02572500B57DB9 /* NSObject+MJKeyValue.m in Sources */,
+				C8FCFA8E1D24C791004FBADE /* QRViewController.m in Sources */,
 				C8E9B3981D02592E00B57DB9 /* NetWorkTool.m in Sources */,
 				C8E9B39B1D025C9400B57DB9 /* travelInformationTableCellModel.m in Sources */,
 				C893F2A91D055D8100E96398 /* MLSelectPhotoPickerBrowserPhotoScrollView.m in Sources */,
@@ -1906,6 +1912,7 @@
 				C8000A5E1D21042A00A527C0 /* MJRefreshComponent.m in Sources */,
 				C80A885D1D0CECAE003801CB /* settinhHeaderViewController.m in Sources */,
 				C8FCFA831D24B7EF004FBADE /* breakRulusPicker.m in Sources */,
+				C8FCFA8D1D24C791004FBADE /* QRView.m in Sources */,
 				C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */,
 				C893F2A61D055D8100E96398 /* MLSelectPhotoPickerViewController.m in Sources */,
 				C8536D561D06A7360044BEC8 /* LuYinViewController.m in Sources */,
@@ -1935,7 +1942,6 @@
 				C893F2A01D055D8100E96398 /* MLSelectPhotoPickerDatas.m in Sources */,
 				C8E598A11D0FEBD300D58C64 /* ScreenCaptureView.m in Sources */,
 				C84A742C1D01096B00CA4CFD /* carOwnerInterfaceVC.m in Sources */,
-				C84A743E1D01109900CA4CFD /* SaomiaoController.m in Sources */,
 				C8E9B3901D02572500B57DB9 /* NSObject+MJClass.m in Sources */,
 				C807A25F1D128E8D00482FA6 /* DOPScrollableActionSheet.m in Sources */,
 				C8000A781D21163100A527C0 /* horizontalCell.m in Sources */,

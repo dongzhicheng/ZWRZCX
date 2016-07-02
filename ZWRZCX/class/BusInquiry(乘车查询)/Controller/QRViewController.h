@@ -18,4 +18,5 @@ typedef void(^QRUrlBlock)(NSString *url);
 @property (nonatomic, copy) NSString *stringValue;
 @property (nonatomic,assign)int singleNum;
 
+
 @end

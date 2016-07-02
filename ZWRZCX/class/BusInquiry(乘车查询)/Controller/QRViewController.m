@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "QRView.h"
 #import <objc/runtime.h>
-
+#import "carOwnerInterfaceTableViewCell.h"
 
 #define qrRectViewWH [UIScreen mainScreen].bounds.size.width * 0.8
 
@@ -152,13 +152,10 @@
     
     NSLog(@"🍌🍌🍌🍌%@",connection.inputPorts);
     
-    
-    
-    
 }
 
 - (void)pop:(UIButton *)button {
-//    [NOTIFICATION_CENTER postNotificationName:@"track" object:nil];
+
     [self.navigationController popToRootViewControllerAnimated:NO];
     
     [self.navigationController popViewControllerAnimated:NO];
@@ -194,6 +191,7 @@
 
 
 }
+
 -(void)onOrOff:(UIButton *)button{
 
     if (!_isOpenOrClose) {
