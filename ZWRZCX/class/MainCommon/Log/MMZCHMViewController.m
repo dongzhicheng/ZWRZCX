@@ -25,16 +25,11 @@
     self.navigationController.navigationBarHidden = NO;
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
-//    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(clickaddBtn)];
-//    [addBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"]];
-//    [addBtn setImageInsets:UIEdgeInsetsMake(0, -15, 0, 15)];
-//    addBtn.tintColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
-//    [self.navigationItem setLeftBarButtonItem:addBtn];
     [self createTextFields];
 }
 -(void)clickaddBtn{
     [self.navigationController popViewControllerAnimated:YES];
-    //[self.navigationController pushViewController:[[MMZCViewController alloc]init] animated:YES];
+   
 }
 -(void)createTextFields{
     UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(30, 75, self.view.frame.size.width-90, 30)];
@@ -173,28 +168,29 @@
     return btn;
 }
 -(void)next{ //点击下一步按钮去验证验证码
-    if ([phone.text isEqualToString:@""]){
-        [SVProgressHUD showInfoWithStatus:@"亲,请输入注册手机号码"];
-        return;
-    }
-    else if (phone.text.length <11){
-        [SVProgressHUD showInfoWithStatus:@"您输入的手机号码格式不正确"];
-        return;
-    }
-    else if ([code.text isEqualToString:@""]){
-      [SVProgressHUD showInfoWithStatus:@"亲,请输入验证码"];
-        return;
-    }else if (code.text.length == 0){
-       [SVProgressHUD showInfoWithStatus:@"验证码长度错误"];
-    }
-    [SMSSDK commitVerificationCode:code.text phoneNumber:phone.text zone:@"86" result:^(NSError *error) {
-        if (!error) {
-            NSLog(@" MMZCHMViewController  next ->>短信验证成功");
-            [self.navigationController pushViewController:[[settingPassWardViewController alloc]init] animated:YES];
-        }else{
-            NSLog(@"MMZCHMViewController  next ->>短信错误信息:%@",error);
-        }
-    }];
+//    if ([phone.text isEqualToString:@""]){
+//        [SVProgressHUD showInfoWithStatus:@"亲,请输入注册手机号码"];
+//        return;
+//    }
+//    else if (phone.text.length <11){
+//        [SVProgressHUD showInfoWithStatus:@"您输入的手机号码格式不正确"];
+//        return;
+//    }
+//    else if ([code.text isEqualToString:@""]){
+//      [SVProgressHUD showInfoWithStatus:@"亲,请输入验证码"];
+//        return;
+//    }else if (code.text.length == 0){
+//       [SVProgressHUD showInfoWithStatus:@"验证码长度错误"];
+//    }
+//    [SMSSDK commitVerificationCode:code.text phoneNumber:phone.text zone:@"86" result:^(NSError *error) {
+//        if (!error) {
+//            NSLog(@" MMZCHMViewController  next ->>短信验证成功");
+//            [self.navigationController pushViewController:[[settingPassWardViewController alloc]init] animated:YES];
+//        }else{
+//            NSLog(@"MMZCHMViewController  next ->>短信错误信息:%@",error);
+//        }
+//    }];
+[self.navigationController pushViewController:[[settingPassWardViewController alloc]init] animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

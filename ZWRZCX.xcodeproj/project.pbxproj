@@ -38,6 +38,7 @@
 		C80A885C1D0CECAE003801CB /* settingPassWardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88561D0CECAE003801CB /* settingPassWardViewController.m */; };
 		C80A885D1D0CECAE003801CB /* settinhHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88581D0CECAE003801CB /* settinhHeaderViewController.m */; };
 		C80A88601D0CECCF003801CB /* forgetPassWardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A885F1D0CECCF003801CB /* forgetPassWardViewController.m */; };
+		C833E0391D276C6400E977F7 /* settinhHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C833E0381D276C6400E977F7 /* settinhHeaderModel.m */; };
 		C8400CB61CFED340008A8952 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8400CB51CFED340008A8952 /* MapKit.framework */; };
 		C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */; };
 		C84A74231D01042000CA4CFD /* breakRulusNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */; };
@@ -282,6 +283,8 @@
 		C80A88581D0CECAE003801CB /* settinhHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settinhHeaderViewController.m; sourceTree = "<group>"; };
 		C80A885E1D0CECCF003801CB /* forgetPassWardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forgetPassWardViewController.h; sourceTree = "<group>"; };
 		C80A885F1D0CECCF003801CB /* forgetPassWardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forgetPassWardViewController.m; sourceTree = "<group>"; };
+		C833E0371D276C6400E977F7 /* settinhHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settinhHeaderModel.h; sourceTree = "<group>"; };
+		C833E0381D276C6400E977F7 /* settinhHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settinhHeaderModel.m; sourceTree = "<group>"; };
 		C8400CB51CFED340008A8952 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapKit.framework; sourceTree = "<group>"; };
 		C84A741E1D01039B00CA4CFD /* BusInquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusInquiryViewController.h; sourceTree = "<group>"; };
 		C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusInquiryViewController.m; sourceTree = "<group>"; };
@@ -835,6 +838,8 @@
 			children = (
 				C8000A791D21165500A527C0 /* horizontalModel.h */,
 				C8000A7A1D21165500A527C0 /* horizontalModel.m */,
+				C833E0371D276C6400E977F7 /* settinhHeaderModel.h */,
+				C833E0381D276C6400E977F7 /* settinhHeaderModel.m */,
 			);
 			path = LogModel;
 			sourceTree = "<group>";
@@ -1900,6 +1905,7 @@
 				C8A3C51D1CFEB60500E741BC /* MainDiTuViewController.m in Sources */,
 				C80A88601D0CECCF003801CB /* forgetPassWardViewController.m in Sources */,
 				C8000A611D21042A00A527C0 /* MJRefreshAutoGifFooter.m in Sources */,
+				C833E0391D276C6400E977F7 /* settinhHeaderModel.m in Sources */,
 				C8FCFA881D24B8F2004FBADE /* breakRulusPickerModel.m in Sources */,
 				C893F29D1D055D8100E96398 /* UIView+MLExtension.m in Sources */,
 				C8000A6B1D21042A00A527C0 /* MJRefreshConst.m in Sources */,

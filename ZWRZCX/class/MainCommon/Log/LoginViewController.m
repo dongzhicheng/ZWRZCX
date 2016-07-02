@@ -11,9 +11,11 @@
 #import <SMS_SDK/SMSSDK.h>
 #import "MainDiTuViewController.h"
 
+
 @interface LoginViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *iphoneEMSNumberTexfield;
 @property (strong, nonatomic) IBOutlet UITextField *YanZhengMaTextField;
+
 
 @end
 
@@ -46,25 +48,24 @@
 }
 - (IBAction)phoneNumberRegister:(id)sender {
     
-
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.view.backgroundColor = [UIColor purpleColor];
-    
-    // 产生粒子
-    //    [self animationAutoProductStarAndPoint];
+
+    //    [self animationAutoProductStarAndPoint]; // 产生粒子
     
 #pragma mark http://m.blog.csdn.net/blog/u012890196/21246751
-    // 网页教程
-    //    [self animation];
+    
+    //    [self animation]; // 网页教程
     
 #pragma mark http://blog.csdn.net/chaoyuan899/article/details/42174647
     //    [self animation_1];
     
-    // 礼花弹
-    [self animation_2];
+    [self animation_2];  // 礼花弹
+    
+
     
 }
 
@@ -145,10 +146,6 @@
     emitterLayer.emitterCells = [NSArray arrayWithObjects:cellStar, starCell0, nil];
     [self.view.layer insertSublayer:emitterLayer atIndex:0];
     
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)animation

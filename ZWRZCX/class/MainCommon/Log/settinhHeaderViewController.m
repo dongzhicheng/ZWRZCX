@@ -1,9 +1,12 @@
 
-
+#import "LoginViewController.h"
+#import "settinhHeaderModel.h"
 @interface settinhHeaderViewController ()<UIActionSheetDelegate,UIImagePickerControllerDelegate>
 {
     UIView *bgView;
     UITextField *username;   //昵称
+    settinhHeaderModel *settingHeaderModel;
+    
 }
 @property (nonatomic,strong) UIButton *head; //头像
 
@@ -14,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self->settingHeaderModel = [[settinhHeaderModel alloc] init];
     
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
 //    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(clickaddBtn)];
@@ -111,34 +116,32 @@
     menu.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
     [menu showInView:self.view];
 }
-//*************************代理方法*******************************
+
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
    
-    if (buttonIndex == 0) { //0->拍照，1->相册
+    if (buttonIndex == 0) {
         [self snapImage];
-    } else if (buttonIndex == 1) {  //NSLog(@"index:%zd",buttonIndex);
+    } else if (buttonIndex == 1) {
         [self localPhoto];
     }
 }
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    NSString *type = [info objectForKey:UIImagePickerControllerMediaType];  //完成选择  //NSLog(@"type:%@",type);
+    NSString *type = [info objectForKey:UIImagePickerControllerMediaType];
     if ([type isEqualToString:@"public.image"]) {
-        UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"]; //转换成NSData
-        [picker dismissViewControllerAnimated:YES completion:^{  //关闭相册界面
-            [_head setImage:image forState:UIControlStateNormal]; //设置头像
-            //[self updatePhotoFor:image];   //上传头像
+        UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+        [picker dismissViewControllerAnimated:YES completion:^{
+            [_head setImage:image forState:UIControlStateNormal];
+            NSData * imageData = UIImagePNGRepresentation(image);
+            NSString *_encodedImageStr = [imageData base64Encoding];
+            settingHeaderModel.headerStr = _encodedImageStr;
+            settingHeaderModel.stringNAME = @"nihooalajdf";
+            NSString * document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
+            NSString * fileName = [document stringByAppendingPathComponent:@"imageObject"];
+            [NSKeyedArchiver archiveRootObject:settingHeaderModel toFile:fileName];
         }];
     }
 }
-#pragma mark --头像上传
--(void)updatePhoto:(NSString *)base64Str{
-    //    NSString *url =[NSString stringWithFormat:@"%@%@",Host_DSXVipManager,@"/service/member"];
-    //
-    //    NSDictionary *dict = @{@"action":@"avatar",@"owner":@"guide",@"username":[UserModel getUserDefaultLoginName],@"password":[UserModel getUserDefaultPassword],@"filename":@"head.jpg",@"data":base64Str,@"operId":[UserModel getUserDefaultId],@"operType":@"guide"};
-    //    [[NetRequestManager sharedInstance] sendRequest:[NSURL URLWithString:url] parameterDic:dict requestTag:0 delegate:self userInfo:nil];
-}
-
 //*****************************拍照**********************************
 - (void) snapImage{
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -174,6 +177,16 @@
     [picker dismissViewControllerAnimated:YES completion:^{
         
     }];
+}
+
+
+
+#pragma mark --头像上传
+-(void)updatePhoto:(NSString *)base64Str{
+    //    NSString *url =[NSString stringWithFormat:@"%@%@",Host_DSXVipManager,@"/service/member"];
+    //
+    //    NSDictionary *dict = @{@"action":@"avatar",@"owner":@"guide",@"username":[UserModel getUserDefaultLoginName],@"password":[UserModel getUserDefaultPassword],@"filename":@"head.jpg",@"data":base64Str,@"operId":[UserModel getUserDefaultId],@"operType":@"guide"};
+    //    [[NetRequestManager sharedInstance] sendRequest:[NSURL URLWithString:url] parameterDic:dict requestTag:0 delegate:self userInfo:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -57,9 +57,18 @@
    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:216/255.0f green:209/255.0f blue:192/255.0f alpha:1]];
 //    self.navigationController.navigationBarHidden = YES;
 }
+- (void)viewDidAppear:(BOOL)animated{
+
+
+
+}
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+
+    
+   
+    
     
     //self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     //设置NavigationBar背景颜色
@@ -71,6 +80,8 @@
     [self createImageViews];
     [self createTextFields];
     [self createLabel];
+    
+
 }
 
 -(void)clickaddBtn:(UIButton *)button{
@@ -141,14 +152,43 @@
     
 }
 -(void)createButtons{
+   
     UIButton *landBtn=[self createButtonFrame:CGRectMake(10, 190, self.view.frame.size.width-20, 37) backImageName:nil title:@"登录" titleColor:[UIColor whiteColor]  font:[UIFont systemFontOfSize:19] target:self action:@selector(landClick)];
+   
     landBtn.backgroundColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
+    
     landBtn.layer.cornerRadius=5.0f;
+    
     UIButton *newUserBtn=[self createButtonFrame:CGRectMake(5, 235, 70, 30) backImageName:nil title:@"快速注册" titleColor:[UIColor grayColor] font:[UIFont systemFontOfSize:13] target:self action:@selector(registration:)];
-    //newUserBtn.backgroundColor=[UIColor lightGrayColor];
-    UIButton *forgotPwdBtn=[self createButtonFrame:CGRectMake(self.view.frame.size.width-75, 235, 60, 30) backImageName:nil title:@"找回密码" titleColor:[UIColor grayColor] font:[UIFont systemFontOfSize:13] target:self action:@selector(fogetPwd:)];
-    //fogotPwdBtn.backgroundColor=[UIColor lightGrayColor];
   
+    UIButton *forgotPwdBtn=[self createButtonFrame:CGRectMake(self.view.frame.size.width-75, 235, 60, 30) backImageName:nil title:@"找回密码" titleColor:[UIColor grayColor] font:[UIFont systemFontOfSize:13] target:self action:@selector(fogetPwd:)];
+   
+    self.headr = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width-195, 255, 80, 80)];
+    
+    self.headr.layer.cornerRadius = 40;
+    
+    NSLog(@"%@",self.headr);
+    
+    self.headr.layer.masksToBounds = YES;
+    
+    self.headr.backgroundColor = [UIColor redColor];
+    
+    NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
+    
+    NSString *fileName = [document stringByAppendingPathComponent:@"imageObject"];
+    
+    settinhHeaderModel *settingHeaderModel = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
+    
+    NSString *headerstr = settingHeaderModel.headerStr;
+    
+    NSData * headerImageData = [[NSData alloc] initWithBase64EncodedString:headerstr options:nil];
+    
+    UIImage *headImage = [[UIImage alloc] initWithData:headerImageData];
+    
+    [self.headr setImage:headImage forState:UIControlStateNormal];
+    
+    [self.view addSubview:self.headr];
+    
       #define Start_X 60.0f           // 第一个按钮的X坐标
       #define Start_Y 440.0f           // 第一个按钮的Y坐标
       #define Width_Space 50.0f        // 2个按钮之间的横间距
@@ -171,6 +211,8 @@
     //xinlangBtn.tag = UMSocialSnsTypeSina;
     xinlangBtn.layer.cornerRadius=25;
     xinlangBtn=[self createButtonFrame:xinlangBtn.frame backImageName:@"ic_landing_microblog" title:nil titleColor:nil font:nil target:self action:@selector(onClickSina:)];
+    
+    
     
     [self.view addSubview:weixinBtn];
     [self.view addSubview:QQBtn];

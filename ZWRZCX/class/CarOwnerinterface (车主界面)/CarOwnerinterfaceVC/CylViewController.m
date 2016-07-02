@@ -49,8 +49,6 @@
     
     self.scrollView.delegate = self;
     
-  
-
     [self startTimer];
  
 }
