@@ -104,6 +104,46 @@
                                     <action selector="guidanceStation:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="d5r-dw-EMq"/>
                                 </connections>
                             </button>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6lm-KY-77x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-ga-LGf">
+                                        <rect key="frame" x="13" y="5" width="53" height="33"/>
+                                        <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="顺风车"/>
+                                        <connections>
+                                            <action selector="shunFengCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="SUC-js-1ed"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyZ-It-uwm">
+                                        <rect key="frame" x="169" y="5" width="57" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="三轮车" backgroundImage="welcome7"/>
+                                        <connections>
+                                            <action selector="sanLunCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="DCh-dE-Qcf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgh-ll-FOa">
+                                        <rect key="frame" x="248" y="5" width="52" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="大卡车" backgroundImage="welcome6"/>
+                                        <connections>
+                                            <action selector="bigCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="zfq-xI-Kzd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-95-YMM">
+                                        <rect key="frame" x="88" y="5" width="60" height="32"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="小火车" backgroundImage="welcome8"/>
+                                        <connections>
+                                            <action selector="huoCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="klR-mR-y3K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="地图界面" id="bzG-wD-Dm7"/>
@@ -137,6 +177,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="welcome6" width="320" height="568"/>
+        <image name="welcome7" width="320" height="568"/>
+        <image name="welcome8" width="320" height="568"/>
         <image name="welcome9" width="320" height="568"/>
     </resources>
 </document>

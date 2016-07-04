@@ -5,8 +5,7 @@
 {
     UIView *bgView;
     UITextField *username;   //昵称
-    settinhHeaderModel *settingHeaderModel;
-    
+    settinhHeaderModel *settingHeaderModel; //存储图像的数据模型
 }
 @property (nonatomic,strong) UIButton *head; //头像
 
@@ -17,20 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self->settingHeaderModel = [[settinhHeaderModel alloc] init];
-    
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
-//    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(clickaddBtn)];
-//    [addBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"]];
-//    [addBtn setImageInsets:UIEdgeInsetsMake(0, -15, 0, 15)];
-//    addBtn.tintColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
-//    [self.navigationItem setLeftBarButtonItem:addBtn];
     [self createUI];
     [self createTextFields];
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self->username resignFirstResponder];// 辞去第一响应者
+    [self->username resignFirstResponder];
 }
 -(void)createTextFields{
     CGRect frame=[UIScreen mainScreen].bounds;
@@ -95,7 +87,6 @@
     [bg setImage:[UIImage imageNamed:@"mycenter_bg.png"]];
     bg.backgroundColor=[UIColor grayColor];
     [self.view addSubview:bg];
-    
     _head=[[UIButton alloc]initWithFrame:CGRectMake((self.view.frame.size.width-80)/2, 110, 80, 80)];
     [_head setImage:[UIImage imageNamed:@"head"] forState:UIControlStateNormal];
     _head.layer.cornerRadius=40;
@@ -103,7 +94,6 @@
     _head.backgroundColor=[UIColor whiteColor];
     [_head addTarget:self action:@selector(changeHeadView1:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_head];
-    
     UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width-80)/2, 180, 80, 80)];
     label.text=@"点击设置头像";
     label.textColor=[UIColor whiteColor];
@@ -119,7 +109,6 @@
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-   
     if (buttonIndex == 0) {
         [self snapImage];
     } else if (buttonIndex == 1) {
@@ -133,6 +122,7 @@
         [picker dismissViewControllerAnimated:YES completion:^{
             [_head setImage:image forState:UIControlStateNormal];
             NSData * imageData = UIImagePNGRepresentation(image);
+            NSLog(@"%@",imageData);
             NSString *_encodedImageStr = [imageData base64Encoding];
             settingHeaderModel.headerStr = _encodedImageStr;
             settingHeaderModel.stringNAME = @"nihooalajdf";
@@ -142,7 +132,7 @@
         }];
     }
 }
-//*****************************拍照**********************************
+
 - (void) snapImage{
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         __block UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
@@ -164,9 +154,8 @@
     __block UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     picker.delegate = self;
-    picker.allowsEditing = YES;  //设置选择后的图片可被编辑
+    picker.allowsEditing = YES;
     picker.navigationBar.barTintColor =[UIColor grayColor];
-//  picker.navigationBar.tintColor = [UIColor redColor]; //可以更改返回的小剪头的颜色
     picker.navigationBar.titleTextAttributes = @{UITextAttributeTextColor:[UIColor blackColor]};
     [self presentViewController:picker animated:YES completion:^{
         picker = nil;
@@ -178,8 +167,6 @@
         
     }];
 }
-
-
 
 #pragma mark --头像上传
 -(void)updatePhoto:(NSString *)base64Str{

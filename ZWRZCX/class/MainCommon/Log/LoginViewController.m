@@ -65,15 +65,16 @@
     
     [self animation_2];  // 礼花弹
     
+}
 
-    
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.YanZhengMaTextField resignFirstResponder];
+    [self.iphoneEMSNumberTexfield resignFirstResponder];
 }
 
 - (void)animationAutoProductStarAndPoint
 {
-    
     // 发射器
-    
     CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
     // 发射器位置
     emitterLayer.emitterPosition = CGPointMake(200,150);
@@ -300,10 +301,7 @@
     burstCell.emitterCells = @[starCell]; // 爆炸粒子产生后才有星星粒子
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.YanZhengMaTextField resignFirstResponder];
-    [self.iphoneEMSNumberTexfield resignFirstResponder];
-}
+
 
 
 /*

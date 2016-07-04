@@ -10,6 +10,8 @@
 #import <MapKit/MapKit.h>
 #import <MapKit/MKMapCamera.h>
 #import <UIKit/UIKit.h>
+#import "traveIInformationTableVC.h"
+
 @interface MainDiTuViewController ()
 @property (nonatomic,strong) CLLocationManager *locationManager;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
@@ -21,6 +23,23 @@
 @end
 
 @implementation MainDiTuViewController
+- (IBAction)shunFengCar:(id)sender {
+    
+    traveIInformationTableVC *traveVC = [[traveIInformationTableVC alloc ] init];
+    [self.navigationController pushViewController:traveVC animated:YES];
+    
+}
+- (IBAction)huoCar:(id)sender {
+    
+}
+- (IBAction)sanLunCar:(id)sender {
+    
+    
+}
+- (IBAction)bigCar:(id)sender {
+    
+    
+}
 
 - (IBAction)start:(UIButton *)sender {
     

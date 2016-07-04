@@ -167,8 +167,6 @@
     
     self.headr.layer.cornerRadius = 40;
     
-    NSLog(@"%@",self.headr);
-    
     self.headr.layer.masksToBounds = YES;
     
     self.headr.backgroundColor = [UIColor redColor];
@@ -182,6 +180,8 @@
     NSString *headerstr = settingHeaderModel.headerStr;
     
     NSData * headerImageData = [[NSData alloc] initWithBase64EncodedString:headerstr options:nil];
+    
+    NSLog(@"headerImageData--%@ 选好头像返回别的界面MMZCViewController---headerImageData",headerImageData);
     
     UIImage *headImage = [[UIImage alloc] initWithData:headerImageData];
     
@@ -288,16 +288,16 @@
         [SVProgressHUD showInfoWithStatus:@"亲,密码长度至少六位"];
         return;
     }
-    /*
-     判断帐号和密码是否正确   然后再跳转控制器
-     */
+
+    // 判断帐号和密码是否正确   然后再跳转控制器
+   
     UIViewController * viewVC  = [[UIViewController alloc]init];
     viewVC.view.backgroundColor = [UIColor redColor];
     [self.navigationController pushViewController:viewVC animated:YES];
-    NSLog(@"MMZCViewController -> landClick -> 点击了登录按钮,在这里写登录成功后跳转到哪个控制器的代码");//有问题需处理,不能够push控制器 如果使用模态又没有导航栏和底下的tabarVC
+    NSLog(@"MMZCViewController -> landClick -> 点击了登录按钮,在这里写登录成功后跳转到哪个控制器的代码"); //有问题需处理,不能够push控制器 如果使用模态又没有导航栏和底下的tabarVC
     
 }
--(void)zhuce{ //注册
+-(void)zhuce{
     [self.navigationController pushViewController:[[MMZCHMViewController alloc]init] animated:YES];
 }
 -(void)registration:(UIButton *)button{
@@ -335,7 +335,7 @@
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
 @end

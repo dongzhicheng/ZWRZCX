@@ -24,11 +24,6 @@
     self.navigationController.navigationBarHidden = NO;
     self.title=@"找回密码1/2";
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
-//    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(clickaddBtn)];
-//    [addBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"]];
-//    [addBtn setImageInsets:UIEdgeInsetsMake(0, -15, 0, 15)];
-//    addBtn.tintColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
-//    [self.navigationItem setLeftBarButtonItem:addBtn];
     [self createTextFields];
 }
 -(void)createTextFields{
@@ -38,57 +33,45 @@
     label.textAlignment=UITextAlignmentLeft;
     label.font=[UIFont systemFontOfSize:13];
     [self.view addSubview:label];
-    
     CGRect frame=[UIScreen mainScreen].bounds;
     bgView=[[UIView alloc]initWithFrame:CGRectMake(10, 110, frame.size.width-20, 100)];
     bgView.layer.cornerRadius=3.0;
     bgView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:bgView];
-    
     _phone=[self createTextFielfFrame:CGRectMake(100, 10, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"11位手机号"];
     _phone.clearButtonMode = UITextFieldViewModeWhileEditing;
     _phone.keyboardType=UIKeyboardTypeNumberPad;
     _phone.text=@"18363345960";
-    
     code=[self createTextFielfFrame:CGRectMake(100, 60, 90, 30) font:[UIFont systemFontOfSize:14]  placeholder:@"4位数字" ];
     code.clearButtonMode = UITextFieldViewModeWhileEditing;
-    //code.text=@"mojun1992225";
-    code.secureTextEntry=YES; //密文样式
+    code.secureTextEntry=YES; // 密文样式 // code.text=@"mojun1992225";
     code.keyboardType=UIKeyboardTypeNumberPad;
-    
     UILabel *phonelabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 12, 50, 25)];
     phonelabel.text=@"手机号";
     phonelabel.textColor=[UIColor blackColor];
     phonelabel.textAlignment=UITextAlignmentLeft;
     phonelabel.font=[UIFont systemFontOfSize:14];
-    
     UILabel *codelabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 62, 50, 25)];
     codelabel.text=@"验证码";
     codelabel.textColor=[UIColor blackColor];
     codelabel.textAlignment=UITextAlignmentLeft;
     codelabel.font=[UIFont systemFontOfSize:14];
-    
     yzButton=[[UIButton alloc]initWithFrame:CGRectMake(bgView.frame.size.width-100-20, 62, 100, 30)]; //yzButton.layer.cornerRadius=3.0f;
     [yzButton setTitle:@"获取验证码" forState:UIControlStateNormal];
     [yzButton setTitleColor:[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1] forState:UIControlStateNormal];
     yzButton.font=[UIFont systemFontOfSize:13];
     [yzButton addTarget:self action:@selector(getValidCode:) forControlEvents:UIControlEventTouchUpInside];
     [bgView addSubview:yzButton];
-    
     UIImageView *line1=[self createImageViewFrame:CGRectMake(20, 50, bgView.frame.size.width-40, 1) imageName:nil color:[UIColor colorWithRed:180/255.0f green:180/255.0f blue:180/255.0f alpha:.3]];
-    
     UIButton *landBtn=[self createButtonFrame:CGRectMake(10, bgView.frame.size.height+bgView.frame.origin.y+30,self.view.frame.size.width-20, 37) backImageName:nil title:@"下一步" titleColor:[UIColor whiteColor]  font:[UIFont systemFontOfSize:17] target:self action:@selector(landClick)];
     landBtn.backgroundColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
     landBtn.layer.cornerRadius=5.0f;
-    
     [bgView addSubview:_phone];
     [bgView addSubview:code];
-    
     [bgView addSubview:phonelabel];
     [bgView addSubview:codelabel];
     [bgView addSubview:line1];
     [self.view addSubview:landBtn];
-    
 }
 
 - (void)getValidCode:(UIButton *)sender{
@@ -100,7 +83,6 @@
         [SVProgressHUD showInfoWithStatus:@"您输入的手机号码格式不正确"];
         return;
     }
-     //发送短信验证码
     [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:_phone.text
                                    zone:@"86"
                        customIdentifier:nil
@@ -175,7 +157,7 @@
     }
     return btn;
 }
--(void)landClick { //点击下一步按钮的时候去验证验证码
+-(void)landClick {
         if ([_phone.text isEqualToString:@""]){
             [SVProgressHUD showInfoWithStatus:@"亲,请输入注册手机号码"];
             return;
@@ -192,7 +174,7 @@
         if (!error) {
             NSLog(@"forgetPassWardViewController-->短信验证成功");
             newPassWardViewController *new=[[newPassWardViewController alloc]init];
-            new.userPhone=_phone.text; //赋值
+            new.userPhone=_phone.text; // 赋值
             [self.navigationController pushViewController:new animated:YES];
         }else{
             NSLog(@"forgetPassWardViewController-->短信错误信息:%@",error);

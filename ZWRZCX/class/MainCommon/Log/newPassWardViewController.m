@@ -14,15 +14,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    self.navigationController.title = @"找回密码2/2";
-//    self.title=@"找回密码2/2";
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
-//    UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(clickaddBtn)];
-//    [addBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"]];
-//    [addBtn setImageInsets:UIEdgeInsetsMake(0, -15, 0, 15)];
-//    addBtn.tintColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
-//    [self.navigationItem setLeftBarButtonItem:addBtn];
     [self createTextFields];
 }
 -(void)createTextFields{
@@ -32,23 +24,19 @@
     label.textAlignment=UITextAlignmentLeft;
     label.font=[UIFont systemFontOfSize:13];
     [self.view addSubview:label];
-    
     CGRect frame=[UIScreen mainScreen].bounds;
     bgView=[[UIView alloc]initWithFrame:CGRectMake(10, 110, frame.size.width-20, 50)];
     bgView.layer.cornerRadius=3.0;
     bgView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:bgView];
-    
     passward=[self createTextFielfFrame:CGRectMake(100, 10, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"6-20位字母或数字"];
     passward.clearButtonMode = UITextFieldViewModeWhileEditing;
     passward.secureTextEntry=YES;
-    
     UILabel *phonelabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 12, 50, 25)];
     phonelabel.text=@"密码";
     phonelabel.textColor=[UIColor blackColor];
     phonelabel.textAlignment=UITextAlignmentLeft;
     phonelabel.font=[UIFont systemFontOfSize:14];
-    
     UIButton *landBtn=[self createButtonFrame:CGRectMake(10, bgView.frame.size.height+bgView.frame.origin.y+30,self.view.frame.size.width-20, 37) backImageName:nil title:@"完成" titleColor:[UIColor whiteColor]  font:[UIFont systemFontOfSize:17] target:self action:@selector(okClick)];
     landBtn.backgroundColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
     landBtn.layer.cornerRadius=5.0f;
