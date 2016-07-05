@@ -98,6 +98,8 @@
             
             [self.breakRulusTextFiled resignFirstResponder];
             
+            self.breakRulusTextFiled.text = @"";
+            
             break;
         case CZToolBarButtonTypeDone:  // 完成
             
