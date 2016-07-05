@@ -1,26 +1,27 @@
 //
-//  traveIInformationTableVC.m
+//  travelInformationVC.m
 //  ZWRZCX
 //
-//  Created by 董志成 on 16/6/3.
+//  Created by 董志成 on 16/7/5.
 //  Copyright © 2016年 董志成. All rights reserved.
+//
 
+#import "travelInformationVC.h"
 
-#import "MJRefresh.h"
+@interface travelInformationVC ()<UITableViewDataSource,UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *travelCellModelArray;
 
-@interface traveIInformationTableVC ()<UITableViewDataSource,UITableViewDelegate>
-
-@property (strong , nonatomic) IBOutlet UIImageView *iamg;
-@property (strong , nonatomic) NSArray * travelCellModelArray;
 
 @end
 
-@implementation traveIInformationTableVC
+@implementation travelInformationVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
-    __weak typeof (self) weakself = self;
+    __weak typeof(self) weakself = self;
     
     [travelInformationTableCellModel travesArrayInfCellWithCompletion:^(NSArray *travesArrayInCell) {
         
@@ -40,8 +41,14 @@
     
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     return 108;
 }
 
@@ -82,24 +89,12 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-       
-    }   
+        
+    }
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-}
+
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 }
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 /*
 #pragma mark - Navigation

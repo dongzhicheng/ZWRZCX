@@ -9,7 +9,8 @@
 #import "breakRulusPicker.h"
 #import <UIKit/UIKit.h>
 #import "MainDiTuViewController.h"
-@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
+
+@interface breakRulusNotesViewController ()<AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate,CZToolBarDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *carOwnerInterfaceLabel;
 
@@ -19,9 +20,14 @@
 @property (nonatomic,strong)AVCaptureSession *session;
 @property (nonatomic,strong)AVCaptureVideoPreviewLayer *layer;
 @property (strong, nonatomic) IBOutlet UILabel *Textbouds;
-
+//pickController
 @property (strong, nonatomic) IBOutlet UIPickerView *pickView;
 @property (strong, nonatomic) IBOutlet UITextField *breakRulusTextFiled;
+@property (strong, nonatomic) NSArray *foods;
+@property (nonatomic, weak) CZToolBar* toolBar;
+@property (assign, nonatomic)NSInteger row;
+@property (strong, nonatomic) IBOutlet UITextField *detailWordsTextFiled;
+
 @property (strong,nonatomic)cunlabelModel *cunlabelModel;
 @property (nonatomic, strong) AVPlayerViewController *playerVc;
 
@@ -29,7 +35,18 @@
 
 @implementation breakRulusNotesViewController
 
+-(NSArray *)foods{ //懒加载测试数据 pickeController
 
+    if (!_foods) {
+        
+        NSString *path = [[NSBundle mainBundle ] pathForResource:@"foods" ofType:@"plist"];
+        
+        _foods = [NSArray arrayWithContentsOfFile:path];
+        
+    }
+    return _foods;
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,7 +55,13 @@
     self.carOwnerInterfaceLabel.numberOfLines = 0;
     self.pickView.dataSource = self;
     self.pickView.delegate = self;
-    [self pickerView:[UIPickerView new] didSelectRow:1 inComponent:0];
+    CZToolBar* toolBar = [CZToolBar toolBar];
+    toolBar.toolBarDelegate = self;
+    self.toolBar = toolBar;
+    self.breakRulusTextFiled.inputView = self.pickView;
+    [self.pickView removeFromSuperview];
+    self.breakRulusTextFiled.inputAccessoryView = toolBar;
+    
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -47,29 +70,61 @@
 }
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
 
-    return  40;
+    return  [self.foods[1] count];
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    return self.foods[1][row];
 
 }
 
--(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
 
-    breakRulusPicker *breakRulusPickerView = [breakRulusPicker flagView];
-    
- 
-    NSString * str = [NSString stringWithFormat:@"违规选项功能测试%d",row+1];
-
-    
-    breakRulusPickerView.nameLabel.text = str;
-    
-    return breakRulusPickerView;
+    self.row = row;
 
 }
 
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+- (BOOL)textField:(UITextField*)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string; // 是否允许 用户输入文字
+{
+    return YES;
+}
 
-    NSString * str = [NSString stringWithFormat:@"违规选项功能测试%d",row];
-    
-    self.breakRulusTextFiled.text = str;
+- (void)toolBar:(CZToolBar*)toolBar withButtonType:(CZToolBarButtonType)type
+{
+    switch (type) {
+            
+        case CZToolBarButtonTypePre: // 取消
+            
+            [self.breakRulusTextFiled resignFirstResponder];
+            
+            break;
+        case CZToolBarButtonTypeDone:  // 完成
+            
+            NSLog(@"CZToolBarButtonTypeDone");
+            
+            NSString* str = self.foods[1][self.row];
+            
+            NSString *brithStr = str;
+            
+            brithStr = [NSString stringWithFormat:@"%@%@",self.breakRulusTextFiled.text,str];
+            
+            self.breakRulusTextFiled.text = brithStr;
+            
+            [self.breakRulusTextFiled resignFirstResponder];
+            
+            [self.view endEditing:YES];
+            
+            break;
+            
+    }
+}
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    [self.breakRulusTextFiled resignFirstResponder];
+    [self.detailWordsTextFiled resignFirstResponder];
 
 }
 
@@ -84,7 +139,8 @@
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
  
- NSLog(@" textFieldDidBeginEditing  %@",textField.text);
+
+
 }
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
@@ -100,11 +156,6 @@
     NSLog(@" textFieldDidEndEditing   %@",textField.text);
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-
-    [self.breakRulusTextFiled resignFirstResponder];
-
-}
 
 - (IBAction)pictureButton:(id)sender {
     

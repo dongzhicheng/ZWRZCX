@@ -21,16 +21,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DZC" translatesAutoresizingMaskIntoConstraints="NO" id="VL2-mt-1pe">
                                 <rect key="frame" x="19" y="33" width="69" height="62"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投诉内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lp-Yc-hFe">
-                                <rect key="frame" x="102" y="69" width="165" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投诉内容类别:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lp-Yc-hFe">
+                                <rect key="frame" x="89" y="69" width="91" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVn-ct-qva">
-                                <rect key="frame" x="10" y="155" width="147" height="33"/>
-                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="56" y="141" width="243" height="31"/>
+                                <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="确认投诉文字">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="sureInputAndshow:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="XbL-lC-1PN"/>
                                 </connections>
@@ -63,8 +65,8 @@
                                     <action selector="vidoButton:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="QYU-Hr-h0V"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="字过多点击最后一个字来切换开始和结束位置" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGD-In-4XJ">
-                                <rect key="frame" x="4" y="112" width="310" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="投诉内容属于那类" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGD-In-4XJ">
+                                <rect key="frame" x="174" y="67" width="137" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -80,29 +82,17 @@
                                     <action selector="pictureButton:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="be5-BT-ZxM"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1w-5C-3rt">
-                                <rect key="frame" x="4" y="192" width="161" height="205"/>
-                                <connections>
-                                    <segue destination="oMV-24-Hfs" kind="embed" id="Z7S-CL-tp0"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="鲁L568*****" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd5-Y9-Qou">
-                                <rect key="frame" x="102" y="40" width="165" height="16"/>
+                                <rect key="frame" x="89" y="40" width="130" height="19"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV4-xG-ILA">
-                                <rect key="frame" x="165" y="311" width="142" height="59"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-8q-QJM">
-                                <rect key="frame" x="165" y="145" width="142" height="166"/>
+                                <rect key="frame" x="0.0" y="325" width="355" height="175"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-qB-fKE">
-                                <rect key="frame" x="97" y="449" width="63" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nc-qB-fKE">
+                                <rect key="frame" x="94" y="449" width="63" height="30"/>
                                 <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="视频播放">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,6 +101,24 @@
                                     <action selector="shipingBoFang:" destination="JeN-bC-0Kj" eventType="touchUpInside" id="Ghe-bh-4pf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投诉具体内容:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dns-Af-dZK">
+                                <rect key="frame" x="4" y="110" width="85" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhy-XV-6pe">
+                                <rect key="frame" x="94" y="103" width="217" height="30"/>
+                                <color key="backgroundColor" red="0.991843213" green="1" blue="0.40147542200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1w-5C-3rt">
+                                <rect key="frame" x="-1" y="180" width="155" height="145"/>
+                                <connections>
+                                    <segue destination="oMV-24-Hfs" kind="embed" id="Z7S-CL-tp0"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -140,7 +148,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="breakRulusTextFiled" destination="BGD-In-4XJ" id="pL4-6S-Rnj"/>
-                        <outlet property="carOwnerInterfaceLabel" destination="uV4-xG-ILA" id="hsa-Pn-ah4"/>
+                        <outlet property="detailWordsTextFiled" destination="yhy-XV-6pe" id="QpO-ce-wgu"/>
                         <outlet property="pickView" destination="CK9-8q-QJM" id="0M5-wJ-lUj"/>
                     </connections>
                 </viewController>

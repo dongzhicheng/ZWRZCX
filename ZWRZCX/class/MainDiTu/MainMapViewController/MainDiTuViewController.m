@@ -25,10 +25,19 @@
 @implementation MainDiTuViewController
 - (IBAction)shunFengCar:(id)sender {
     
-    traveIInformationTableVC *traveVC = [[traveIInformationTableVC alloc ] init];
-    [self.navigationController pushViewController:traveVC animated:YES];
+    UIStoryboard * stroBoard  = [UIStoryboard storyboardWithName:@"travelInformationSto" bundle:nil];
+    
+    traveIInformationTableVC *traveVC  = [stroBoard instantiateInitialViewController];
+    
+    traveVC.title = @"顺风车";
+    
+    [self.navigationController pushViewController:traveVC animated:NO];
+    
+//    [self presentModalViewController:traveVC animated:YES];
+
     
 }
+
 - (IBAction)huoCar:(id)sender {
     
 }

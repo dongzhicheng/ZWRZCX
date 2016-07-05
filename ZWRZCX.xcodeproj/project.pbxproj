@@ -38,6 +38,7 @@
 		C80A885C1D0CECAE003801CB /* settingPassWardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88561D0CECAE003801CB /* settingPassWardViewController.m */; };
 		C80A885D1D0CECAE003801CB /* settinhHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A88581D0CECAE003801CB /* settinhHeaderViewController.m */; };
 		C80A88601D0CECCF003801CB /* forgetPassWardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80A885F1D0CECCF003801CB /* forgetPassWardViewController.m */; };
+		C817D40F1D2B3E8400AF319A /* travelInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C817D40E1D2B3E8400AF319A /* travelInformationVC.m */; };
 		C833E0391D276C6400E977F7 /* settinhHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C833E0381D276C6400E977F7 /* settinhHeaderModel.m */; };
 		C8400CB61CFED340008A8952 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8400CB51CFED340008A8952 /* MapKit.framework */; };
 		C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */; };
@@ -198,6 +199,9 @@
 		C8FCFA881D24B8F2004FBADE /* breakRulusPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */; };
 		C8FCFA8D1D24C791004FBADE /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA8A1D24C791004FBADE /* QRView.m */; };
 		C8FCFA8E1D24C791004FBADE /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA8C1D24C791004FBADE /* QRViewController.m */; };
+		C8FD3E991D2BA02D004629F4 /* foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8FD3E981D2BA02D004629F4 /* foods.plist */; };
+		C8FD3E9D1D2BA926004629F4 /* CZToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FD3E9B1D2BA926004629F4 /* CZToolBar.m */; };
+		C8FD3E9E1D2BA926004629F4 /* CZToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FD3E9C1D2BA926004629F4 /* CZToolBar.xib */; };
 		F192629CBAC827ECD5DBE301 /* libPods-ZWRZCX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F126B11BD236215B95FDAF9 /* libPods-ZWRZCX.a */; };
 /* End PBXBuildFile section */
 
@@ -283,6 +287,8 @@
 		C80A88581D0CECAE003801CB /* settinhHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settinhHeaderViewController.m; sourceTree = "<group>"; };
 		C80A885E1D0CECCF003801CB /* forgetPassWardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forgetPassWardViewController.h; sourceTree = "<group>"; };
 		C80A885F1D0CECCF003801CB /* forgetPassWardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forgetPassWardViewController.m; sourceTree = "<group>"; };
+		C817D40D1D2B3E8400AF319A /* travelInformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = travelInformationVC.h; sourceTree = "<group>"; };
+		C817D40E1D2B3E8400AF319A /* travelInformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = travelInformationVC.m; sourceTree = "<group>"; };
 		C833E0371D276C6400E977F7 /* settinhHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settinhHeaderModel.h; sourceTree = "<group>"; };
 		C833E0381D276C6400E977F7 /* settinhHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settinhHeaderModel.m; sourceTree = "<group>"; };
 		C8400CB51CFED340008A8952 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapKit.framework; sourceTree = "<group>"; };
@@ -528,6 +534,10 @@
 		C8FCFA8A1D24C791004FBADE /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
 		C8FCFA8B1D24C791004FBADE /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		C8FCFA8C1D24C791004FBADE /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
+		C8FD3E981D2BA02D004629F4 /* foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = foods.plist; sourceTree = "<group>"; };
+		C8FD3E9A1D2BA926004629F4 /* CZToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZToolBar.h; sourceTree = "<group>"; };
+		C8FD3E9B1D2BA926004629F4 /* CZToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZToolBar.m; sourceTree = "<group>"; };
+		C8FD3E9C1D2BA926004629F4 /* CZToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZToolBar.xib; sourceTree = "<group>"; };
 		F406251E67B72781736F84C5 /* Pods-ZWRZCX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWRZCX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWRZCX/Pods-ZWRZCX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -818,6 +828,9 @@
 				C84A742B1D01096B00CA4CFD /* carOwnerInterfaceVC.m */,
 				C853FB381D1D166500ECF8D2 /* CylViewController.h */,
 				C853FB391D1D166500ECF8D2 /* CylViewController.m */,
+				C8FD3E9A1D2BA926004629F4 /* CZToolBar.h */,
+				C8FD3E9B1D2BA926004629F4 /* CZToolBar.m */,
+				C8FD3E9C1D2BA926004629F4 /* CZToolBar.xib */,
 			);
 			name = CarOwnerVC;
 			path = CarOwnerinterfaceVC;
@@ -992,6 +1005,7 @@
 				C8A3C4B51CFE5D2200E741BC /* Main.storyboard */,
 				C8A3C4B81CFE5D2200E741BC /* Assets.xcassets */,
 				C8A3C4BA1CFE5D2200E741BC /* LaunchScreen.storyboard */,
+				C8FD3E981D2BA02D004629F4 /* foods.plist */,
 				C8A3C4BD1CFE5D2200E741BC /* Info.plist */,
 				C8A3C4AC1CFE5D2100E741BC /* Supporting Files */,
 			);
@@ -1413,6 +1427,8 @@
 			children = (
 				C84A74241D01047100CA4CFD /* traveIInformationTableVC.h */,
 				C84A74251D01047100CA4CFD /* traveIInformationTableVC.m */,
+				C817D40D1D2B3E8400AF319A /* travelInformationVC.h */,
+				C817D40E1D2B3E8400AF319A /* travelInformationVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1723,9 +1739,11 @@
 				C8E5B7D91D1A7EA000350FB9 /* welcome2@2x.png in Resources */,
 				C893F25E1D0516A800E96398 /* BusInquiry.storyboard in Resources */,
 				C8E5B7E11D1A7EA000350FB9 /* welcome6@2x.png in Resources */,
+				C8FD3E9E1D2BA926004629F4 /* CZToolBar.xib in Resources */,
 				C893F2671D0518E500E96398 /* MainMapSto.storyboard in Resources */,
 				C8A3C4B91CFE5D2200E741BC /* Assets.xcassets in Resources */,
 				C8E9B38A1D02572500B57DB9 /* Info.plist in Resources */,
+				C8FD3E991D2BA02D004629F4 /* foods.plist in Resources */,
 				C8536CF31D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard in Resources */,
 				C8E5B7E21D1A7EA000350FB9 /* welcome7.png in Resources */,
 				C8E9B3A11D02A96300B57DB9 /* webViewController.storyboard in Resources */,
@@ -1865,6 +1883,7 @@
 				C80A885B1D0CECAE003801CB /* newPassWardViewController.m in Sources */,
 				C893F2561D050E0700E96398 /* DZCTabBar.m in Sources */,
 				C8000A641D21042A00A527C0 /* MJRefreshBackGifFooter.m in Sources */,
+				C8FD3E9D1D2BA926004629F4 /* CZToolBar.m in Sources */,
 				C8A3C51A1CFEB4C500E741BC /* UIView+Ex.m in Sources */,
 				C893F2A41D055D8100E96398 /* MLSelectPhotoPickerAssetsViewController.m in Sources */,
 				C8000A661D21042A00A527C0 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1954,6 +1973,7 @@
 				C85A262B1D23651C008FAC98 /* businquiryViewController.m in Sources */,
 				C8E5989F1D0FEBD300D58C64 /* PlayBackViewController.m in Sources */,
 				C893F2AC1D055D8100E96398 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */,
+				C817D40F1D2B3E8400AF319A /* travelInformationVC.m in Sources */,
 				C8000A631D21042A00A527C0 /* MJRefreshAutoStateFooter.m in Sources */,
 				C8E9B38D1D02572500B57DB9 /* MJProperty.m in Sources */,
 			);
