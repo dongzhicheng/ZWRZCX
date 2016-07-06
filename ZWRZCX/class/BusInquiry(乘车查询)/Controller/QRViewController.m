@@ -1,16 +1,9 @@
-//
-//  QRViewController.m
-//  QRWeiXinDemo
-//
-//  Created by lovelydd on 15/4/25.
-//  Copyright (c) 2015年 lovelydd. All rights reserved.
-//
 
 #import "QRViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "QRView.h"
 #import <objc/runtime.h>
-#import "carOwnerInterfaceTableViewCell.h"
+#import "breakRulusSelectPhotoCell.h"
 
 #define qrRectViewWH [UIScreen mainScreen].bounds.size.width * 0.8
 
@@ -26,30 +19,22 @@
 @property (nonatomic,weak) QRView *rview;
 @property (nonatomic,assign) BOOL isOpenOrClose;
 
-
-
 @end
 
 @implementation QRViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
     
     self.isOpenOrClose = NO;
     
 //    [self creatLeftButton:@selector(pop:) image:@"icon-arrow-back" title:@"返回"];
-//    
-//    self.customTitleLabel.text =
+
     self.title = @"扫一扫";
 
-    
-    
     _device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    
-    
+
     // Input
     _input = [AVCaptureDeviceInput deviceInputWithDevice:self.device error:nil];
     
@@ -64,15 +49,12 @@
     {
         [_session addInput:self.input];
         
-   
     }
     
     if ([_session canAddOutput:self.output])
     {
         [_session addOutput:self.output];
     }
-    
-    
     
     // 条码类型 AVMetadataObjectTypeQRCode
     _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode,AVMetadataObjectTypeEAN13Code,
@@ -85,11 +67,8 @@
     [self.view.layer insertSublayer:_preview atIndex:0];
     
     //添加闪光灯button
-    
-    
-    
+
     [_session startRunning];
-    
     
     CGRect screenRect = [UIScreen mainScreen].bounds;
     QRView *qrRectView = [[QRView alloc] initWithFrame:screenRect];
@@ -119,8 +98,7 @@
     [_label setText:@"将取景框对准二维码或者条形码\n即可自动扫描"];
     [_label setTintColor:[UIColor yellowColor]];
     [self.view addSubview:_label];
-    
-    
+
     [self addTorchButton];
 }
 
@@ -132,15 +110,11 @@
     NSString *stringValue;
     
     if ([metadataObjects count] > 0){
-        //停止扫描
-        [_session stopRunning];
+        [_session stopRunning]; //停止扫描
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
         stringValue = metadataObject.stringValue;
         _stringValue = stringValue;
-        
-        
         NSData *data = [_stringValue dataUsingEncoding:NSUTF8StringEncoding];
-        NSLog(@"%@",data.description);
         
     }
 
@@ -149,25 +123,20 @@
     if (self.qrUrlBlock) {
         self.qrUrlBlock(stringValue);
     }
-    
     NSLog(@"🍌🍌🍌🍌%@",connection.inputPorts);
     
 }
 
 - (void)pop:(UIButton *)button {
-
-    [self.navigationController popToRootViewControllerAnimated:NO];
     
+    [self.navigationController popToRootViewControllerAnimated:NO];
     [self.navigationController popViewControllerAnimated:NO];
 }
 -(void)viewWillAppear:(BOOL)animated{
 
     [super viewWillAppear: animated];
-    
     [_rview addTimer];
     
-   
-
 }
 -(void)viewWillDisappear:(BOOL)animated{
 
@@ -188,7 +157,6 @@
     [self.view addSubview:button];
     
     button.frame = CGRectMake([UIScreen mainScreen].bounds.size.width-10-50,[UIScreen mainScreen].bounds.size.height-10-30-55, 50, 30);
-
 
 }
 

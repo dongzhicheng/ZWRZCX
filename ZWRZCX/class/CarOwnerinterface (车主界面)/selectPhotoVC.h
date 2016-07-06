@@ -1,5 +1,5 @@
 //
-//  reportJuBaoVC.h
+//  carOwnerInterfaceVC.h
 //  ZWRZCX
 //
 //  Created by 董志成 on 16/6/3.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface reportJuBaoVC : UIViewController
+@interface selectPhotoVC : UITableViewController
 
 @end

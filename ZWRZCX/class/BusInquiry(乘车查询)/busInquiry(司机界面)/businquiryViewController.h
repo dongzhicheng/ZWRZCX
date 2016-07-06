@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 
 @interface businquiryViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UIImageView *businquiryImageView;
 @property (strong, nonatomic) IBOutlet UILabel *businquiryNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *businquiryDetailLabel;

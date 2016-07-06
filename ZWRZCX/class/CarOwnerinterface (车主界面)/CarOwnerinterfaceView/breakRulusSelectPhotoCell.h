@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface carOwnerInterfaceTableViewCell : UITableViewCell
+@interface breakRulusSelectPhotoCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UIImageView *hearImageView;
 @property (strong, nonatomic) IBOutlet UILabel *textLabe;

@@ -17,18 +17,26 @@
 @implementation businquiryViewController
 
 
-- (IBAction)safePositionColle:(id)sender {
+- (IBAction)saveScreenToPhone:(id)sender { //截屏
     
-    MKMapItem *currentItem = [MKMapItem mapItemForCurrentLocation];
-    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
-    [MKMapItem openMapsWithItems:@[currentItem,currentItem] launchOptions:nil];
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    UIImageWriteToSavedPhotosAlbum(img, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
     
 }
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    NSLog(@"保存成功");
+}
+
+
 -(void)viewWillAppear:(BOOL)animated{
 
     self.businquiryName.text = @"";
 }
 -(void)viewDidAppear:(BOOL)animated{
+    
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; //创建沙盒对象
     self.businquiryName.numberOfLines = 0;
     NSString  * str = [userDefaults stringForKey:@"busInquiry"];
@@ -39,7 +47,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     NSURL * url = [NSURL URLWithString:@"http://192.168.4.99:8080/smart/userfiles/1/_thumbs/images/photo/2016/02/50387ada5de8b.jpg?hash=bd645afcb04eba8a17a42bcc198a613b&fileHash=201606290919-11"];
     

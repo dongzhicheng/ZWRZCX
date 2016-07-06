@@ -8,7 +8,7 @@
 
 
 
-@interface carOwnerInterfaceVC ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate>
+@interface selectPhotoVC ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (strong,nonatomic) MLSelectPhotoAssets *carOwnerInterfaceVCAsset;
 
@@ -18,14 +18,15 @@
 
 @end
 
-@implementation carOwnerInterfaceVC
+@implementation selectPhotoVC
+
 - (IBAction)textScreenRecord:(id)sender {
     
 
-    
 }
 
 - (UICollectionView *)collectionView{
+    
     if (!_collectionView) {
         UICollectionViewFlowLayout *flowLabyout = [[UICollectionViewFlowLayout alloc] init];
         flowLabyout.itemSize = CGSizeMake(50, 50);
@@ -84,10 +85,10 @@
     
     static NSString *ID = @"carOwnerInterfaceVCCell";
     
-    carOwnerInterfaceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    breakRulusSelectPhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
     if (cell == nil) {
-        cell = [[carOwnerInterfaceTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[breakRulusSelectPhotoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
     
     MLSelectPhotoAssets *asset = self.carOwnerassets[indexPath.row];

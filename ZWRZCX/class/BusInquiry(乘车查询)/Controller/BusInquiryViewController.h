@@ -13,6 +13,5 @@
 }
 @property (strong, nonatomic) IBOutlet UITextField *BusinquirynameLabel;
 
-@property (strong ,nonatomic)businquiryViewController *busVC;
 
 @end

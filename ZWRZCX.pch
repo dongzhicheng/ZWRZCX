@@ -33,9 +33,10 @@
     #import "MLSelectPhotoPickerAssetsViewController.h"
     #import "MLSelectPhotoBrowserViewController.h"
     #import "SCPhotoHelper.h"
-    #import "carOwnerInterfaceVC.h"
+    #import "selectPhotoVC.h" //处理图片选择的VC
+
     #import "MLSelectPhotoPickerViewController.h"
-    #import "carOwnerInterfaceTableViewCell.h"
+    #import "breakRulusSelectPhotoCell.h"
     #import <UIKit/UIKit.h>
     #import "BusInquiryViewController.h"
 
@@ -45,7 +46,7 @@
     #import <MapKit/MapKit.h>
     #import "breakRulusNotesViewController.h"
     #import "MainDiTuViewController.h"
-    #import "cunlabelModel.h"
+    #import "CarHomePageModel.h"
     #import "traveIInformationTableVC.h"
     #import "travelInformationTableCell.h"
     #import "travelInformationTableCellModel.h"

@@ -36,11 +36,9 @@
     printC.delegate = self;
     
     if (!printC) {
-        
         NSLog(@"打印机不存在"); // [self showAlertView:@"初始化失败"];
         
     }
-    
     printC.showsNumberOfCopies = YES;
     
     printC.showsPageRange = YES;
@@ -50,18 +48,11 @@
     NSData *data = [NSData dataWithData:imgDate];
     
     if (printC && [UIPrintInteractionController canPrintData:data]) {
-        
         UIPrintInfo *printInfo = [UIPrintInfo printInfo]; //准备打印信息以预设值初始化的对象。
-        
         printInfo.outputType = UIPrintInfoOutputGeneral; //设置输出类型。
-        
         printC.showsPageRange = YES; //显示的页面范围
-        
         printC.printInfo = printInfo; // printInfo.jobName = @"my.job";
-        
         printC.printingItem = data; //single NSData, NSURL, UIImage, ALAsset
-        
-        
         void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) =
         ^(UIPrintInteractionController *printController, BOOL completed, NSError *error) { // 等待完成
             
@@ -70,66 +61,44 @@
             }
             
         };
-        
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            
             UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:sender];//调用方法的时候，要注意参数的类型－下面presentFromBarButtonItem:的参数类型是 UIBarButtonItem..如果你是在系统的UIToolbar or UINavigationItem上放的一个打印button，就不需要转换了。
             [printC presentFromBarButtonItem:item animated:YES completionHandler:completionHandler];//在ipad上弹出打印那个页面
             
         } else {
-            
             [printC presentAnimated:YES completionHandler:completionHandler];//在iPhone上弹出打印那个页面
             
         }
     }
 }
 
-
 - (void)printInteractionControllerWillStartJob:(UIPrintInteractionController *)printInteractionController{
-    
     NSLog(@"printInteractionControllerWillStartJob");
 }
 - (void)printInteractionControllerDidFinishJob:(UIPrintInteractionController *)printInteractionController{
-    
     NSLog(@"printInteractionControllerDidFinishJob");
 }
 
 - (UIViewController *)printInteractionControllerParentViewController:(UIPrintInteractionController *)printInteractionController{
-    
     UIViewController * vc  = [UIViewController new];
-    
     vc.view.backgroundColor = [UIColor redColor];
-    
-    NSLog(@"11");
-    
     return vc;
-    
 }
-
-
 //测试成功播放视频
 - (IBAction)textViodPlayer:(id)sender {
-   
      [self presentViewController:self.playerVc animated:YES completion:nil];
-    
-  }
+}
 
 -(void)viewWillAppear:(BOOL)animated{
 
     NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    
     [userDefaults setObject:[NSString stringWithFormat:@"%@",self.BusinquirynameLabel.text] forKey:@"busInquiry"];
 
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    
-    
     newRecordObj = [[NewRecordScreen alloc]initWithView:self.view andViewController:self];
     myTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doubleTapHandle:)];
     [myTapGesture setNumberOfTapsRequired:2];
@@ -165,51 +134,34 @@
 
 }
 
-
-
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
 
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; //创建沙盒对象
-    
     [userDefaults setValue:[NSString stringWithFormat:@"%@",textField.text] forKey:@"busInquiry"];
-    
-    
     return YES;
-
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
 
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults]; //创建沙盒对象
-    
     [userDefaults setValue:[NSString stringWithFormat:@"%@",textField.text] forKey:@"busInquiry"];
-    
 }
 
 -(void)TextClick{
     
     DOPAction *action1 = [[DOPAction alloc] initWithName:@"Wechat" iconName:@"weixin" handler:^{
-        //
+  
         NSLog(@"测试点击了cell对应的qq按钮");
-        
-        
         UIViewController * viewVC = [UIViewController new];
-        
         viewVC.title = @"测试跳转Wechat界面";
-        
         viewVC.view.backgroundColor = [UIColor blueColor];
-        
         [self.navigationController pushViewController:viewVC animated:YES];
-        
 
     }];
     DOPAction *action2 = [[DOPAction alloc] initWithName:@"QQ" iconName:@"qq" handler:^{
-        //
         
         UIViewController * viewVC = [UIViewController new];
-        
         viewVC.view.backgroundColor = [UIColor grayColor];
-        
         viewVC.title = @"测试跳转QQ界面";
         [self.navigationController pushViewController:viewVC animated:YES];
         
@@ -217,37 +169,28 @@
     DOPAction *action3 = [[DOPAction alloc] initWithName:@"WxFriends" iconName:@"wxFriends" handler:^{
         //
         UIViewController * viewVC = [UIViewController new];
-        
         viewVC.view.backgroundColor = [UIColor yellowColor];
-        
         viewVC.title = @"测试跳转WxFriends界面";
-        
         [self.navigationController pushViewController:viewVC animated:YES];
+        
     }];
     DOPAction *action4 = [[DOPAction alloc] initWithName:@"Qzone" iconName:@"qzone" handler:^{
         
         UIViewController * viewVC = [UIViewController new];
-        
         viewVC.view.backgroundColor = [UIColor yellowColor];
-        
         viewVC.title = @"测试跳转Qzone界面";
-        
         [self.navigationController pushViewController:viewVC animated:YES];
-        //
+        
     }];
     DOPAction *action5 = [[DOPAction alloc] initWithName:@"Weibo" iconName:@"weibo" handler:^{
         
         UIViewController * viewVC = [UIViewController new];
-        
         viewVC.view.backgroundColor = [UIColor yellowColor];
-        
         viewVC.title = @"测试跳转Weibo界面";
-        
         [self.navigationController pushViewController:viewVC animated:YES];
-        //
+        
     }];
     DOPAction *action6 = [[DOPAction alloc] initWithName:@"Twitter" iconName:@"twitter" handler:^{
-        //
         
     }];
     DOPAction *action7 = [[DOPAction alloc] initWithName:@"Facebook" iconName:@"fb" handler:^{
@@ -278,7 +221,6 @@
         //
     }];
 
-    
     NSArray *actions;
     
     switch (0) {
@@ -313,7 +255,6 @@
 
 - (void)handlePan:(UIPanGestureRecognizer*) recognizer
 {
-    
     NSLog(@"拖移，慢速移动");
     CGPoint translation = [recognizer translationInView:self.view];
     recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);

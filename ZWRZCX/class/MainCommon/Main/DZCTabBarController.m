@@ -27,7 +27,7 @@
     NSArray *sbNames = @[  // 添加tabBarController的子控制器
                          @"MainMapSto",
                          @"BusInquiry",
-                         @"CarOwnerInterfaceSto",
+                         @"selectPhotoVC",
                          @"travelInformationSto",
                          @"LogSto"
                          ];

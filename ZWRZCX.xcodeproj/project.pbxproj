@@ -41,19 +41,17 @@
 		C817D40F1D2B3E8400AF319A /* travelInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C817D40E1D2B3E8400AF319A /* travelInformationVC.m */; };
 		C833E0391D276C6400E977F7 /* settinhHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C833E0381D276C6400E977F7 /* settinhHeaderModel.m */; };
 		C8400CB61CFED340008A8952 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8400CB51CFED340008A8952 /* MapKit.framework */; };
+		C848DD381D2CA3AC00DA4AB7 /* goReportingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C848DD371D2CA3AC00DA4AB7 /* goReportingVC.m */; };
+		C848DD3B1D2CA3C700DA4AB7 /* goReportingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C848DD3A1D2CA3C700DA4AB7 /* goReportingModel.m */; };
 		C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */; };
 		C84A74231D01042000CA4CFD /* breakRulusNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */; };
 		C84A74261D01047100CA4CFD /* traveIInformationTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74251D01047100CA4CFD /* traveIInformationTableVC.m */; };
-		C84A74291D01073800CA4CFD /* setUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74281D01073800CA4CFD /* setUpViewController.m */; };
-		C84A742C1D01096B00CA4CFD /* carOwnerInterfaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A742B1D01096B00CA4CFD /* carOwnerInterfaceVC.m */; };
-		C84A742F1D0109F300CA4CFD /* reportJuBaoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A742E1D0109F300CA4CFD /* reportJuBaoVC.m */; };
+		C84A742C1D01096B00CA4CFD /* selectPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A742B1D01096B00CA4CFD /* selectPhotoVC.m */; };
 		C84A74321D010A6100CA4CFD /* writeAgreementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74311D010A6100CA4CFD /* writeAgreementVC.m */; };
 		C84A74351D010AA300CA4CFD /* QualificationsApplicationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74341D010AA300CA4CFD /* QualificationsApplicationVC.m */; };
-		C84A74381D010AE000CA4CFD /* complaintNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74371D010AE000CA4CFD /* complaintNotesViewController.m */; };
-		C84A743B1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A743A1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m */; };
 		C84A74401D01247000CA4CFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84A743F1D01247000CA4CFD /* AVFoundation.framework */; };
 		C84A74441D016A1C00CA4CFD /* travelInformationTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74431D016A1C00CA4CFD /* travelInformationTableCell.m */; };
-		C8536CF31D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8536CF21D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard */; };
+		C8536CF31D064D5D0044BEC8 /* selectPhotoVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8536CF21D064D5D0044BEC8 /* selectPhotoVC.storyboard */; };
 		C8536D561D06A7360044BEC8 /* LuYinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8536D4F1D06A7360044BEC8 /* LuYinViewController.m */; };
 		C8536D581D06A7360044BEC8 /* LVRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8536D541D06A7360044BEC8 /* LVRecordView.m */; };
 		C8536D591D06A7360044BEC8 /* LVRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8536D551D06A7360044BEC8 /* LVRecordView.xib */; };
@@ -100,7 +98,6 @@
 		C8A3C4BC1CFE5D2200E741BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A3C4BA1CFE5D2200E741BC /* LaunchScreen.storyboard */; };
 		C8A3C4C71CFE5D2200E741BC /* ZWRZCXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A3C4C61CFE5D2200E741BC /* ZWRZCXTests.m */; };
 		C8A3C4D21CFE5D2200E741BC /* ZWRZCXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A3C4D11CFE5D2200E741BC /* ZWRZCXUITests.m */; };
-		C8A3C5181CFEB4C500E741BC /* carOwnerInterfaceStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A3C4FD1CFEB4C500E741BC /* carOwnerInterfaceStoryBoard.storyboard */; };
 		C8A3C5191CFEB4C500E741BC /* UIImage+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A3C50C1CFEB4C500E741BC /* UIImage+Ex.m */; };
 		C8A3C51A1CFEB4C500E741BC /* UIView+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A3C50E1CFEB4C500E741BC /* UIView+Ex.m */; };
 		C8A3C51D1CFEB60500E741BC /* MainDiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A3C51C1CFEB60500E741BC /* MainDiTuViewController.m */; };
@@ -191,11 +188,9 @@
 		C8E9B3F31D02C5CC00B57DB9 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9B3F21D02C5CC00B57DB9 /* AddressBookUI.framework */; };
 		C8E9B3F71D02D30600B57DB9 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9B3F51D02D30600B57DB9 /* MOBFoundation.framework */; };
 		C8E9B3F81D02D30600B57DB9 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E9B3F61D02D30600B57DB9 /* SMS_SDK.framework */; };
-		C8FC2B4A1D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B491D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m */; };
-		C8FC2B4D1D0EA38E00C561C0 /* cunlabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */; };
+		C8FC2B4A1D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B491D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.m */; };
+		C8FC2B4D1D0EA38E00C561C0 /* CarHomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FC2B4C1D0EA38E00C561C0 /* CarHomePageModel.m */; };
 		C8FC2B4F1D0EB7D200C561C0 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FC2B4E1D0EB7D200C561C0 /* AVKit.framework */; };
-		C8FCFA831D24B7EF004FBADE /* breakRulusPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA821D24B7EF004FBADE /* breakRulusPicker.m */; };
-		C8FCFA851D24B80C004FBADE /* breakRulusPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */; };
 		C8FCFA881D24B8F2004FBADE /* breakRulusPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */; };
 		C8FCFA8D1D24C791004FBADE /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA8A1D24C791004FBADE /* QRView.m */; };
 		C8FCFA8E1D24C791004FBADE /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FCFA8C1D24C791004FBADE /* QRViewController.m */; };
@@ -273,8 +268,8 @@
 		C8000A771D21163100A527C0 /* horizontalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = horizontalCell.m; sourceTree = "<group>"; };
 		C8000A791D21165500A527C0 /* horizontalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = horizontalModel.h; sourceTree = "<group>"; };
 		C8000A7A1D21165500A527C0 /* horizontalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = horizontalModel.m; sourceTree = "<group>"; };
-		C807A25D1D128E8D00482FA6 /* DOPScrollableActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPScrollableActionSheet.h; sourceTree = "<group>"; };
-		C807A25E1D128E8D00482FA6 /* DOPScrollableActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPScrollableActionSheet.m; sourceTree = "<group>"; };
+		C807A25D1D128E8D00482FA6 /* DOPScrollableActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOPScrollableActionSheet.h; path = "../text(桌面图标手势)/DOPScrollableActionSheet.h"; sourceTree = "<group>"; };
+		C807A25E1D128E8D00482FA6 /* DOPScrollableActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOPScrollableActionSheet.m; path = "../text(桌面图标手势)/DOPScrollableActionSheet.m"; sourceTree = "<group>"; };
 		C80A884F1D0CECAE003801CB /* MMZCHMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMZCHMViewController.h; sourceTree = "<group>"; };
 		C80A88501D0CECAE003801CB /* MMZCHMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMZCHMViewController.m; sourceTree = "<group>"; };
 		C80A88511D0CECAE003801CB /* MMZCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMZCViewController.h; sourceTree = "<group>"; };
@@ -292,30 +287,26 @@
 		C833E0371D276C6400E977F7 /* settinhHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settinhHeaderModel.h; sourceTree = "<group>"; };
 		C833E0381D276C6400E977F7 /* settinhHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settinhHeaderModel.m; sourceTree = "<group>"; };
 		C8400CB51CFED340008A8952 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapKit.framework; sourceTree = "<group>"; };
+		C848DD361D2CA3AC00DA4AB7 /* goReportingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goReportingVC.h; sourceTree = "<group>"; };
+		C848DD371D2CA3AC00DA4AB7 /* goReportingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = goReportingVC.m; sourceTree = "<group>"; };
+		C848DD391D2CA3C700DA4AB7 /* goReportingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goReportingModel.h; sourceTree = "<group>"; };
+		C848DD3A1D2CA3C700DA4AB7 /* goReportingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = goReportingModel.m; sourceTree = "<group>"; };
 		C84A741E1D01039B00CA4CFD /* BusInquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusInquiryViewController.h; sourceTree = "<group>"; };
 		C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusInquiryViewController.m; sourceTree = "<group>"; };
-		C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = breakRulusNotesViewController.h; sourceTree = "<group>"; };
-		C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = breakRulusNotesViewController.m; sourceTree = "<group>"; };
+		C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = breakRulusNotesViewController.h; path = "../../breakRulusNotes(车主界面的)/Controller/breakRulusNotesViewController.h"; sourceTree = "<group>"; };
+		C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = breakRulusNotesViewController.m; path = "../../breakRulusNotes(车主界面的)/Controller/breakRulusNotesViewController.m"; sourceTree = "<group>"; };
 		C84A74241D01047100CA4CFD /* traveIInformationTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = traveIInformationTableVC.h; sourceTree = "<group>"; };
 		C84A74251D01047100CA4CFD /* traveIInformationTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = traveIInformationTableVC.m; sourceTree = "<group>"; };
-		C84A74271D01073800CA4CFD /* setUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setUpViewController.h; sourceTree = "<group>"; };
-		C84A74281D01073800CA4CFD /* setUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setUpViewController.m; sourceTree = "<group>"; };
-		C84A742A1D01096B00CA4CFD /* carOwnerInterfaceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = carOwnerInterfaceVC.h; path = ../carOwnerInterfaceVC.h; sourceTree = "<group>"; };
-		C84A742B1D01096B00CA4CFD /* carOwnerInterfaceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = carOwnerInterfaceVC.m; path = ../carOwnerInterfaceVC.m; sourceTree = "<group>"; };
-		C84A742D1D0109F300CA4CFD /* reportJuBaoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reportJuBaoVC.h; sourceTree = "<group>"; };
-		C84A742E1D0109F300CA4CFD /* reportJuBaoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reportJuBaoVC.m; sourceTree = "<group>"; };
+		C84A742A1D01096B00CA4CFD /* selectPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = selectPhotoVC.h; path = ../../selectPhotoVC.h; sourceTree = "<group>"; };
+		C84A742B1D01096B00CA4CFD /* selectPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = selectPhotoVC.m; path = ../../selectPhotoVC.m; sourceTree = "<group>"; };
 		C84A74301D010A6100CA4CFD /* writeAgreementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writeAgreementVC.h; sourceTree = "<group>"; };
 		C84A74311D010A6100CA4CFD /* writeAgreementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = writeAgreementVC.m; sourceTree = "<group>"; };
 		C84A74331D010AA300CA4CFD /* QualificationsApplicationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualificationsApplicationVC.h; sourceTree = "<group>"; };
 		C84A74341D010AA300CA4CFD /* QualificationsApplicationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualificationsApplicationVC.m; sourceTree = "<group>"; };
-		C84A74361D010AE000CA4CFD /* complaintNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = complaintNotesViewController.h; sourceTree = "<group>"; };
-		C84A74371D010AE000CA4CFD /* complaintNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = complaintNotesViewController.m; sourceTree = "<group>"; };
-		C84A74391D010B2500CA4CFD /* EvidenceCollectionComplainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvidenceCollectionComplainVC.h; sourceTree = "<group>"; };
-		C84A743A1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvidenceCollectionComplainVC.m; sourceTree = "<group>"; };
 		C84A743F1D01247000CA4CFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C84A74421D016A1C00CA4CFD /* travelInformationTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = travelInformationTableCell.h; path = ../Controller/travelInformationTableCell.h; sourceTree = "<group>"; };
 		C84A74431D016A1C00CA4CFD /* travelInformationTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = travelInformationTableCell.m; path = ../Controller/travelInformationTableCell.m; sourceTree = "<group>"; };
-		C8536CF21D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarOwnerInterfaceSto.storyboard; sourceTree = "<group>"; };
+		C8536CF21D064D5D0044BEC8 /* selectPhotoVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = selectPhotoVC.storyboard; path = ../../CarOwnerinterfaceView/selectPhotoVC.storyboard; sourceTree = "<group>"; };
 		C8536D4E1D06A7360044BEC8 /* LuYinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuYinViewController.h; sourceTree = "<group>"; };
 		C8536D4F1D06A7360044BEC8 /* LuYinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuYinViewController.m; sourceTree = "<group>"; };
 		C8536D531D06A7360044BEC8 /* LVRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRecordView.h; sourceTree = "<group>"; };
@@ -323,8 +314,8 @@
 		C8536D551D06A7360044BEC8 /* LVRecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LVRecordView.xib; sourceTree = "<group>"; };
 		C853FB381D1D166500ECF8D2 /* CylViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylViewController.h; sourceTree = "<group>"; };
 		C853FB391D1D166500ECF8D2 /* CylViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CylViewController.m; sourceTree = "<group>"; };
-		C85A26291D23651C008FAC98 /* businquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = businquiryViewController.h; sourceTree = "<group>"; };
-		C85A262A1D23651C008FAC98 /* businquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = businquiryViewController.m; sourceTree = "<group>"; };
+		C85A26291D23651C008FAC98 /* businquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = businquiryViewController.h; path = ../businquiryViewController.h; sourceTree = "<group>"; };
+		C85A262A1D23651C008FAC98 /* businquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = businquiryViewController.m; path = ../businquiryViewController.m; sourceTree = "<group>"; };
 		C88346981D0D104800E5ABE9 /* logWinDiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logWinDiTuViewController.h; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.h; sourceTree = "<group>"; };
 		C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = logWinDiTuViewController.m; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.m; sourceTree = "<group>"; };
 		C893F24E1D050D7B00E96398 /* DZCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZCNavigationController.h; path = Main/DZCNavigationController.h; sourceTree = "<group>"; };
@@ -404,7 +395,6 @@
 		C8A3C4CD1CFE5D2200E741BC /* ZWRZCXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWRZCXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A3C4D11CFE5D2200E741BC /* ZWRZCXUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWRZCXUITests.m; sourceTree = "<group>"; };
 		C8A3C4D31CFE5D2200E741BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8A3C4FD1CFEB4C500E741BC /* carOwnerInterfaceStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = carOwnerInterfaceStoryBoard.storyboard; sourceTree = "<group>"; };
 		C8A3C50B1CFEB4C500E741BC /* UIImage+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Ex.h"; path = "../class/other/UIImage+Ex.h"; sourceTree = "<group>"; };
 		C8A3C50C1CFEB4C500E741BC /* UIImage+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Ex.m"; path = "../class/other/UIImage+Ex.m"; sourceTree = "<group>"; };
 		C8A3C50D1CFEB4C500E741BC /* UIView+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Ex.h"; path = "../class/other/UIView+Ex.h"; sourceTree = "<group>"; };
@@ -520,24 +510,21 @@
 		C8E9B3F21D02C5CC00B57DB9 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		C8E9B3F51D02D30600B57DB9 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		C8E9B3F61D02D30600B57DB9 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
-		C8FC2B481D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = carOwnerInterfaceTableViewCell.h; sourceTree = "<group>"; };
-		C8FC2B491D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = carOwnerInterfaceTableViewCell.m; sourceTree = "<group>"; };
-		C8FC2B4B1D0EA38E00C561C0 /* cunlabelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cunlabelModel.h; sourceTree = "<group>"; };
-		C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cunlabelModel.m; sourceTree = "<group>"; };
+		C8FC2B481D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = breakRulusSelectPhotoCell.h; path = ../../CarOwnerinterfaceView/breakRulusSelectPhotoCell.h; sourceTree = "<group>"; };
+		C8FC2B491D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = breakRulusSelectPhotoCell.m; path = ../../CarOwnerinterfaceView/breakRulusSelectPhotoCell.m; sourceTree = "<group>"; };
+		C8FC2B4B1D0EA38E00C561C0 /* CarHomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarHomePageModel.h; path = "../breakRulusNotes(车主界面的)/Model/CarHomePageModel.h"; sourceTree = "<group>"; };
+		C8FC2B4C1D0EA38E00C561C0 /* CarHomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarHomePageModel.m; path = "../breakRulusNotes(车主界面的)/Model/CarHomePageModel.m"; sourceTree = "<group>"; };
 		C8FC2B4E1D0EB7D200C561C0 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		C8FCFA811D24B7EF004FBADE /* breakRulusPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = breakRulusPicker.h; sourceTree = "<group>"; };
-		C8FCFA821D24B7EF004FBADE /* breakRulusPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = breakRulusPicker.m; sourceTree = "<group>"; };
-		C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = breakRulusPicker.xib; sourceTree = "<group>"; };
-		C8FCFA861D24B8F2004FBADE /* breakRulusPickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = breakRulusPickerModel.h; sourceTree = "<group>"; };
-		C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = breakRulusPickerModel.m; sourceTree = "<group>"; };
+		C8FCFA861D24B8F2004FBADE /* breakRulusPickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = breakRulusPickerModel.h; path = "../../breakRulusNotes(车主界面的)/Model/breakRulusPickerModel.h"; sourceTree = "<group>"; };
+		C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = breakRulusPickerModel.m; path = "../../breakRulusNotes(车主界面的)/Model/breakRulusPickerModel.m"; sourceTree = "<group>"; };
 		C8FCFA891D24C791004FBADE /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
 		C8FCFA8A1D24C791004FBADE /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
 		C8FCFA8B1D24C791004FBADE /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
 		C8FCFA8C1D24C791004FBADE /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
 		C8FD3E981D2BA02D004629F4 /* foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = foods.plist; sourceTree = "<group>"; };
-		C8FD3E9A1D2BA926004629F4 /* CZToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZToolBar.h; sourceTree = "<group>"; };
-		C8FD3E9B1D2BA926004629F4 /* CZToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZToolBar.m; sourceTree = "<group>"; };
-		C8FD3E9C1D2BA926004629F4 /* CZToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZToolBar.xib; sourceTree = "<group>"; };
+		C8FD3E9A1D2BA926004629F4 /* CZToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZToolBar.h; path = ../../CarOwnerinterfaceVC/CZToolBar.h; sourceTree = "<group>"; };
+		C8FD3E9B1D2BA926004629F4 /* CZToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZToolBar.m; path = ../../CarOwnerinterfaceVC/CZToolBar.m; sourceTree = "<group>"; };
+		C8FD3E9C1D2BA926004629F4 /* CZToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CZToolBar.xib; path = ../../CarOwnerinterfaceVC/CZToolBar.xib; sourceTree = "<group>"; };
 		F406251E67B72781736F84C5 /* Pods-ZWRZCX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWRZCX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWRZCX/Pods-ZWRZCX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -715,13 +702,62 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		C807A25C1D128A2200482FA6 /* text(桌面图标手势) */ = {
+		C848DD2F1D2C918600DA4AB7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C807A25D1D128E8D00482FA6 /* DOPScrollableActionSheet.h */,
-				C807A25E1D128E8D00482FA6 /* DOPScrollableActionSheet.m */,
+				C85A26291D23651C008FAC98 /* businquiryViewController.h */,
+				C85A262A1D23651C008FAC98 /* businquiryViewController.m */,
 			);
-			path = "text(桌面图标手势)";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C848DD301D2C918600DA4AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C848DD311D2C918600DA4AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C848DD321D2CA35500DA4AB7 /* GoReporting(举报) */ = {
+			isa = PBXGroup;
+			children = (
+				C848DD331D2CA35500DA4AB7 /* Controller */,
+				C848DD341D2CA35500DA4AB7 /* Model */,
+				C848DD351D2CA35500DA4AB7 /* View */,
+			);
+			path = "GoReporting(举报)";
+			sourceTree = "<group>";
+		};
+		C848DD331D2CA35500DA4AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C848DD361D2CA3AC00DA4AB7 /* goReportingVC.h */,
+				C848DD371D2CA3AC00DA4AB7 /* goReportingVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C848DD341D2CA35500DA4AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C848DD391D2CA3C700DA4AB7 /* goReportingModel.h */,
+				C848DD3A1D2CA3C700DA4AB7 /* goReportingModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C848DD351D2CA35500DA4AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C84A74171D0102F100CA4CFD /* BaseCommon */ = {
@@ -770,7 +806,7 @@
 				C8536D521D06A7360044BEC8 /* CustomView */,
 			);
 			name = "LuYin(录音)";
-			path = LuYin;
+			path = ../../LuYin;
 			sourceTree = "<group>";
 		};
 		C8536D4D1D06A7360044BEC8 /* ViewController */ = {
@@ -793,46 +829,42 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
-		C85A26281D2364F5008FAC98 /* busInquiry(司机界面) */ = {
+		C85A26281D2364F5008FAC98 /* busInquiry(司机信息界面) */ = {
 			isa = PBXGroup;
 			children = (
-				C85A26291D23651C008FAC98 /* businquiryViewController.h */,
-				C85A262A1D23651C008FAC98 /* businquiryViewController.m */,
+				C848DD2F1D2C918600DA4AB7 /* Controller */,
+				C848DD301D2C918600DA4AB7 /* Model */,
+				C848DD311D2C918600DA4AB7 /* View */,
 			);
-			path = "busInquiry(司机界面)";
+			name = "busInquiry(司机信息界面)";
+			path = "../busInquiry(司机界面)";
 			sourceTree = "<group>";
 		};
-		C893F25F1D0517D000E96398 /* CarOwnerView */ = {
+		C893F25F1D0517D000E96398 /* CarHomePageView */ = {
 			isa = PBXGroup;
 			children = (
-				C8536CF21D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard */,
-				C8FC2B481D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.h */,
-				C8FC2B491D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m */,
 			);
-			name = CarOwnerView;
+			name = CarHomePageView;
 			path = CarOwnerinterfaceView;
 			sourceTree = "<group>";
 		};
-		C893F2601D0517E300E96398 /* CarOwnerModel */ = {
+		C893F2601D0517E300E96398 /* CarHomePageModel */ = {
 			isa = PBXGroup;
 			children = (
+				C8FC2B4B1D0EA38E00C561C0 /* CarHomePageModel.h */,
+				C8FC2B4C1D0EA38E00C561C0 /* CarHomePageModel.m */,
 			);
-			name = CarOwnerModel;
+			name = CarHomePageModel;
 			path = CarOwnerinterfaceModel;
 			sourceTree = "<group>";
 		};
-		C893F2611D0517E300E96398 /* CarOwnerVC */ = {
+		C893F2611D0517E300E96398 /* CarHomePageVC(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				C84A742A1D01096B00CA4CFD /* carOwnerInterfaceVC.h */,
-				C84A742B1D01096B00CA4CFD /* carOwnerInterfaceVC.m */,
 				C853FB381D1D166500ECF8D2 /* CylViewController.h */,
 				C853FB391D1D166500ECF8D2 /* CylViewController.m */,
-				C8FD3E9A1D2BA926004629F4 /* CZToolBar.h */,
-				C8FD3E9B1D2BA926004629F4 /* CZToolBar.m */,
-				C8FD3E9C1D2BA926004629F4 /* CZToolBar.xib */,
 			);
-			name = CarOwnerVC;
+			name = "CarHomePageVC(首页)";
 			path = CarOwnerinterfaceVC;
 			sourceTree = "<group>";
 		};
@@ -885,7 +917,7 @@
 				C893F29B1D055D8100E96398 /* MLSelectPhoto.bundle */,
 			);
 			name = "MLSelectPhoto(用来图片选择)";
-			path = MLSelectPhoto;
+			path = ../../MLSelectPhoto;
 			sourceTree = "<group>";
 		};
 		C893F2761D055D8100E96398 /* Models */ = {
@@ -1044,30 +1076,28 @@
 			children = (
 				C84A74411D01595900CA4CFD /* Log(登录界面VC含地图stor) */,
 				C8E5B7B71D1A646E00350FB9 /* NewUserGuid(新特性) */,
-				C8E598881D0FEBD300D58C64 /* RecordScreen(频幕录制busIn） */,
-				C8536D4C1D06A7360044BEC8 /* LuYin(录音) */,
-				C893F26D1D055D8100E96398 /* MLSelectPhoto(用来图片选择) */,
 				C8A3C5061CFEB4C500E741BC /* MainDiTu(地图) */,
-				C8A3C4E61CFEB4C500E741BC /* BusInquiry(乘车查询) */,
+				C8A3C4E61CFEB4C500E741BC /* BusInquiry(功能菜单) */,
 				C8A3C4EA1CFEB4C500E741BC /* CarOwner (车主界面) */,
+				C8A3C5131CFEB4C500E741BC /* travelInformation(出行信息) */,
 			);
 			name = class;
 			path = ZWRZCX/class;
 			sourceTree = "<group>";
 		};
-		C8A3C4E61CFEB4C500E741BC /* BusInquiry(乘车查询) */ = {
+		C8A3C4E61CFEB4C500E741BC /* BusInquiry(功能菜单) */ = {
 			isa = PBXGroup;
 			children = (
-				C85A26281D2364F5008FAC98 /* busInquiry(司机界面) */,
-				C807A25C1D128A2200482FA6 /* text(桌面图标手势) */,
-				C8A3C4E71CFEB4C500E741BC /* Controller(含录屏) */,
+				C8A3C4E71CFEB4C500E741BC /* Controller(录屏,二维码,桌面小球) */,
 				C8A3C4E81CFEB4C500E741BC /* Model */,
 				C8A3C4E91CFEB4C500E741BC /* View */,
+				C8E598881D0FEBD300D58C64 /* RecordScreen */,
 			);
+			name = "BusInquiry(功能菜单)";
 			path = "BusInquiry(乘车查询)";
 			sourceTree = "<group>";
 		};
-		C8A3C4E71CFEB4C500E741BC /* Controller(含录屏) */ = {
+		C8A3C4E71CFEB4C500E741BC /* Controller(录屏,二维码,桌面小球) */ = {
 			isa = PBXGroup;
 			children = (
 				C84A741E1D01039B00CA4CFD /* BusInquiryViewController.h */,
@@ -1076,8 +1106,11 @@
 				C8FCFA8A1D24C791004FBADE /* QRView.m */,
 				C8FCFA8B1D24C791004FBADE /* QRViewController.h */,
 				C8FCFA8C1D24C791004FBADE /* QRViewController.m */,
+				C807A25D1D128E8D00482FA6 /* DOPScrollableActionSheet.h */,
+				C807A25E1D128E8D00482FA6 /* DOPScrollableActionSheet.m */,
+				C85A26281D2364F5008FAC98 /* busInquiry(司机信息界面) */,
 			);
-			name = "Controller(含录屏)";
+			name = "Controller(录屏,二维码,桌面小球)";
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -1099,95 +1132,16 @@
 		C8A3C4EA1CFEB4C500E741BC /* CarOwner (车主界面) */ = {
 			isa = PBXGroup;
 			children = (
-				C893F2611D0517E300E96398 /* CarOwnerVC */,
-				C893F2601D0517E300E96398 /* CarOwnerModel */,
-				C893F25F1D0517D000E96398 /* CarOwnerView */,
-				C8A3C4EB1CFEB4C500E741BC /* breakRulusNotes(违规记录) */,
-				C8A3C4EF1CFEB4C500E741BC /* complaintNotes(被投诉举报记录) */,
+				C893F2611D0517E300E96398 /* CarHomePageVC(首页) */,
+				C893F2601D0517E300E96398 /* CarHomePageModel */,
+				C893F25F1D0517D000E96398 /* CarHomePageView */,
 				C8A3C4F31CFEB4C500E741BC /* QualificationsApplication(运营资格申请) */,
-				C8A3C4F71CFEB4C500E741BC /* reportJuBao(举报记录) */,
-				C8A3C5021CFEB4C500E741BC /* EvidenceCollectionComplain(取证投诉) */,
-				C8A3C50F1CFEB4C500E741BC /* setUp(设置) */,
-				C8A3C5131CFEB4C500E741BC /* travelInformation(出行信息) */,
+				C8A3C4F71CFEB4C500E741BC /* breakRulusNotes(违章记录) */,
 				C8A3C4FE1CFEB4C500E741BC /* writeAgreement(签署协议) */,
+				C848DD321D2CA35500DA4AB7 /* GoReporting(举报) */,
 			);
 			name = "CarOwner (车主界面)";
 			path = "CarOwnerinterface (车主界面)";
-			sourceTree = "<group>";
-		};
-		C8A3C4EB1CFEB4C500E741BC /* breakRulusNotes(违规记录) */ = {
-			isa = PBXGroup;
-			children = (
-				C8A3C4EC1CFEB4C500E741BC /* Controller */,
-				C8A3C4ED1CFEB4C500E741BC /* Model */,
-				C8A3C4EE1CFEB4C500E741BC /* View */,
-			);
-			name = "breakRulusNotes(违规记录)";
-			path = "breakRulusNotes(车主界面的)";
-			sourceTree = "<group>";
-		};
-		C8A3C4EC1CFEB4C500E741BC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */,
-				C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */,
-				C8FCFA811D24B7EF004FBADE /* breakRulusPicker.h */,
-				C8FCFA821D24B7EF004FBADE /* breakRulusPicker.m */,
-				C8FCFA841D24B80C004FBADE /* breakRulusPicker.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C8A3C4ED1CFEB4C500E741BC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C8FC2B4B1D0EA38E00C561C0 /* cunlabelModel.h */,
-				C8FC2B4C1D0EA38E00C561C0 /* cunlabelModel.m */,
-				C8FCFA861D24B8F2004FBADE /* breakRulusPickerModel.h */,
-				C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C8A3C4EE1CFEB4C500E741BC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C8A3C4EF1CFEB4C500E741BC /* complaintNotes(被投诉举报记录) */ = {
-			isa = PBXGroup;
-			children = (
-				C8A3C4F01CFEB4C500E741BC /* Controller */,
-				C8A3C4F11CFEB4C500E741BC /* Model */,
-				C8A3C4F21CFEB4C500E741BC /* View */,
-			);
-			name = "complaintNotes(被投诉举报记录)";
-			path = "complaintNotes(车主界面的)";
-			sourceTree = "<group>";
-		};
-		C8A3C4F01CFEB4C500E741BC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C84A74361D010AE000CA4CFD /* complaintNotesViewController.h */,
-				C84A74371D010AE000CA4CFD /* complaintNotesViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C8A3C4F11CFEB4C500E741BC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C8A3C4F21CFEB4C500E741BC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		C8A3C4F31CFEB4C500E741BC /* QualificationsApplication(运营资格申请) */ = {
@@ -1226,22 +1180,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C8A3C4F71CFEB4C500E741BC /* reportJuBao(举报记录) */ = {
+		C8A3C4F71CFEB4C500E741BC /* breakRulusNotes(违章记录) */ = {
 			isa = PBXGroup;
 			children = (
 				C8A3C4F81CFEB4C500E741BC /* Controller */,
 				C8A3C4FB1CFEB4C500E741BC /* Model */,
 				C8A3C4FC1CFEB4C500E741BC /* View */,
+				C8536D4C1D06A7360044BEC8 /* LuYin(录音) */,
+				C893F26D1D055D8100E96398 /* MLSelectPhoto(用来图片选择) */,
 			);
-			name = "reportJuBao(举报记录)";
+			name = "breakRulusNotes(违章记录)";
 			path = "reportJuBao(车主界面)";
 			sourceTree = "<group>";
 		};
 		C8A3C4F81CFEB4C500E741BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C84A742D1D0109F300CA4CFD /* reportJuBaoVC.h */,
-				C84A742E1D0109F300CA4CFD /* reportJuBaoVC.m */,
+				C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */,
+				C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */,
+				C84A742A1D01096B00CA4CFD /* selectPhotoVC.h */,
+				C84A742B1D01096B00CA4CFD /* selectPhotoVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1249,6 +1207,8 @@
 		C8A3C4FB1CFEB4C500E741BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8FCFA861D24B8F2004FBADE /* breakRulusPickerModel.h */,
+				C8FCFA871D24B8F2004FBADE /* breakRulusPickerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1256,7 +1216,12 @@
 		C8A3C4FC1CFEB4C500E741BC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C8A3C4FD1CFEB4C500E741BC /* carOwnerInterfaceStoryBoard.storyboard */,
+				C8FC2B481D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.h */,
+				C8FC2B491D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.m */,
+				C8FD3E9A1D2BA926004629F4 /* CZToolBar.h */,
+				C8FD3E9B1D2BA926004629F4 /* CZToolBar.m */,
+				C8FD3E9C1D2BA926004629F4 /* CZToolBar.xib */,
+				C8536CF21D064D5D0044BEC8 /* selectPhotoVC.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1289,40 +1254,6 @@
 			sourceTree = "<group>";
 		};
 		C8A3C5011CFEB4C500E741BC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C8A3C5021CFEB4C500E741BC /* EvidenceCollectionComplain(取证投诉) */ = {
-			isa = PBXGroup;
-			children = (
-				C8A3C5031CFEB4C500E741BC /* Controller */,
-				C8A3C5041CFEB4C500E741BC /* Model */,
-				C8A3C5051CFEB4C500E741BC /* View */,
-			);
-			name = "EvidenceCollectionComplain(取证投诉)";
-			path = "../EvidenceCollectionComplain(取证投诉)";
-			sourceTree = "<group>";
-		};
-		C8A3C5031CFEB4C500E741BC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C84A74391D010B2500CA4CFD /* EvidenceCollectionComplainVC.h */,
-				C84A743A1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C8A3C5041CFEB4C500E741BC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C8A3C5051CFEB4C500E741BC /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1376,40 +1307,6 @@
 			path = class/other;
 			sourceTree = "<group>";
 		};
-		C8A3C50F1CFEB4C500E741BC /* setUp(设置) */ = {
-			isa = PBXGroup;
-			children = (
-				C8A3C5101CFEB4C500E741BC /* Controller */,
-				C8A3C5111CFEB4C500E741BC /* Model */,
-				C8A3C5121CFEB4C500E741BC /* View */,
-			);
-			name = "setUp(设置)";
-			path = "../setUp(设置)";
-			sourceTree = "<group>";
-		};
-		C8A3C5101CFEB4C500E741BC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C84A74271D01073800CA4CFD /* setUpViewController.h */,
-				C84A74281D01073800CA4CFD /* setUpViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C8A3C5111CFEB4C500E741BC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C8A3C5121CFEB4C500E741BC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C8A3C5131CFEB4C500E741BC /* travelInformation(出行信息) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1418,8 +1315,7 @@
 				C8A3C5151CFEB4C500E741BC /* Model */,
 				C8A3C5161CFEB4C500E741BC /* View */,
 			);
-			name = "travelInformation(出行信息)";
-			path = "../travelInformation(出行信息)";
+			path = "travelInformation(出行信息)";
 			sourceTree = "<group>";
 		};
 		C8A3C5141CFEB4C500E741BC /* Controller */ = {
@@ -1452,7 +1348,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C8E598881D0FEBD300D58C64 /* RecordScreen(频幕录制busIn） */ = {
+		C8E598881D0FEBD300D58C64 /* RecordScreen */ = {
 			isa = PBXGroup;
 			children = (
 				C8E598891D0FEBD300D58C64 /* CCFScreenRecorderConsts.h */,
@@ -1466,8 +1362,8 @@
 				C8E598951D0FEBD300D58C64 /* ScreenCaptureView.h */,
 				C8E598961D0FEBD300D58C64 /* ScreenCaptureView.m */,
 			);
-			name = "RecordScreen(频幕录制busIn）";
-			path = "RecordScreen(频幕录制）";
+			name = RecordScreen;
+			path = "../RecordScreen(频幕录制）";
 			sourceTree = "<group>";
 		};
 		C8E5B7B71D1A646E00350FB9 /* NewUserGuid(新特性) */ = {
@@ -1731,7 +1627,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8A3C5181CFEB4C500E741BC /* carOwnerInterfaceStoryBoard.storyboard in Resources */,
 				C8E5B7DD1D1A7EA000350FB9 /* welcome4@2x.png in Resources */,
 				C8E5B7E41D1A7EA000350FB9 /* welcome8.png in Resources */,
 				C8E5B7E61D1A7EA000350FB9 /* welcome9.png in Resources */,
@@ -1744,7 +1639,7 @@
 				C8A3C4B91CFE5D2200E741BC /* Assets.xcassets in Resources */,
 				C8E9B38A1D02572500B57DB9 /* Info.plist in Resources */,
 				C8FD3E991D2BA02D004629F4 /* foods.plist in Resources */,
-				C8536CF31D064D5D0044BEC8 /* CarOwnerInterfaceSto.storyboard in Resources */,
+				C8536CF31D064D5D0044BEC8 /* selectPhotoVC.storyboard in Resources */,
 				C8E5B7E21D1A7EA000350FB9 /* welcome7.png in Resources */,
 				C8E9B3A11D02A96300B57DB9 /* webViewController.storyboard in Resources */,
 				C893F2AF1D055D8100E96398 /* MLSelectPhoto.bundle in Resources */,
@@ -1765,7 +1660,6 @@
 				C8E5B7DF1D1A7EA000350FB9 /* welcome5@2x.png in Resources */,
 				C8E5B7DB1D1A7EA000350FB9 /* welcome3@2x.png in Resources */,
 				C8E5B7E51D1A7EA000350FB9 /* welcome8@2x.png in Resources */,
-				C8FCFA851D24B80C004FBADE /* breakRulusPicker.xib in Resources */,
 				C893F26C1D05197800E96398 /* LogSto.storyboard in Resources */,
 				C8E5B7E31D1A7EA000350FB9 /* welcome7@2x.png in Resources */,
 			);
@@ -1875,7 +1769,6 @@
 				C8000A6F1D21042A00A527C0 /* UIView+MJExtension.m in Sources */,
 				C8000A681D21042A00A527C0 /* MJRefreshNormalHeader.m in Sources */,
 				C80A88591D0CECAE003801CB /* MMZCHMViewController.m in Sources */,
-				C84A74381D010AE000CA4CFD /* complaintNotesViewController.m in Sources */,
 				C893F2AD1D055D8100E96398 /* MLSelectPhotoPickerFooterCollectionReusableView.m in Sources */,
 				C8000A6C1D21042A00A527C0 /* NSBundle+MJRefresh.m in Sources */,
 				C8000A621D21042A00A527C0 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1892,22 +1785,19 @@
 				C8000A691D21042A00A527C0 /* MJRefreshStateHeader.m in Sources */,
 				C893F29C1D055D8100E96398 /* UIImage+MLTint.m in Sources */,
 				C8A3C4B41CFE5D2100E741BC /* ViewController.m in Sources */,
-				C84A742F1D0109F300CA4CFD /* reportJuBaoVC.m in Sources */,
 				C84A74441D016A1C00CA4CFD /* travelInformationTableCell.m in Sources */,
 				C8E9B38E1D02572500B57DB9 /* MJPropertyKey.m in Sources */,
 				C893F2BE1D05777000E96398 /* UIView+Extension.m in Sources */,
 				C893F2A31D055D8100E96398 /* MLSelectPhotoNavigationViewController.m in Sources */,
-				C84A74291D01073800CA4CFD /* setUpViewController.m in Sources */,
 				C893F25C1D050F0000E96398 /* DZCTabBarController.m in Sources */,
 				C8E9B38F1D02572500B57DB9 /* MJPropertyType.m in Sources */,
 				C893F2B81D055DE300E96398 /* ALActionSheetView.m in Sources */,
-				C8FC2B4A1D0E5D4D00C561C0 /* carOwnerInterfaceTableViewCell.m in Sources */,
+				C8FC2B4A1D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.m in Sources */,
 				C80A885C1D0CECAE003801CB /* settingPassWardViewController.m in Sources */,
 				C84A74321D010A6100CA4CFD /* writeAgreementVC.m in Sources */,
 				C8E9B39F1D02A94F00B57DB9 /* webViewController.m in Sources */,
 				C8000A7B1D21165500A527C0 /* horizontalModel.m in Sources */,
 				C893F29F1D055D8100E96398 /* MLSelectPhotoPickerBrowserPhoto.m in Sources */,
-				C84A743B1D010B2500CA4CFD /* EvidenceCollectionComplainVC.m in Sources */,
 				C893F2A71D055D8100E96398 /* MLPhotoPickerImageView.m in Sources */,
 				C84A74261D01047100CA4CFD /* traveIInformationTableVC.m in Sources */,
 				C893F2BB1D05773C00E96398 /* UIBarButtonItem+Extension.m in Sources */,
@@ -1928,15 +1818,15 @@
 				C8FCFA881D24B8F2004FBADE /* breakRulusPickerModel.m in Sources */,
 				C893F29D1D055D8100E96398 /* UIView+MLExtension.m in Sources */,
 				C8000A6B1D21042A00A527C0 /* MJRefreshConst.m in Sources */,
-				C8FC2B4D1D0EA38E00C561C0 /* cunlabelModel.m in Sources */,
+				C8FC2B4D1D0EA38E00C561C0 /* CarHomePageModel.m in Sources */,
 				C883469A1D0D104800E5ABE9 /* logWinDiTuViewController.m in Sources */,
 				C8E9B3941D02572500B57DB9 /* NSString+MJExtension.m in Sources */,
 				C8E9B3E51D02C46500B57DB9 /* LoginViewController.m in Sources */,
 				C80A885A1D0CECAE003801CB /* MMZCViewController.m in Sources */,
 				C893F2A81D055D8100E96398 /* MLSelectPhotoPickerBrowserPhotoImageView.m in Sources */,
 				C8000A5E1D21042A00A527C0 /* MJRefreshComponent.m in Sources */,
+				C848DD3B1D2CA3C700DA4AB7 /* goReportingModel.m in Sources */,
 				C80A885D1D0CECAE003801CB /* settinhHeaderViewController.m in Sources */,
-				C8FCFA831D24B7EF004FBADE /* breakRulusPicker.m in Sources */,
 				C8FCFA8D1D24C791004FBADE /* QRView.m in Sources */,
 				C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */,
 				C893F2A61D055D8100E96398 /* MLSelectPhotoPickerViewController.m in Sources */,
@@ -1956,6 +1846,7 @@
 				C893F2AB1D055D8100E96398 /* MLSelectPhotoPickerCollectionView.m in Sources */,
 				C893F2501D050D7B00E96398 /* DZCNavigationController.m in Sources */,
 				C8E9B3911D02572500B57DB9 /* NSObject+MJCoding.m in Sources */,
+				C848DD381D2CA3AC00DA4AB7 /* goReportingVC.m in Sources */,
 				C8A3C4AE1CFE5D2100E741BC /* main.m in Sources */,
 				C893F2591D050E3500E96398 /* DZCTabBarButton.m in Sources */,
 				C8000A731D21154400A527C0 /* horizontalCollecVC.m in Sources */,
@@ -1966,7 +1857,7 @@
 				C8000A6D1D21042A00A527C0 /* UIScrollView+MJExtension.m in Sources */,
 				C893F2A01D055D8100E96398 /* MLSelectPhotoPickerDatas.m in Sources */,
 				C8E598A11D0FEBD300D58C64 /* ScreenCaptureView.m in Sources */,
-				C84A742C1D01096B00CA4CFD /* carOwnerInterfaceVC.m in Sources */,
+				C84A742C1D01096B00CA4CFD /* selectPhotoVC.m in Sources */,
 				C8E9B3901D02572500B57DB9 /* NSObject+MJClass.m in Sources */,
 				C807A25F1D128E8D00482FA6 /* DOPScrollableActionSheet.m in Sources */,
 				C8000A781D21163100A527C0 /* horizontalCell.m in Sources */,

@@ -1,10 +1,4 @@
-//
-//  DOPScrollableActionSheet.m
-//  DOPScrollableActionSheet
-//
-//  Created by weizhou on 12/27/14.
-//  Copyright (c) 2014 fengweizhou. All rights reserved.
-//
+
 
 #import "DOPScrollableActionSheet.h"
 
@@ -136,14 +130,13 @@ static CGFloat horizontalMargin = 20.0;
 }
 
 - (void)show {
+    
     self.window = [[UIWindow alloc] initWithFrame:self.screenRect];
     self.window.windowLevel = UIWindowLevelAlert;
     self.window.backgroundColor = [UIColor clearColor];
     self.window.rootViewController = [UIViewController new];
     self.window.rootViewController.view.backgroundColor = [UIColor clearColor];
-    
     [self.window.rootViewController.view addSubview:self.dimBackground];
-    
     [self.window.rootViewController.view addSubview:self];
     
     self.window.hidden = NO;

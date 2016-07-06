@@ -6,9 +6,9 @@
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
-#import "carOwnerInterfaceTableViewCell.h"
+#import "breakRulusSelectPhotoCell.h"
 
-@implementation carOwnerInterfaceTableViewCell
+@implementation breakRulusSelectPhotoCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

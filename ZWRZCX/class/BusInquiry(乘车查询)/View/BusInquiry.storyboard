@@ -193,18 +193,12 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-NM-EGH">
                                 <rect key="frame" x="13" y="429" width="275" height="31"/>
-                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="安全定位"/>
+                                <state key="normal" title="屏幕截图到相册"/>
                                 <connections>
-                                    <action selector="safePositionColle:" destination="Vhf-tg-w4m" eventType="touchUpInside" id="U1M-gY-bGg"/>
+                                    <action selector="saveScreenToPhone:" destination="Vhf-tg-w4m" eventType="touchUpInside" id="XA6-EG-lIf"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc1-ZI-EYR">
-                                <rect key="frame" x="13" y="466" width="275" height="31"/>
-                                <color key="backgroundColor" red="1" green="0.30981695739999998" blue="0.1031784815" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

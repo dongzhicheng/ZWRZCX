@@ -6,7 +6,7 @@
 //  Created by 董志成 on 16/6/3.
 //  Copyright © 2016年 董志成. All rights reserved.
 //
-#import "breakRulusPicker.h"
+
 #import <UIKit/UIKit.h>
 #import "MainDiTuViewController.h"
 
@@ -28,7 +28,7 @@
 @property (assign, nonatomic)NSInteger row;
 @property (strong, nonatomic) IBOutlet UITextField *detailWordsTextFiled;
 
-@property (strong,nonatomic)cunlabelModel *cunlabelModel;
+@property (strong,nonatomic)CarHomePageModel *cunlabelModel;
 @property (nonatomic, strong) AVPlayerViewController *playerVc;
 
 @end
@@ -36,16 +36,11 @@
 @implementation breakRulusNotesViewController
 
 -(NSArray *)foods{ //懒加载测试数据 pickeController
-
     if (!_foods) {
-        
         NSString *path = [[NSBundle mainBundle ] pathForResource:@"foods" ofType:@"plist"];
-        
         _foods = [NSArray arrayWithContentsOfFile:path];
-        
     }
     return _foods;
-
 }
 
 - (void)viewDidLoad {
@@ -93,32 +88,19 @@
 - (void)toolBar:(CZToolBar*)toolBar withButtonType:(CZToolBarButtonType)type
 {
     switch (type) {
-            
         case CZToolBarButtonTypePre: // 取消
-            
             [self.breakRulusTextFiled resignFirstResponder];
-            
             self.breakRulusTextFiled.text = @"";
-            
             break;
         case CZToolBarButtonTypeDone:  // 完成
-            
             NSLog(@"CZToolBarButtonTypeDone");
-            
             NSString* str = self.foods[1][self.row];
-            
             NSString *brithStr = str;
-            
             brithStr = [NSString stringWithFormat:@"%@%@",self.breakRulusTextFiled.text,str];
-            
             self.breakRulusTextFiled.text = brithStr;
-            
             [self.breakRulusTextFiled resignFirstResponder];
-            
             [self.view endEditing:YES];
-            
             break;
-            
     }
 }
 

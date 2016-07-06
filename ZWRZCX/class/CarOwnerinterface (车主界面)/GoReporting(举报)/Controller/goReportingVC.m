@@ -1,27 +1,27 @@
 //
-//  reportJuBaoVC.m
+//  goReportingVC.m
 //  ZWRZCX
 //
-//  Created by 董志成 on 16/6/3.
+//  Created by 董志成 on 16/7/6.
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
-#import "reportJuBaoVC.h"
+#import "goReportingVC.h"
 
-@interface reportJuBaoVC ()
+@interface goReportingVC ()
 
 @end
 
-@implementation reportJuBaoVC
+@implementation goReportingVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-   
+    // Dispose of any resources that can be recreated.
 }
 
 /*
