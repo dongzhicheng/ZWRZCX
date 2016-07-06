@@ -43,9 +43,9 @@
 		C8400CB61CFED340008A8952 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8400CB51CFED340008A8952 /* MapKit.framework */; };
 		C848DD381D2CA3AC00DA4AB7 /* goReportingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C848DD371D2CA3AC00DA4AB7 /* goReportingVC.m */; };
 		C848DD3B1D2CA3C700DA4AB7 /* goReportingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C848DD3A1D2CA3C700DA4AB7 /* goReportingModel.m */; };
+		C848DD3E1D2CAC4900DA4AB7 /* CarHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C848DD3D1D2CAC4900DA4AB7 /* CarHomePageVC.m */; };
 		C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */; };
 		C84A74231D01042000CA4CFD /* breakRulusNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */; };
-		C84A74261D01047100CA4CFD /* traveIInformationTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74251D01047100CA4CFD /* traveIInformationTableVC.m */; };
 		C84A742C1D01096B00CA4CFD /* selectPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A742B1D01096B00CA4CFD /* selectPhotoVC.m */; };
 		C84A74321D010A6100CA4CFD /* writeAgreementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74311D010A6100CA4CFD /* writeAgreementVC.m */; };
 		C84A74351D010AA300CA4CFD /* QualificationsApplicationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A74341D010AA300CA4CFD /* QualificationsApplicationVC.m */; };
@@ -291,12 +291,12 @@
 		C848DD371D2CA3AC00DA4AB7 /* goReportingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = goReportingVC.m; sourceTree = "<group>"; };
 		C848DD391D2CA3C700DA4AB7 /* goReportingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goReportingModel.h; sourceTree = "<group>"; };
 		C848DD3A1D2CA3C700DA4AB7 /* goReportingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = goReportingModel.m; sourceTree = "<group>"; };
+		C848DD3C1D2CAC4900DA4AB7 /* CarHomePageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarHomePageVC.h; sourceTree = "<group>"; };
+		C848DD3D1D2CAC4900DA4AB7 /* CarHomePageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarHomePageVC.m; sourceTree = "<group>"; };
 		C84A741E1D01039B00CA4CFD /* BusInquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusInquiryViewController.h; sourceTree = "<group>"; };
 		C84A741F1D01039B00CA4CFD /* BusInquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusInquiryViewController.m; sourceTree = "<group>"; };
 		C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = breakRulusNotesViewController.h; path = "../../breakRulusNotes(车主界面的)/Controller/breakRulusNotesViewController.h"; sourceTree = "<group>"; };
 		C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = breakRulusNotesViewController.m; path = "../../breakRulusNotes(车主界面的)/Controller/breakRulusNotesViewController.m"; sourceTree = "<group>"; };
-		C84A74241D01047100CA4CFD /* traveIInformationTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = traveIInformationTableVC.h; sourceTree = "<group>"; };
-		C84A74251D01047100CA4CFD /* traveIInformationTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = traveIInformationTableVC.m; sourceTree = "<group>"; };
 		C84A742A1D01096B00CA4CFD /* selectPhotoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = selectPhotoVC.h; path = ../../selectPhotoVC.h; sourceTree = "<group>"; };
 		C84A742B1D01096B00CA4CFD /* selectPhotoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = selectPhotoVC.m; path = ../../selectPhotoVC.m; sourceTree = "<group>"; };
 		C84A74301D010A6100CA4CFD /* writeAgreementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writeAgreementVC.h; sourceTree = "<group>"; };
@@ -861,6 +861,8 @@
 		C893F2611D0517E300E96398 /* CarHomePageVC(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				C848DD3C1D2CAC4900DA4AB7 /* CarHomePageVC.h */,
+				C848DD3D1D2CAC4900DA4AB7 /* CarHomePageVC.m */,
 				C853FB381D1D166500ECF8D2 /* CylViewController.h */,
 				C853FB391D1D166500ECF8D2 /* CylViewController.m */,
 			);
@@ -1321,8 +1323,6 @@
 		C8A3C5141CFEB4C500E741BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C84A74241D01047100CA4CFD /* traveIInformationTableVC.h */,
-				C84A74251D01047100CA4CFD /* traveIInformationTableVC.m */,
 				C817D40D1D2B3E8400AF319A /* travelInformationVC.h */,
 				C817D40E1D2B3E8400AF319A /* travelInformationVC.m */,
 			);
@@ -1797,9 +1797,9 @@
 				C84A74321D010A6100CA4CFD /* writeAgreementVC.m in Sources */,
 				C8E9B39F1D02A94F00B57DB9 /* webViewController.m in Sources */,
 				C8000A7B1D21165500A527C0 /* horizontalModel.m in Sources */,
+				C848DD3E1D2CAC4900DA4AB7 /* CarHomePageVC.m in Sources */,
 				C893F29F1D055D8100E96398 /* MLSelectPhotoPickerBrowserPhoto.m in Sources */,
 				C893F2A71D055D8100E96398 /* MLPhotoPickerImageView.m in Sources */,
-				C84A74261D01047100CA4CFD /* traveIInformationTableVC.m in Sources */,
 				C893F2BB1D05773C00E96398 /* UIBarButtonItem+Extension.m in Sources */,
 				C8E9B3921D02572500B57DB9 /* NSObject+MJKeyValue.m in Sources */,
 				C8FCFA8E1D24C791004FBADE /* QRViewController.m in Sources */,
