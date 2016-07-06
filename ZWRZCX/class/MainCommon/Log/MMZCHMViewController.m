@@ -156,28 +156,30 @@
     return btn;
 }
 -(void)next{
-    if ([phone.text isEqualToString:@""]){
-        [SVProgressHUD showInfoWithStatus:@"亲,请输入注册手机号码"];
-        return;
-    }
-    else if (phone.text.length <11){
-        [SVProgressHUD showInfoWithStatus:@"您输入的手机号码格式不正确"];
-        return;
-    }
-    else if ([code.text isEqualToString:@""]){
-      [SVProgressHUD showInfoWithStatus:@"亲,请输入验证码"];
-        return;
-    }else if (code.text.length == 0){
-       [SVProgressHUD showInfoWithStatus:@"验证码长度错误"];
-    }
-    [SMSSDK commitVerificationCode:code.text phoneNumber:phone.text zone:@"86" result:^(NSError *error) {
-        if (!error) {
-            NSLog(@" MMZCHMViewController  next ->>短信验证成功");
-            [self.navigationController pushViewController:[[settingPassWardViewController alloc]init] animated:YES];
-        }else{
-            NSLog(@"MMZCHMViewController  next ->>短信错误信息:%@",error);
-        }
-    }];
+//    if ([phone.text isEqualToString:@""]){
+//        [SVProgressHUD showInfoWithStatus:@"亲,请输入注册手机号码"];
+//        return;
+//    }
+//    else if (phone.text.length <11){
+//        [SVProgressHUD showInfoWithStatus:@"您输入的手机号码格式不正确"];
+//        return;
+//    }
+//    else if ([code.text isEqualToString:@""]){
+//      [SVProgressHUD showInfoWithStatus:@"亲,请输入验证码"];
+//        return;
+//    }else if (code.text.length == 0){
+//       [SVProgressHUD showInfoWithStatus:@"验证码长度错误"];
+//    }
+//    [SMSSDK commitVerificationCode:code.text phoneNumber:phone.text zone:@"86" result:^(NSError *error) {
+//        if (!error) {
+//            NSLog(@" MMZCHMViewController  next ->>短信验证成功");
+//            [self.navigationController pushViewController:[[settingPassWardViewController alloc]init] animated:YES];
+//        }else{
+//            NSLog(@"MMZCHMViewController  next ->>短信错误信息:%@",error);
+//        }
+//    }];
+    
+     [self.navigationController pushViewController:[[settingPassWardViewController alloc]init] animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

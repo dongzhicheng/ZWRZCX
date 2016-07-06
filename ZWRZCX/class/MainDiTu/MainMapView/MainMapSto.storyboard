@@ -8,7 +8,6 @@
         <!--地图界面-->
         <scene sceneID="Cc2-ck-M7W">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-JP-lON" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="lkg-mx-fFF" customClass="MainDiTuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="deU-O9-v1B"/>
@@ -56,13 +55,13 @@
                     <navigationItem key="navigationItem" title="地图界面" id="Qn1-ed-KI0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-JP-lON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="294.5" y="249.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9aV-Ec-hnl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qrp-DZ-Du8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xNl-sV-shG" customClass="DZCNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -75,6 +74,7 @@
                         <segue destination="lkg-mx-fFF" kind="relationship" relationship="rootViewController" id="HQJ-7Y-iPW"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrp-DZ-Du8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-152.5" y="263.5"/>
         </scene>
@@ -159,7 +159,6 @@
         <!--Navigation Controller-->
         <scene sceneID="aRY-5R-9gY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-PR-T7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WZn-C0-gsh" customClass="DZCNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -172,6 +171,7 @@
                         <segue destination="vWC-8i-Bb6" kind="relationship" relationship="rootViewController" id="HfI-Km-dgB"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-PR-T7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-289.5" y="-564.5"/>
         </scene>

@@ -66,10 +66,6 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
 
-    
-   
-    
-    
     //self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     //设置NavigationBar背景颜色
     View=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
@@ -99,7 +95,7 @@
 }
 -(void)createTextFields{
     CGRect frame=[UIScreen mainScreen].bounds;
-    bgView=[[UIView alloc]initWithFrame:CGRectMake(10, 75, frame.size.width-20, 100)];
+    bgView=[[UIView alloc]initWithFrame:CGRectMake(10, 100, frame.size.width-20, 100)];
     bgView.layer.cornerRadius=3.0;
     bgView.alpha=0.7;
     bgView.backgroundColor=[UIColor whiteColor];
@@ -153,17 +149,17 @@
 }
 -(void)createButtons{
    
-    UIButton *landBtn=[self createButtonFrame:CGRectMake(10, 190, self.view.frame.size.width-20, 37) backImageName:nil title:@"登录" titleColor:[UIColor whiteColor]  font:[UIFont systemFontOfSize:19] target:self action:@selector(landClick)];
+    UIButton *landBtn=[self createButtonFrame:CGRectMake(10, 225, self.view.frame.size.width-20, 37) backImageName:nil title:@"登录" titleColor:[UIColor whiteColor]  font:[UIFont systemFontOfSize:19] target:self action:@selector(landClick)];
    
     landBtn.backgroundColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
     
     landBtn.layer.cornerRadius=5.0f;
     
-    UIButton *newUserBtn=[self createButtonFrame:CGRectMake(5, 235, 70, 30) backImageName:nil title:@"快速注册" titleColor:[UIColor grayColor] font:[UIFont systemFontOfSize:13] target:self action:@selector(registration:)];
+    UIButton *newUserBtn=[self createButtonFrame:CGRectMake(5, 255, 70, 30) backImageName:nil title:@"快速注册" titleColor:[UIColor grayColor] font:[UIFont systemFontOfSize:13] target:self action:@selector(registration:)];
   
-    UIButton *forgotPwdBtn=[self createButtonFrame:CGRectMake(self.view.frame.size.width-75, 235, 60, 30) backImageName:nil title:@"找回密码" titleColor:[UIColor grayColor] font:[UIFont systemFontOfSize:13] target:self action:@selector(fogetPwd:)];
+    UIButton *forgotPwdBtn=[self createButtonFrame:CGRectMake(self.view.frame.size.width-75, 255, 60, 30) backImageName:nil title:@"找回密码" titleColor:[UIColor grayColor] font:[UIFont systemFontOfSize:13] target:self action:@selector(fogetPwd:)];
    
-    self.headr = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width-195, 255, 80, 80)];
+    self.headr = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width-195, 10, 80, 80)];
     
     self.headr.layer.cornerRadius = 40;
     
@@ -171,23 +167,36 @@
     
     self.headr.backgroundColor = [UIColor redColor];
     
+    
+    
     NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
     
     NSString *fileName = [document stringByAppendingPathComponent:@"imageObject"];
     
-    settinhHeaderModel *settingHeaderModel = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
     
-    NSString *headerstr = settingHeaderModel.headerStr;
+    settinhHeaderModel *settingHeaderModel = [settinhHeaderModel new];
     
-    NSData * headerImageData = [[NSData alloc] initWithBase64EncodedString:headerstr options:nil];
+    if (![settingHeaderModel.headerStr  isEqual: @""]) {
+        
+        settingHeaderModel = [NSKeyedUnarchiver unarchiveObjectWithFile:fileName];
+        
+        NSString *headerstr = settingHeaderModel.headerStr;
+        
+        NSData * headerImageData = [[NSData alloc] initWithBase64EncodedString:headerstr options:nil];
+        
+        NSLog(@"headerImageData--%@ 选好头像返回别的界面MMZCViewController---headerImageData",headerImageData);
+        
+        UIImage *headImage = [[UIImage alloc] initWithData:headerImageData];
+        
+        [self.headr setImage:headImage forState:UIControlStateNormal];
+        
+    }
     
-    NSLog(@"headerImageData--%@ 选好头像返回别的界面MMZCViewController---headerImageData",headerImageData);
-    
-    UIImage *headImage = [[UIImage alloc] initWithData:headerImageData];
-    
-    [self.headr setImage:headImage forState:UIControlStateNormal];
+
     
     [self.view addSubview:self.headr];
+    
+   
     
       #define Start_X 60.0f           // 第一个按钮的X坐标
       #define Start_Y 440.0f           // 第一个按钮的Y坐标
