@@ -8,6 +8,7 @@
         <!--地图界面-->
         <scene sceneID="Cc2-ck-M7W">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-JP-lON" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="lkg-mx-fFF" customClass="MainDiTuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="deU-O9-v1B"/>
@@ -55,13 +56,13 @@
                     <navigationItem key="navigationItem" title="地图界面" id="Qn1-ed-KI0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-JP-lON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="294.5" y="249.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9aV-Ec-hnl">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrp-DZ-Du8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xNl-sV-shG" customClass="DZCNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -74,7 +75,6 @@
                         <segue destination="lkg-mx-fFF" kind="relationship" relationship="rootViewController" id="HQJ-7Y-iPW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qrp-DZ-Du8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-152.5" y="263.5"/>
         </scene>
@@ -94,7 +94,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV3-HC-zHD">
-                                <rect key="frame" x="106" y="407" width="149" height="42"/>
+                                <rect key="frame" x="98" y="407" width="149" height="42"/>
                                 <color key="backgroundColor" red="1" green="0.30981695739999998" blue="0.1031784815" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="点击进入导航界面">
@@ -105,10 +105,10 @@
                                 </connections>
                             </button>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6lm-KY-77x">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="-16" width="375" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-ga-LGf">
-                                        <rect key="frame" x="13" y="5" width="53" height="33"/>
+                                        <rect key="frame" x="8" y="29" width="55" height="52"/>
                                         <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="顺风车"/>
@@ -117,7 +117,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyZ-It-uwm">
-                                        <rect key="frame" x="169" y="5" width="57" height="33"/>
+                                        <rect key="frame" x="180" y="29" width="50" height="52"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="三轮车" backgroundImage="welcome7"/>
@@ -125,21 +125,21 @@
                                             <action selector="sanLunCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="DCh-dE-Qcf"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-95-YMM">
+                                        <rect key="frame" x="92" y="29" width="58" height="52"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="小火车" backgroundImage="welcome8"/>
+                                        <connections>
+                                            <action selector="huoCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="klR-mR-y3K"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgh-ll-FOa">
-                                        <rect key="frame" x="248" y="5" width="52" height="32"/>
+                                        <rect key="frame" x="254" y="29" width="58" height="52"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="大卡车" backgroundImage="welcome6"/>
                                         <connections>
                                             <action selector="bigCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="zfq-xI-Kzd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-95-YMM">
-                                        <rect key="frame" x="88" y="5" width="60" height="32"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="小火车" backgroundImage="welcome8"/>
-                                        <connections>
-                                            <action selector="huoCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="klR-mR-y3K"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -154,11 +154,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TR-5e-53X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="246.5" y="-555.5"/>
+            <point key="canvasLocation" x="214.5" y="-564.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aRY-5R-9gY">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-PR-T7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WZn-C0-gsh" customClass="DZCNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -171,7 +172,6 @@
                         <segue destination="vWC-8i-Bb6" kind="relationship" relationship="rootViewController" id="HfI-Km-dgB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-PR-T7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-289.5" y="-564.5"/>
         </scene>

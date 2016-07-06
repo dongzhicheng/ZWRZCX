@@ -43,6 +43,7 @@
     viewController.navigationItem.leftBarButtonItems = @[fixed,back];
 }
 - (void)backClick { //点击自定义回退按钮
+
     [self popViewControllerAnimated:YES]; //弹到上一个控制器
 }
 

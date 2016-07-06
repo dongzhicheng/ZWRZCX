@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <MapKit/MKMapCamera.h>
 #import <UIKit/UIKit.h>
-#import "traveIInformationTableVC.h"
+#import "travelInformationVC.h"
 
 @interface MainDiTuViewController ()
 @property (nonatomic,strong) CLLocationManager *locationManager;
@@ -25,18 +25,16 @@
 @implementation MainDiTuViewController
 - (IBAction)shunFengCar:(id)sender {
     
-    UIStoryboard * stroBoard  = [UIStoryboard storyboardWithName:@"travelInformationSto" bundle:nil];
-    
-    traveIInformationTableVC *traveVC  = [stroBoard instantiateInitialViewController];
-    
-    traveVC.title = @"顺风车";
-    
-    [self.navigationController pushViewController:traveVC animated:NO];
-    
-//    [self presentModalViewController:traveVC animated:YES];
+    UIViewController * testVc = [[UIViewController alloc] init];
+    testVc.view.backgroundColor = [UIColor yellowColor];
+    [self.navigationController pushViewController:testVc animated:YES];
 
-    
 }
+-(void)leftbtnClick {
+    NSLog(@"leftbtnClick");
+
+}
+
 
 - (IBAction)huoCar:(id)sender {
     

@@ -11,9 +11,7 @@
 @interface selectPhotoVC ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (strong,nonatomic) MLSelectPhotoAssets *carOwnerInterfaceVCAsset;
-
 @property (strong,nonatomic) NSMutableArray * carOwnerassets;
-
 @property (weak,nonatomic) UICollectionView *collectionView;
 
 @end
@@ -58,16 +56,14 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-//    self.tableView.backgroundColor = [UIColor grayColor];
-
-//    UIView * BackGroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width , [UIScreen mainScreen].bounds.size.height)];
-
-//    self.tableView.backgroundView = imageView;
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selectPhotos) name:@"breakRulusNotesViewController" object:nil];
     
 }
+-(void)dealloc{
 
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"breakRulusNotesViewController" object:nil];
+
+}
 - (void)selectPhotos {
     __weak typeof (self) weakSelf = self;
     [[SCPhotoHelper sharedInstance] choosePicture:^(NSArray *assets) {

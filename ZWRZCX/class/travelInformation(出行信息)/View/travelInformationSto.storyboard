@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hwy-aT-Tm0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1au-wG-l8K">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="message" rowHeight="108" id="zNk-R7-78j" customClass="travelInformationTableCell">
-                                        <rect key="frame" x="0.0" y="28" width="381" height="108"/>
+                                        <rect key="frame" x="0.0" y="92" width="381" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zNk-R7-78j" id="Eax-vH-fBD">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="107"/>
@@ -58,98 +58,102 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RN1-ef-SqV">
-                                <rect key="frame" x="1" y="0.0" width="367" height="138"/>
+                                <rect key="frame" x="1" y="0.0" width="367" height="146"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-qJ-oUU">
-                                        <rect key="frame" x="20" y="12" width="63" height="50"/>
+                                        <rect key="frame" x="20" y="12" width="63" height="60"/>
+                                        <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="testBtnClick:" destination="hwy-aT-Tm0" eventType="touchUpInside" id="6yS-Xb-iFJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj4-vs-prP">
-                                        <rect key="frame" x="137" y="12" width="63" height="50"/>
+                                        <rect key="frame" x="137" y="12" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="testBtnBordColorBtn1:" destination="hwy-aT-Tm0" eventType="touchUpInside" id="5wp-ku-xUy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G89-kp-DgX">
-                                        <rect key="frame" x="246" y="12" width="63" height="50"/>
+                                        <rect key="frame" x="246" y="12" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.79285301600000002" green="1" blue="0.56147644630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="testBtnBordColorBtn2:" destination="hwy-aT-Tm0" eventType="touchUpInside" id="rvL-jj-Pw4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHd-3H-a4J">
-                                        <rect key="frame" x="20" y="77" width="63" height="50"/>
+                                        <rect key="frame" x="20" y="77" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.4612811879" green="0.53763765900000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="testBtnBordColorBtn3:" destination="hwy-aT-Tm0" eventType="touchUpInside" id="yXp-Ll-MMG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-jc-QwF">
-                                        <rect key="frame" x="137" y="77" width="63" height="50"/>
+                                        <rect key="frame" x="137" y="77" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="testBtnBordColorBtn4:" destination="hwy-aT-Tm0" eventType="touchUpInside" id="Owc-2F-OXp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMk-Lf-I9o">
-                                        <rect key="frame" x="246" y="77" width="63" height="50"/>
+                                        <rect key="frame" x="246" y="77" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.47450980390000003" green="0.1325372423" blue="0.067524278029999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="testBtnBordColorBtn5:" destination="hwy-aT-Tm0" eventType="touchUpInside" id="AtJ-fG-KYY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.28190524189999999" green="1" blue="0.79827990199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.991843213" green="1" blue="0.40147542200000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WKE-mL-OXK"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="KQ4-2e-FKM" id="OAh-6H-2v2"/>
+                        <outlet property="testBtnBordColorBtn0" destination="nsg-qJ-oUU" id="03k-Ud-ozR"/>
+                        <outlet property="testBtnBordColorBtn1" destination="uj4-vs-prP" id="38u-0j-ETe"/>
+                        <outlet property="testBtnBordColorBtn2" destination="G89-kp-DgX" id="4m5-Pt-Urj"/>
+                        <outlet property="testBtnBordColorBtn3" destination="wHd-3H-a4J" id="zIh-yO-sAl"/>
+                        <outlet property="testBtnBordColorBtn4" destination="ugM-jc-QwF" id="mkp-25-vpk"/>
+                        <outlet property="testBtnBordColorBtn5" destination="dMk-Lf-I9o" id="01U-V8-GgC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Fv-Yu-6tj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.5" y="324.5"/>
+            <point key="canvasLocation" x="373.5" y="323.5"/>
         </scene>
-        <!--旅行信息-->
-        <scene sceneID="e1B-cH-ewJ">
+        <!--Navigation Controller-->
+        <scene sceneID="gtA-oX-tgT">
             <objects>
-                <tableViewController id="1G2-nW-SAA" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="28" sectionFooterHeight="28" id="RgM-wJ-81z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="message" rowHeight="108" id="9Nl-9n-mIT" customClass="travelInformationTableCell">
-                                <rect key="frame" x="0.0" y="28" width="375" height="108"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Nl-9n-mIT" id="Mha-7P-zBp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyC-R8-8co">
-                                            <rect key="frame" x="17" y="8" width="85" height="73"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-oC-4Td">
-                                            <rect key="frame" x="110" y="39" width="201" height="42"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F77-Hb-cwz">
-                                            <rect key="frame" x="110" y="18" width="149" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="detailLabel" destination="3sh-oC-4Td" id="FDd-PN-7Ga"/>
-                                    <outlet property="hearImageView" destination="hyC-R8-8co" id="ZbK-cV-bHL"/>
-                                    <outlet property="textLabe" destination="F77-Hb-cwz" id="8Kz-sE-N2a"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="1G2-nW-SAA" id="wrf-xO-NiG"/>
-                            <outlet property="delegate" destination="1G2-nW-SAA" id="F7c-pG-jba"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="旅行信息" id="qga-7n-1YX"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1au-wG-l8K" customClass="DZCNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3tH-XK-ERf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5kX-iX-Tza">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hwy-aT-Tm0" kind="relationship" relationship="rootViewController" id="H6A-iy-KZV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBu-7g-bXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286.5" y="332.5"/>
+            <point key="canvasLocation" x="-80.5" y="323.5"/>
         </scene>
     </scenes>
 </document>
