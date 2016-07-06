@@ -1,34 +1,23 @@
 //
-//  goReportingVC.m
+//  CarHomePageVC.m
 //  ZWRZCX
 //
 //  Created by 董志成 on 16/7/6.
 //  Copyright © 2016年 董志成. All rights reserved.
 //
 
+#import "CarHomePageVC.h"
 #import "goReportingVC.h"
-#import "breakRulusNotesViewController.h"
-@interface goReportingVC ()
+
+@interface CarHomePageVC ()
 
 @end
 
-@implementation goReportingVC
+@implementation CarHomePageVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-- (IBAction)detailEvidenceInputbtn:(id)sender {
-    
-//    breakRulusNotesViewController *breakVC = [breakRulusNotesViewController new];
-//    
-//    [self presentViewController:breakVC animated:YES completion:^{
-//        
-//        
-//        
-//    }];
-//    
-    
 }
 
 - (void)didReceiveMemoryWarning {

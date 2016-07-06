@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-OF-sac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1561.5" y="1330.5"/>
+            <point key="canvasLocation" x="-1542.5" y="1316.5"/>
         </scene>
         <!--Select PhotoVC-->
         <scene sceneID="VXw-xx-AKn">
@@ -439,11 +439,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="282" id="xmC-of-dZH">
-                                        <rect key="frame" x="0.0" y="372" width="375" height="282"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="296" id="xmC-of-dZH">
+                                        <rect key="frame" x="0.0" y="372" width="375" height="296"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xmC-of-dZH" id="QBi-iV-U2R">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yos-tA-Stt">
@@ -498,7 +498,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvl-zW-vv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1997.5" y="1324.5"/>
+            <point key="canvasLocation" x="-2550.5" y="1310.5"/>
         </scene>
         <!--举报界面-->
         <scene sceneID="0TY-1m-WB6">
@@ -512,48 +512,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-iD-qp0">
-                                <rect key="frame" x="16" y="427" width="278" height="28"/>
-                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="证据录入"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07s-r8-nMv">
-                                <rect key="frame" x="16" y="477" width="278" height="25"/>
-                                <color key="backgroundColor" red="0.47450980390000003" green="0.1325372423" blue="0.067524278029999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="举报"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-xn-Wwf">
-                                <rect key="frame" x="11" y="80" width="89" height="83"/>
-                                <color key="backgroundColor" red="0.4424598978" green="0.4230057726" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="投诉司机" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owV-WI-eWf">
-                                <rect key="frame" x="14" y="177" width="283" height="30"/>
+                                <rect key="frame" x="14" y="157" width="283" height="30"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-iD-qp0">
+                                <rect key="frame" x="63" y="391" width="185" height="28"/>
+                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="简单证据录入"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-xn-Wwf">
+                                <rect key="frame" x="11" y="80" width="86" height="69"/>
+                                <color key="backgroundColor" red="0.4424598978" green="0.4230057726" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="OGG-8d-oLX"/>
+                                    <constraint firstAttribute="height" constant="31" id="Tac-yd-5Bw"/>
+                                </constraints>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="车辆违规行驶，车辆司机服务态度不好，司机乱收费用" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VuZ-vm-k9c">
-                                <rect key="frame" x="14" y="248" width="277" height="30"/>
+                                <rect key="frame" x="14" y="274" width="277" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="投诉车牌号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoe-Sp-p27">
-                                <rect key="frame" x="14" y="215" width="283" height="30"/>
+                                <rect key="frame" x="14" y="217" width="283" height="30"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07s-r8-nMv">
+                                <rect key="frame" x="63" y="432" width="185" height="25"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.1325372423" blue="0.067524278029999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="详细证据录入"/>
+                                <connections>
+                                    <segue destination="JeN-bC-0Kj" kind="show" id="fKx-O8-PYY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e2y-xn-Wwf" firstAttribute="top" secondItem="fPc-hs-aY0" secondAttribute="bottom" constant="16" id="YO8-0N-sv0"/>
+                            <constraint firstItem="e2y-xn-Wwf" firstAttribute="leading" secondItem="1J3-WH-9wq" secondAttribute="leadingMargin" constant="-5" id="eM7-XJ-c4N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="举报界面" id="DMo-8D-HMl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8l-gI-CyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2818.5" y="1324.5"/>
+            <point key="canvasLocation" x="-2024.5" y="1316.5"/>
         </scene>
         <!--签署协议-->
         <scene sceneID="ppM-vc-XDf">
@@ -577,7 +588,7 @@
                                 <rect key="frame" x="222" y="427" width="51" height="31"/>
                             </switch>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9r-ME-GBN">
-                                <rect key="frame" x="11" y="83" width="90" height="81"/>
+                                <rect key="frame" x="11" y="94" width="84" height="79"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="严格遵守国家有关安全生产的法律法规。" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tug-OL-pqd">
@@ -593,7 +604,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgS-Vp-JBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2408.5" y="1324.5"/>
+            <point key="canvasLocation" x="-2961.5" y="1310.5"/>
         </scene>
         <!--车主界面-->
         <scene sceneID="8rg-sz-pLb">
@@ -672,7 +683,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dxs-L9-AWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2154.5" y="312.5"/>
+            <point key="canvasLocation" x="-2222.5" y="312.5"/>
         </scene>
         <!--车主界面-->
         <scene sceneID="BvO-0g-HfK">
@@ -743,11 +754,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fi-pg-qru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1565" y="253.5"/>
+            <point key="canvasLocation" x="-1589" y="257.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="DZC" width="500" height="333"/>
         <image name="welcome6" width="320" height="568"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ib8-1H-TdV"/>
+    </inferredMetricsTieBreakers>
 </document>
