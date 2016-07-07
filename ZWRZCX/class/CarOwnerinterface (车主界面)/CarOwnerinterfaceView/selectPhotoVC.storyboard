@@ -773,7 +773,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="zb1-rZ-S3A">
-                                <rect key="frame" x="0.0" y="220" width="375" height="332"/>
+                                <rect key="frame" x="0.0" y="220" width="375" height="223"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AudioTableViewCell" rowHeight="61" id="XC0-Km-OSW" customClass="AudioTableViewCell">
@@ -837,19 +837,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wy-NP-9ZC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wy-NP-9ZC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                                 </imageView>
-                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-IW-KGG">
-                                                    <rect key="frame" x="20" y="20" width="355" height="175"/>
-                                                </pickerView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="0wy-NP-9ZC" secondAttribute="bottom" constant="32" id="hdX-KX-jU8"/>
-                                                <constraint firstItem="0wy-NP-9ZC" firstAttribute="leading" secondItem="Rms-hd-l7G" secondAttribute="leading" id="mhX-7L-zZ6"/>
-                                                <constraint firstAttribute="trailing" secondItem="0wy-NP-9ZC" secondAttribute="trailing" id="pOb-Ba-5zZ"/>
-                                                <constraint firstItem="0wy-NP-9ZC" firstAttribute="top" secondItem="Rms-hd-l7G" secondAttribute="top" id="wdW-6H-DDn"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -872,7 +863,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29L-uA-f0k">
-                                <rect key="frame" x="63" y="143" width="243" height="31"/>
+                                <rect key="frame" x="41" y="143" width="243" height="31"/>
                                 <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="确认投诉文字">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -904,11 +895,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-IW-KGG">
+                                <rect key="frame" x="4" y="492" width="355" height="175"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSP-8k-LRJ">
+                                <rect key="frame" x="36" y="444" width="242" height="30"/>
+                                <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zb1-rZ-S3A" firstAttribute="top" secondItem="CN9-Na-6Jt" secondAttribute="bottom" constant="160" id="HK9-Xs-pe1"/>
-                            <constraint firstItem="tkg-xF-U4A" firstAttribute="top" secondItem="zb1-rZ-S3A" secondAttribute="bottom" id="JU7-89-1iy"/>
+                            <constraint firstItem="zb1-rZ-S3A" firstAttribute="top" secondItem="CN9-Na-6Jt" secondAttribute="bottom" constant="180" id="HK9-Xs-pe1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="证据获取界面" id="lbN-Qn-tre">
