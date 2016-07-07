@@ -9,13 +9,25 @@
 #import "VideoTableViewCell.h"
 #import "PhotoTableViewCell.h"
 #import "DZCIQViewController.h"
+#import "breakRulusPickerModel.h"
 
-@interface DZCIQViewController ()<IQMediaPickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface DZCIQViewController ()<IQMediaPickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,UITableViewDelegate,UITableViewDataSource,AVCaptureFileOutputRecordingDelegate,AVPlayerViewControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate,CZToolBarDelegate>
+
+
+@property (strong, nonatomic) IBOutlet UIPickerView *pickView;
+@property (strong, nonatomic) IBOutlet UILabel *Textbouds;
+@property (strong, nonatomic) IBOutlet UITextField *repordTestField;
+@property (strong, nonatomic) IBOutlet UITextField *detailRepordTestField;
+@property (assign, nonatomic)NSInteger row;
+@property (strong, nonatomic) NSArray *foods;
+@property (nonatomic, weak) CZToolBar* toolBar;
+
 
 @end
 
 
 @implementation DZCIQViewController
+
 {
     IBOutlet UITableView *tableViewMedia;
     NSDictionary *mediaInfo;
@@ -23,9 +35,83 @@
     IQMediaPickerControllerMediaType mediaType;
 }
 
+-(NSArray *)foods{ 
+    if (!_foods) {
+        NSString *path = [[NSBundle mainBundle ] pathForResource:@"foods" ofType:@"plist"];
+        _foods = [NSArray arrayWithContentsOfFile:path];
+    }
+    return _foods;
+}
+
+- (IBAction)sureRepordWordsBtn:(id)sender {
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.repordTestField.delegate = self;
+    self.pickView.delegate = self;
+    self.pickView.dataSource = self;
+    
+    CZToolBar* toolBar = [CZToolBar toolBar];
+    toolBar.toolBarDelegate = self;
+    self.toolBar = toolBar;
+    
+    self.repordTestField.inputView = self.pickView;
+    [self.pickView removeFromSuperview];
+    self.repordTestField.inputAccessoryView = toolBar;
+    
+    
+}
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+
+    return 1;
+
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+
+    return [self.foods[1] count];
+
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+
+    self.row = row;
+    
+    return self.foods[1][row];
+
+}
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+
+    return YES;
+
+}
+
+
+- (void)toolBar:(CZToolBar*)toolBar withButtonType:(CZToolBarButtonType)type
+{
+    switch (type) {
+        case CZToolBarButtonTypePre:
+            [self.repordTestField resignFirstResponder];
+            self.repordTestField.text = @"";
+            break;
+        case CZToolBarButtonTypeDone:
+            NSLog(@"CZToolBarButtonTypeDone");
+            NSString* str = self.foods[1][self.row];
+            NSString *brithStr = str;
+            brithStr = [NSString stringWithFormat:@"%@%@",self.repordTestField.text,str];
+            self.repordTestField.text = brithStr;
+            [self.repordTestField resignFirstResponder];
+            [self.view endEditing:YES];
+            break;
+    }
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.repordTestField resignFirstResponder];
+    [self.detailRepordTestField resignFirstResponder];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -45,7 +131,7 @@
 
 - (IBAction)pickAction:(UIBarButtonItem *)sender
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"取证的类型" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"取本地图片", @"取本地视频", @"取本地音频", @"拍图片取证", @"拍视频取证", @"拍音频取证", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"取证的类型" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"取本地图片", @"取本地视频", @"取本地音频", @"拍图片取证", @"录视频取证", @"录音频取证", nil];
     actionSheet.tag = 1;
     [actionSheet showInView:self.view];
 }
