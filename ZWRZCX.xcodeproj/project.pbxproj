@@ -960,7 +960,6 @@
 				C867EEF31D2E2A1300CC4C6A /* IQMediaPickerController.m */,
 				C867EEF41D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.h */,
 				C867EEF51D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.m */,
-				C867EF231D2E2AE000CC4C6A /* IQMediaPickerView */,
 				C867EEA11D2E2A1300CC4C6A /* IQAssetsPickerController */,
 				C867EEB01D2E2A1300CC4C6A /* IQAudioPickerController */,
 				C867EED11D2E2A1300CC4C6A /* IQMediaCaptureController */,
@@ -1204,7 +1203,8 @@
 				C867EF1C1D2E2A6200CC4C6A /* VideoTableViewCell.m */,
 				C867EF241D2E2AF600CC4C6A /* DZCIQViewController.storyboard */,
 			);
-			path = IQMediaPickerView;
+			name = IQMediaPickerView;
+			path = IQMediaPickerController/IQMediaPickerView;
 			sourceTree = "<group>";
 		};
 		C893F25F1D0517D000E96398 /* CarHomePageView */ = {
@@ -1552,7 +1552,7 @@
 		C8A3C4F71CFEB4C500E741BC /* breakRulusNotes(违章记录) */ = {
 			isa = PBXGroup;
 			children = (
-				C8A3C4F81CFEB4C500E741BC /* Controller */,
+				C8A3C4F81CFEB4C500E741BC /* breakRulusNotesController */,
 				C8A3C4FB1CFEB4C500E741BC /* Model */,
 				C8A3C4FC1CFEB4C500E741BC /* View */,
 				C8536D4C1D06A7360044BEC8 /* LuYin(录音) */,
@@ -1562,15 +1562,17 @@
 			path = "reportJuBao(车主界面)";
 			sourceTree = "<group>";
 		};
-		C8A3C4F81CFEB4C500E741BC /* Controller */ = {
+		C8A3C4F81CFEB4C500E741BC /* breakRulusNotesController */ = {
 			isa = PBXGroup;
 			children = (
-				C867EEA01D2E2A1300CC4C6A /* IQMediaPickerController */,
 				C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */,
 				C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */,
 				C84A742A1D01096B00CA4CFD /* selectPhotoVC.h */,
 				C84A742B1D01096B00CA4CFD /* selectPhotoVC.m */,
+				C867EEA01D2E2A1300CC4C6A /* IQMediaPickerController */,
+				C867EF231D2E2AE000CC4C6A /* IQMediaPickerView */,
 			);
+			name = breakRulusNotesController;
 			path = Controller;
 			sourceTree = "<group>";
 		};

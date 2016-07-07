@@ -58,7 +58,7 @@
         {
             mediaType = buttonIndex;
             
-            UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"allowsPickingMultipleItems" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Yes",@"No", nil];
+            UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"是否进行证据多项选择" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Yes",@"No", nil];
             actionSheet.tag = 2;
             [actionSheet showInView:self.view];
         }
@@ -90,9 +90,14 @@
     return [mediaInfo count];
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return [[mediaInfo allKeys] objectAtIndex:section];
+//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return [[mediaInfo allKeys] objectAtIndex:section]; //组头
+//}
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+
+    return @"如下是获取到的图片和音视频证据:";
+
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
