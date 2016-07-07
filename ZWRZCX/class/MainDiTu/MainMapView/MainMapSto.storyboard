@@ -108,8 +108,9 @@
                                 <rect key="frame" x="0.0" y="-16" width="375" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-ga-LGf">
-                                        <rect key="frame" x="8" y="29" width="55" height="52"/>
+                                        <rect key="frame" x="8" y="29" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="顺风车"/>
                                         <connections>
@@ -117,8 +118,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyZ-It-uwm">
-                                        <rect key="frame" x="180" y="29" width="50" height="52"/>
+                                        <rect key="frame" x="180" y="29" width="70" height="70"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="三轮车" backgroundImage="welcome7"/>
                                         <connections>
@@ -126,16 +128,18 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-95-YMM">
-                                        <rect key="frame" x="92" y="29" width="58" height="52"/>
+                                        <rect key="frame" x="92" y="29" width="70" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="小火车" backgroundImage="welcome8"/>
+                                        <state key="normal" title="证据采集" backgroundImage="welcome8"/>
                                         <connections>
                                             <action selector="huoCar:" destination="vWC-8i-Bb6" eventType="touchUpInside" id="klR-mR-y3K"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgh-ll-FOa">
-                                        <rect key="frame" x="254" y="29" width="58" height="52"/>
+                                        <rect key="frame" x="254" y="29" width="70" height="70"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="大卡车" backgroundImage="welcome6"/>
                                         <connections>
@@ -149,7 +153,11 @@
                     <navigationItem key="navigationItem" title="地图界面" id="bzG-wD-Dm7"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="bigCarBtn" destination="Bgh-ll-FOa" id="c1F-fU-5PO"/>
                         <outlet property="mapView" destination="4W1-p3-UcV" id="ABg-G0-BOb"/>
+                        <outlet property="sanLunCarBtn" destination="tyZ-It-uwm" id="SBN-TM-y75"/>
+                        <outlet property="selectEvidenceBtn" destination="Byd-95-YMM" id="2ua-bV-KhE"/>
+                        <outlet property="shunFengCarBtn" destination="cKz-ga-LGf" id="G6C-0E-opC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TR-5e-53X" userLabel="First Responder" sceneMemberID="firstResponder"/>

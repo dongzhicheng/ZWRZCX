@@ -133,16 +133,10 @@
     [pwd resignFirstResponder];
 }
 -(void)createImageViews{
-    //    UIImageView *userImageView=[self createImageViewFrame:CGRectMake(25, 10, 25, 25) imageName:@"ic_landing_nickname" color:nil];
-    //    UIImageView *pwdImageView=[self createImageViewFrame:CGRectMake(25, 60, 25, 25) imageName:@"ic_landing_password" color:nil];
-    //    UIImageView *line1=[self createImageViewFrame:CGRectMake(25, 50, 260, 1.5) imageName:nil color:[UIColor lightGrayColor]];
-    //    UIImageView *line2=[self createImageViewFrame:CGRectMake(88, 210, 280, 1) imageName:nil color:[UIColor grayColor]];
+    
     UIImageView *line3=[self createImageViewFrame:CGRectMake(2, 370, 100, 1) imageName:nil color:[UIColor lightGrayColor]];
     UIImageView *line4=[self createImageViewFrame:CGRectMake(self.view.frame.size.width-100-4, 370, 100, 1) imageName:nil color:[UIColor lightGrayColor]];
-    //    [bgView addSubview:userImageView];
-    //    [bgView addSubview:pwdImageView];
-    //    [bgView addSubview:line1];
-    //    [self.view addSubview:line2];
+    
     [self.view addSubview:line3];
     [self.view addSubview:line4];
     
@@ -167,12 +161,9 @@
     
     self.headr.backgroundColor = [UIColor redColor];
     
-    
-    
     NSString *document = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
     
     NSString *fileName = [document stringByAppendingPathComponent:@"imageObject"];
-    
     
     settinhHeaderModel *settingHeaderModel = [settinhHeaderModel new];
     
@@ -191,13 +182,9 @@
         [self.headr setImage:headImage forState:UIControlStateNormal];
         
     }
-    
 
-    
     [self.view addSubview:self.headr];
-    
-   
-    
+  
       #define Start_X 60.0f           // 第一个按钮的X坐标
       #define Start_Y 440.0f           // 第一个按钮的Y坐标
       #define Width_Space 50.0f        // 2个按钮之间的横间距

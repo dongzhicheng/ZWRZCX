@@ -57,6 +57,44 @@
 		C8536D591D06A7360044BEC8 /* LVRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8536D551D06A7360044BEC8 /* LVRecordView.xib */; };
 		C853FB3A1D1D166500ECF8D2 /* CylViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C853FB391D1D166500ECF8D2 /* CylViewController.m */; };
 		C85A262B1D23651C008FAC98 /* businquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85A262A1D23651C008FAC98 /* businquiryViewController.m */; };
+		C867EEF61D2E2A1300CC4C6A /* IQAlbumAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEA31D2E2A1300CC4C6A /* IQAlbumAssetsViewController.m */; };
+		C867EEF71D2E2A1300CC4C6A /* IQAssetsAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEA61D2E2A1300CC4C6A /* IQAssetsAlbumViewCell.m */; };
+		C867EEF81D2E2A1300CC4C6A /* IQAssetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEA81D2E2A1300CC4C6A /* IQAssetsCell.m */; };
+		C867EEF91D2E2A1300CC4C6A /* IQAssetsPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEAB1D2E2A1300CC4C6A /* IQAssetsPickerShadowView.m */; };
+		C867EEFA1D2E2A1300CC4C6A /* IQCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEAD1D2E2A1300CC4C6A /* IQCheckmarkView.m */; };
+		C867EEFB1D2E2A1300CC4C6A /* IQAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEAF1D2E2A1300CC4C6A /* IQAssetsPickerController.m */; };
+		C867EEFC1D2E2A1300CC4C6A /* IQAudioPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEB21D2E2A1300CC4C6A /* IQAudioPickerController.m */; };
+		C867EEFD1D2E2A1300CC4C6A /* IQAudioPickerController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C867EEB31D2E2A1300CC4C6A /* IQAudioPickerController.xcassets */; };
+		C867EEFE1D2E2A1300CC4C6A /* IQAudioPickerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEB61D2E2A1300CC4C6A /* IQAudioPickerUtility.m */; };
+		C867EEFF1D2E2A1300CC4C6A /* IQAudioPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEBA1D2E2A1300CC4C6A /* IQAudioPickerShadowView.m */; };
+		C867EF001D2E2A1300CC4C6A /* IQSongsAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEBD1D2E2A1300CC4C6A /* IQSongsAlbumViewCell.m */; };
+		C867EF011D2E2A1300CC4C6A /* IQSongsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEBF1D2E2A1300CC4C6A /* IQSongsCell.m */; };
+		C867EF021D2E2A1300CC4C6A /* IQSongsListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEC21D2E2A1300CC4C6A /* IQSongsListTableHeaderView.m */; };
+		C867EF031D2E2A1300CC4C6A /* IQSongsAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEC41D2E2A1300CC4C6A /* IQSongsAlbumListViewController.m */; };
+		C867EF041D2E2A1300CC4C6A /* IQSongsArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEC61D2E2A1300CC4C6A /* IQSongsArtistListViewController.m */; };
+		C867EF051D2E2A1300CC4C6A /* IQSongsCompilationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEC81D2E2A1300CC4C6A /* IQSongsCompilationsViewController.m */; };
+		C867EF061D2E2A1300CC4C6A /* IQSongsComposersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EECA1D2E2A1300CC4C6A /* IQSongsComposersViewController.m */; };
+		C867EF071D2E2A1300CC4C6A /* IQSongsGenreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EECC1D2E2A1300CC4C6A /* IQSongsGenreViewController.m */; };
+		C867EF081D2E2A1300CC4C6A /* IQSongsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EECE1D2E2A1300CC4C6A /* IQSongsListViewController.m */; };
+		C867EF091D2E2A1300CC4C6A /* IQSongsPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EED01D2E2A1300CC4C6A /* IQSongsPlaylistViewController.m */; };
+		C867EF0A1D2E2A1300CC4C6A /* IQMediaCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EED31D2E2A1300CC4C6A /* IQMediaCaptureController.m */; };
+		C867EF0B1D2E2A1300CC4C6A /* IQMediaCaptureController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C867EED41D2E2A1300CC4C6A /* IQMediaCaptureController.xcassets */; };
+		C867EF0C1D2E2A1300CC4C6A /* IQAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EED91D2E2A1300CC4C6A /* IQAudioSession.m */; };
+		C867EF0D1D2E2A1300CC4C6A /* IQCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEDB1D2E2A1300CC4C6A /* IQCaptureSession.m */; };
+		C867EF0E1D2E2A1300CC4C6A /* IQFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEDE1D2E2A1300CC4C6A /* IQFileManager.m */; };
+		C867EF0F1D2E2A1300CC4C6A /* IQBottomContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEE21D2E2A1300CC4C6A /* IQBottomContainerView.m */; };
+		C867EF101D2E2A1300CC4C6A /* IQFeatureOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEE61D2E2A1300CC4C6A /* IQFeatureOverlay.m */; };
+		C867EF111D2E2A1300CC4C6A /* IQMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEE81D2E2A1300CC4C6A /* IQMediaView.m */; };
+		C867EF121D2E2A1300CC4C6A /* IQPartitionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEEB1D2E2A1300CC4C6A /* IQPartitionBar.m */; };
+		C867EF131D2E2A1300CC4C6A /* IQPartitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEED1D2E2A1300CC4C6A /* IQPartitionView.m */; };
+		C867EF141D2E2A1300CC4C6A /* IQ_SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEF11D2E2A1300CC4C6A /* IQ_SCSiriWaveformView.m */; };
+		C867EF151D2E2A1300CC4C6A /* IQMediaPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEF31D2E2A1300CC4C6A /* IQMediaPickerController.m */; };
+		C867EF161D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EEF51D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.m */; };
+		C867EF1F1D2E2A6200CC4C6A /* AudioTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EF181D2E2A6200CC4C6A /* AudioTableViewCell.m */; };
+		C867EF201D2E2A6200CC4C6A /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EF1A1D2E2A6200CC4C6A /* PhotoTableViewCell.m */; };
+		C867EF211D2E2A6200CC4C6A /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EF1C1D2E2A6200CC4C6A /* VideoTableViewCell.m */; };
+		C867EF221D2E2A6200CC4C6A /* DZCIQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C867EF1E1D2E2A6200CC4C6A /* DZCIQViewController.m */; };
+		C867EF251D2E2AF600CC4C6A /* DZCIQViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C867EF241D2E2AF600CC4C6A /* DZCIQViewController.storyboard */; };
 		C883469A1D0D104800E5ABE9 /* logWinDiTuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */; };
 		C893F2501D050D7B00E96398 /* DZCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F24F1D050D7B00E96398 /* DZCNavigationController.m */; };
 		C893F2561D050E0700E96398 /* DZCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C893F2551D050E0700E96398 /* DZCTabBar.m */; };
@@ -316,6 +354,79 @@
 		C853FB391D1D166500ECF8D2 /* CylViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CylViewController.m; sourceTree = "<group>"; };
 		C85A26291D23651C008FAC98 /* businquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = businquiryViewController.h; path = ../businquiryViewController.h; sourceTree = "<group>"; };
 		C85A262A1D23651C008FAC98 /* businquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = businquiryViewController.m; path = ../businquiryViewController.m; sourceTree = "<group>"; };
+		C867EEA21D2E2A1300CC4C6A /* IQAlbumAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAlbumAssetsViewController.h; sourceTree = "<group>"; };
+		C867EEA31D2E2A1300CC4C6A /* IQAlbumAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAlbumAssetsViewController.m; sourceTree = "<group>"; };
+		C867EEA51D2E2A1300CC4C6A /* IQAssetsAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsAlbumViewCell.h; sourceTree = "<group>"; };
+		C867EEA61D2E2A1300CC4C6A /* IQAssetsAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsAlbumViewCell.m; sourceTree = "<group>"; };
+		C867EEA71D2E2A1300CC4C6A /* IQAssetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsCell.h; sourceTree = "<group>"; };
+		C867EEA81D2E2A1300CC4C6A /* IQAssetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsCell.m; sourceTree = "<group>"; };
+		C867EEAA1D2E2A1300CC4C6A /* IQAssetsPickerShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsPickerShadowView.h; sourceTree = "<group>"; };
+		C867EEAB1D2E2A1300CC4C6A /* IQAssetsPickerShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsPickerShadowView.m; sourceTree = "<group>"; };
+		C867EEAC1D2E2A1300CC4C6A /* IQCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQCheckmarkView.h; sourceTree = "<group>"; };
+		C867EEAD1D2E2A1300CC4C6A /* IQCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQCheckmarkView.m; sourceTree = "<group>"; };
+		C867EEAE1D2E2A1300CC4C6A /* IQAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsPickerController.h; sourceTree = "<group>"; };
+		C867EEAF1D2E2A1300CC4C6A /* IQAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsPickerController.m; sourceTree = "<group>"; };
+		C867EEB11D2E2A1300CC4C6A /* IQAudioPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerController.h; sourceTree = "<group>"; };
+		C867EEB21D2E2A1300CC4C6A /* IQAudioPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerController.m; sourceTree = "<group>"; };
+		C867EEB31D2E2A1300CC4C6A /* IQAudioPickerController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IQAudioPickerController.xcassets; sourceTree = "<group>"; };
+		C867EEB51D2E2A1300CC4C6A /* IQAudioPickerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerUtility.h; sourceTree = "<group>"; };
+		C867EEB61D2E2A1300CC4C6A /* IQAudioPickerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerUtility.m; sourceTree = "<group>"; };
+		C867EEB91D2E2A1300CC4C6A /* IQAudioPickerShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerShadowView.h; sourceTree = "<group>"; };
+		C867EEBA1D2E2A1300CC4C6A /* IQAudioPickerShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerShadowView.m; sourceTree = "<group>"; };
+		C867EEBC1D2E2A1300CC4C6A /* IQSongsAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumViewCell.h; sourceTree = "<group>"; };
+		C867EEBD1D2E2A1300CC4C6A /* IQSongsAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumViewCell.m; sourceTree = "<group>"; };
+		C867EEBE1D2E2A1300CC4C6A /* IQSongsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCell.h; sourceTree = "<group>"; };
+		C867EEBF1D2E2A1300CC4C6A /* IQSongsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCell.m; sourceTree = "<group>"; };
+		C867EEC11D2E2A1300CC4C6A /* IQSongsListTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListTableHeaderView.h; sourceTree = "<group>"; };
+		C867EEC21D2E2A1300CC4C6A /* IQSongsListTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListTableHeaderView.m; sourceTree = "<group>"; };
+		C867EEC31D2E2A1300CC4C6A /* IQSongsAlbumListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumListViewController.h; sourceTree = "<group>"; };
+		C867EEC41D2E2A1300CC4C6A /* IQSongsAlbumListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumListViewController.m; sourceTree = "<group>"; };
+		C867EEC51D2E2A1300CC4C6A /* IQSongsArtistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsArtistListViewController.h; sourceTree = "<group>"; };
+		C867EEC61D2E2A1300CC4C6A /* IQSongsArtistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsArtistListViewController.m; sourceTree = "<group>"; };
+		C867EEC71D2E2A1300CC4C6A /* IQSongsCompilationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCompilationsViewController.h; sourceTree = "<group>"; };
+		C867EEC81D2E2A1300CC4C6A /* IQSongsCompilationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCompilationsViewController.m; sourceTree = "<group>"; };
+		C867EEC91D2E2A1300CC4C6A /* IQSongsComposersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsComposersViewController.h; sourceTree = "<group>"; };
+		C867EECA1D2E2A1300CC4C6A /* IQSongsComposersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsComposersViewController.m; sourceTree = "<group>"; };
+		C867EECB1D2E2A1300CC4C6A /* IQSongsGenreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsGenreViewController.h; sourceTree = "<group>"; };
+		C867EECC1D2E2A1300CC4C6A /* IQSongsGenreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsGenreViewController.m; sourceTree = "<group>"; };
+		C867EECD1D2E2A1300CC4C6A /* IQSongsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListViewController.h; sourceTree = "<group>"; };
+		C867EECE1D2E2A1300CC4C6A /* IQSongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListViewController.m; sourceTree = "<group>"; };
+		C867EECF1D2E2A1300CC4C6A /* IQSongsPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsPlaylistViewController.h; sourceTree = "<group>"; };
+		C867EED01D2E2A1300CC4C6A /* IQSongsPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsPlaylistViewController.m; sourceTree = "<group>"; };
+		C867EED21D2E2A1300CC4C6A /* IQMediaCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaCaptureController.h; sourceTree = "<group>"; };
+		C867EED31D2E2A1300CC4C6A /* IQMediaCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaCaptureController.m; sourceTree = "<group>"; };
+		C867EED41D2E2A1300CC4C6A /* IQMediaCaptureController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IQMediaCaptureController.xcassets; sourceTree = "<group>"; };
+		C867EED81D2E2A1300CC4C6A /* IQAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioSession.h; sourceTree = "<group>"; };
+		C867EED91D2E2A1300CC4C6A /* IQAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioSession.m; sourceTree = "<group>"; };
+		C867EEDA1D2E2A1300CC4C6A /* IQCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQCaptureSession.h; sourceTree = "<group>"; };
+		C867EEDB1D2E2A1300CC4C6A /* IQCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQCaptureSession.m; sourceTree = "<group>"; };
+		C867EEDD1D2E2A1300CC4C6A /* IQFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQFileManager.h; sourceTree = "<group>"; };
+		C867EEDE1D2E2A1300CC4C6A /* IQFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQFileManager.m; sourceTree = "<group>"; };
+		C867EEE11D2E2A1300CC4C6A /* IQBottomContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBottomContainerView.h; sourceTree = "<group>"; };
+		C867EEE21D2E2A1300CC4C6A /* IQBottomContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBottomContainerView.m; sourceTree = "<group>"; };
+		C867EEE51D2E2A1300CC4C6A /* IQFeatureOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQFeatureOverlay.h; sourceTree = "<group>"; };
+		C867EEE61D2E2A1300CC4C6A /* IQFeatureOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQFeatureOverlay.m; sourceTree = "<group>"; };
+		C867EEE71D2E2A1300CC4C6A /* IQMediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaView.h; sourceTree = "<group>"; };
+		C867EEE81D2E2A1300CC4C6A /* IQMediaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaView.m; sourceTree = "<group>"; };
+		C867EEEA1D2E2A1300CC4C6A /* IQPartitionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPartitionBar.h; sourceTree = "<group>"; };
+		C867EEEB1D2E2A1300CC4C6A /* IQPartitionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPartitionBar.m; sourceTree = "<group>"; };
+		C867EEEC1D2E2A1300CC4C6A /* IQPartitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPartitionView.h; sourceTree = "<group>"; };
+		C867EEED1D2E2A1300CC4C6A /* IQPartitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPartitionView.m; sourceTree = "<group>"; };
+		C867EEF01D2E2A1300CC4C6A /* IQ_SCSiriWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQ_SCSiriWaveformView.h; sourceTree = "<group>"; };
+		C867EEF11D2E2A1300CC4C6A /* IQ_SCSiriWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQ_SCSiriWaveformView.m; sourceTree = "<group>"; };
+		C867EEF21D2E2A1300CC4C6A /* IQMediaPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaPickerController.h; sourceTree = "<group>"; };
+		C867EEF31D2E2A1300CC4C6A /* IQMediaPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaPickerController.m; sourceTree = "<group>"; };
+		C867EEF41D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaPickerControllerConstants.h; sourceTree = "<group>"; };
+		C867EEF51D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaPickerControllerConstants.m; sourceTree = "<group>"; };
+		C867EF171D2E2A6200CC4C6A /* AudioTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioTableViewCell.h; path = ../AudioTableViewCell.h; sourceTree = "<group>"; };
+		C867EF181D2E2A6200CC4C6A /* AudioTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioTableViewCell.m; path = ../AudioTableViewCell.m; sourceTree = "<group>"; };
+		C867EF191D2E2A6200CC4C6A /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoTableViewCell.h; path = ../PhotoTableViewCell.h; sourceTree = "<group>"; };
+		C867EF1A1D2E2A6200CC4C6A /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoTableViewCell.m; path = ../PhotoTableViewCell.m; sourceTree = "<group>"; };
+		C867EF1B1D2E2A6200CC4C6A /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTableViewCell.h; path = ../VideoTableViewCell.h; sourceTree = "<group>"; };
+		C867EF1C1D2E2A6200CC4C6A /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoTableViewCell.m; path = ../VideoTableViewCell.m; sourceTree = "<group>"; };
+		C867EF1D1D2E2A6200CC4C6A /* DZCIQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCIQViewController.h; sourceTree = "<group>"; };
+		C867EF1E1D2E2A6200CC4C6A /* DZCIQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCIQViewController.m; sourceTree = "<group>"; };
+		C867EF241D2E2AF600CC4C6A /* DZCIQViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DZCIQViewController.storyboard; sourceTree = "<group>"; };
 		C88346981D0D104800E5ABE9 /* logWinDiTuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logWinDiTuViewController.h; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.h; sourceTree = "<group>"; };
 		C88346991D0D104800E5ABE9 /* logWinDiTuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = logWinDiTuViewController.m; path = ../../../MainDiTu/MainMapViewController/logWinDiTuViewController.m; sourceTree = "<group>"; };
 		C893F24E1D050D7B00E96398 /* DZCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DZCNavigationController.h; path = Main/DZCNavigationController.h; sourceTree = "<group>"; };
@@ -840,6 +951,262 @@
 			path = "../busInquiry(司机界面)";
 			sourceTree = "<group>";
 		};
+		C867EEA01D2E2A1300CC4C6A /* IQMediaPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C867EF1D1D2E2A6200CC4C6A /* DZCIQViewController.h */,
+				C867EF1E1D2E2A6200CC4C6A /* DZCIQViewController.m */,
+				C867EEF21D2E2A1300CC4C6A /* IQMediaPickerController.h */,
+				C867EEF31D2E2A1300CC4C6A /* IQMediaPickerController.m */,
+				C867EEF41D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.h */,
+				C867EEF51D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.m */,
+				C867EF231D2E2AE000CC4C6A /* IQMediaPickerView */,
+				C867EEA11D2E2A1300CC4C6A /* IQAssetsPickerController */,
+				C867EEB01D2E2A1300CC4C6A /* IQAudioPickerController */,
+				C867EED11D2E2A1300CC4C6A /* IQMediaCaptureController */,
+			);
+			path = IQMediaPickerController;
+			sourceTree = "<group>";
+		};
+		C867EEA11D2E2A1300CC4C6A /* IQAssetsPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEA21D2E2A1300CC4C6A /* IQAlbumAssetsViewController.h */,
+				C867EEA31D2E2A1300CC4C6A /* IQAlbumAssetsViewController.m */,
+				C867EEA41D2E2A1300CC4C6A /* IQAssetPickerCell */,
+				C867EEA91D2E2A1300CC4C6A /* IQAssetPickerView */,
+				C867EEAE1D2E2A1300CC4C6A /* IQAssetsPickerController.h */,
+				C867EEAF1D2E2A1300CC4C6A /* IQAssetsPickerController.m */,
+			);
+			path = IQAssetsPickerController;
+			sourceTree = "<group>";
+		};
+		C867EEA41D2E2A1300CC4C6A /* IQAssetPickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEA51D2E2A1300CC4C6A /* IQAssetsAlbumViewCell.h */,
+				C867EEA61D2E2A1300CC4C6A /* IQAssetsAlbumViewCell.m */,
+				C867EEA71D2E2A1300CC4C6A /* IQAssetsCell.h */,
+				C867EEA81D2E2A1300CC4C6A /* IQAssetsCell.m */,
+			);
+			path = IQAssetPickerCell;
+			sourceTree = "<group>";
+		};
+		C867EEA91D2E2A1300CC4C6A /* IQAssetPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEAA1D2E2A1300CC4C6A /* IQAssetsPickerShadowView.h */,
+				C867EEAB1D2E2A1300CC4C6A /* IQAssetsPickerShadowView.m */,
+				C867EEAC1D2E2A1300CC4C6A /* IQCheckmarkView.h */,
+				C867EEAD1D2E2A1300CC4C6A /* IQCheckmarkView.m */,
+			);
+			path = IQAssetPickerView;
+			sourceTree = "<group>";
+		};
+		C867EEB01D2E2A1300CC4C6A /* IQAudioPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEB11D2E2A1300CC4C6A /* IQAudioPickerController.h */,
+				C867EEB21D2E2A1300CC4C6A /* IQAudioPickerController.m */,
+				C867EEB31D2E2A1300CC4C6A /* IQAudioPickerController.xcassets */,
+				C867EEB41D2E2A1300CC4C6A /* IQAudioPickerUtility */,
+				C867EEB71D2E2A1300CC4C6A /* IQAudioPIckerViewControllers */,
+			);
+			path = IQAudioPickerController;
+			sourceTree = "<group>";
+		};
+		C867EEB41D2E2A1300CC4C6A /* IQAudioPickerUtility */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEB51D2E2A1300CC4C6A /* IQAudioPickerUtility.h */,
+				C867EEB61D2E2A1300CC4C6A /* IQAudioPickerUtility.m */,
+			);
+			path = IQAudioPickerUtility;
+			sourceTree = "<group>";
+		};
+		C867EEB71D2E2A1300CC4C6A /* IQAudioPIckerViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEB81D2E2A1300CC4C6A /* IQAudioCellShadowView */,
+				C867EEBB1D2E2A1300CC4C6A /* IQAudioPickerTableViewCell */,
+				C867EEC01D2E2A1300CC4C6A /* IQAudioPickerTableViewHeader */,
+				C867EEC31D2E2A1300CC4C6A /* IQSongsAlbumListViewController.h */,
+				C867EEC41D2E2A1300CC4C6A /* IQSongsAlbumListViewController.m */,
+				C867EEC51D2E2A1300CC4C6A /* IQSongsArtistListViewController.h */,
+				C867EEC61D2E2A1300CC4C6A /* IQSongsArtistListViewController.m */,
+				C867EEC71D2E2A1300CC4C6A /* IQSongsCompilationsViewController.h */,
+				C867EEC81D2E2A1300CC4C6A /* IQSongsCompilationsViewController.m */,
+				C867EEC91D2E2A1300CC4C6A /* IQSongsComposersViewController.h */,
+				C867EECA1D2E2A1300CC4C6A /* IQSongsComposersViewController.m */,
+				C867EECB1D2E2A1300CC4C6A /* IQSongsGenreViewController.h */,
+				C867EECC1D2E2A1300CC4C6A /* IQSongsGenreViewController.m */,
+				C867EECD1D2E2A1300CC4C6A /* IQSongsListViewController.h */,
+				C867EECE1D2E2A1300CC4C6A /* IQSongsListViewController.m */,
+				C867EECF1D2E2A1300CC4C6A /* IQSongsPlaylistViewController.h */,
+				C867EED01D2E2A1300CC4C6A /* IQSongsPlaylistViewController.m */,
+			);
+			path = IQAudioPIckerViewControllers;
+			sourceTree = "<group>";
+		};
+		C867EEB81D2E2A1300CC4C6A /* IQAudioCellShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEB91D2E2A1300CC4C6A /* IQAudioPickerShadowView.h */,
+				C867EEBA1D2E2A1300CC4C6A /* IQAudioPickerShadowView.m */,
+			);
+			path = IQAudioCellShadowView;
+			sourceTree = "<group>";
+		};
+		C867EEBB1D2E2A1300CC4C6A /* IQAudioPickerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEBC1D2E2A1300CC4C6A /* IQSongsAlbumViewCell.h */,
+				C867EEBD1D2E2A1300CC4C6A /* IQSongsAlbumViewCell.m */,
+				C867EEBE1D2E2A1300CC4C6A /* IQSongsCell.h */,
+				C867EEBF1D2E2A1300CC4C6A /* IQSongsCell.m */,
+			);
+			path = IQAudioPickerTableViewCell;
+			sourceTree = "<group>";
+		};
+		C867EEC01D2E2A1300CC4C6A /* IQAudioPickerTableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEC11D2E2A1300CC4C6A /* IQSongsListTableHeaderView.h */,
+				C867EEC21D2E2A1300CC4C6A /* IQSongsListTableHeaderView.m */,
+			);
+			path = IQAudioPickerTableViewHeader;
+			sourceTree = "<group>";
+		};
+		C867EED11D2E2A1300CC4C6A /* IQMediaCaptureController */ = {
+			isa = PBXGroup;
+			children = (
+				C867EED21D2E2A1300CC4C6A /* IQMediaCaptureController.h */,
+				C867EED31D2E2A1300CC4C6A /* IQMediaCaptureController.m */,
+				C867EED41D2E2A1300CC4C6A /* IQMediaCaptureController.xcassets */,
+				C867EED51D2E2A1300CC4C6A /* IQMediaCaptureUtility */,
+				C867EEDF1D2E2A1300CC4C6A /* IQMediaCaptureView */,
+				C867EEEE1D2E2A1300CC4C6A /* Third Party */,
+			);
+			path = IQMediaCaptureController;
+			sourceTree = "<group>";
+		};
+		C867EED51D2E2A1300CC4C6A /* IQMediaCaptureUtility */ = {
+			isa = PBXGroup;
+			children = (
+				C867EED61D2E2A1300CC4C6A /* IQCaptureSession */,
+				C867EEDC1D2E2A1300CC4C6A /* IQFileManager */,
+			);
+			path = IQMediaCaptureUtility;
+			sourceTree = "<group>";
+		};
+		C867EED61D2E2A1300CC4C6A /* IQCaptureSession */ = {
+			isa = PBXGroup;
+			children = (
+				C867EED71D2E2A1300CC4C6A /* IQAudioSession */,
+				C867EEDA1D2E2A1300CC4C6A /* IQCaptureSession.h */,
+				C867EEDB1D2E2A1300CC4C6A /* IQCaptureSession.m */,
+			);
+			path = IQCaptureSession;
+			sourceTree = "<group>";
+		};
+		C867EED71D2E2A1300CC4C6A /* IQAudioSession */ = {
+			isa = PBXGroup;
+			children = (
+				C867EED81D2E2A1300CC4C6A /* IQAudioSession.h */,
+				C867EED91D2E2A1300CC4C6A /* IQAudioSession.m */,
+			);
+			path = IQAudioSession;
+			sourceTree = "<group>";
+		};
+		C867EEDC1D2E2A1300CC4C6A /* IQFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEDD1D2E2A1300CC4C6A /* IQFileManager.h */,
+				C867EEDE1D2E2A1300CC4C6A /* IQFileManager.m */,
+			);
+			path = IQFileManager;
+			sourceTree = "<group>";
+		};
+		C867EEDF1D2E2A1300CC4C6A /* IQMediaCaptureView */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEE01D2E2A1300CC4C6A /* IQBottomContainerView */,
+				C867EEE31D2E2A1300CC4C6A /* IQMediaView */,
+				C867EEE91D2E2A1300CC4C6A /* IQPartitionBar */,
+			);
+			path = IQMediaCaptureView;
+			sourceTree = "<group>";
+		};
+		C867EEE01D2E2A1300CC4C6A /* IQBottomContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEE11D2E2A1300CC4C6A /* IQBottomContainerView.h */,
+				C867EEE21D2E2A1300CC4C6A /* IQBottomContainerView.m */,
+			);
+			path = IQBottomContainerView;
+			sourceTree = "<group>";
+		};
+		C867EEE31D2E2A1300CC4C6A /* IQMediaView */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEE41D2E2A1300CC4C6A /* IQFeatureOverlay */,
+				C867EEE71D2E2A1300CC4C6A /* IQMediaView.h */,
+				C867EEE81D2E2A1300CC4C6A /* IQMediaView.m */,
+			);
+			path = IQMediaView;
+			sourceTree = "<group>";
+		};
+		C867EEE41D2E2A1300CC4C6A /* IQFeatureOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEE51D2E2A1300CC4C6A /* IQFeatureOverlay.h */,
+				C867EEE61D2E2A1300CC4C6A /* IQFeatureOverlay.m */,
+			);
+			path = IQFeatureOverlay;
+			sourceTree = "<group>";
+		};
+		C867EEE91D2E2A1300CC4C6A /* IQPartitionBar */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEEA1D2E2A1300CC4C6A /* IQPartitionBar.h */,
+				C867EEEB1D2E2A1300CC4C6A /* IQPartitionBar.m */,
+				C867EEEC1D2E2A1300CC4C6A /* IQPartitionView.h */,
+				C867EEED1D2E2A1300CC4C6A /* IQPartitionView.m */,
+			);
+			path = IQPartitionBar;
+			sourceTree = "<group>";
+		};
+		C867EEEE1D2E2A1300CC4C6A /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEEF1D2E2A1300CC4C6A /* SCSiriWaveformView */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		C867EEEF1D2E2A1300CC4C6A /* SCSiriWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				C867EEF01D2E2A1300CC4C6A /* IQ_SCSiriWaveformView.h */,
+				C867EEF11D2E2A1300CC4C6A /* IQ_SCSiriWaveformView.m */,
+			);
+			path = SCSiriWaveformView;
+			sourceTree = "<group>";
+		};
+		C867EF231D2E2AE000CC4C6A /* IQMediaPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C867EF171D2E2A6200CC4C6A /* AudioTableViewCell.h */,
+				C867EF181D2E2A6200CC4C6A /* AudioTableViewCell.m */,
+				C867EF191D2E2A6200CC4C6A /* PhotoTableViewCell.h */,
+				C867EF1A1D2E2A6200CC4C6A /* PhotoTableViewCell.m */,
+				C867EF1B1D2E2A6200CC4C6A /* VideoTableViewCell.h */,
+				C867EF1C1D2E2A6200CC4C6A /* VideoTableViewCell.m */,
+				C867EF241D2E2AF600CC4C6A /* DZCIQViewController.storyboard */,
+			);
+			path = IQMediaPickerView;
+			sourceTree = "<group>";
+		};
 		C893F25F1D0517D000E96398 /* CarHomePageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1198,6 +1565,7 @@
 		C8A3C4F81CFEB4C500E741BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C867EEA01D2E2A1300CC4C6A /* IQMediaPickerController */,
 				C84A74211D01042000CA4CFD /* breakRulusNotesViewController.h */,
 				C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */,
 				C84A742A1D01096B00CA4CFD /* selectPhotoVC.h */,
@@ -1641,8 +2009,10 @@
 				C8FD3E991D2BA02D004629F4 /* foods.plist in Resources */,
 				C8536CF31D064D5D0044BEC8 /* selectPhotoVC.storyboard in Resources */,
 				C8E5B7E21D1A7EA000350FB9 /* welcome7.png in Resources */,
+				C867EF251D2E2AF600CC4C6A /* DZCIQViewController.storyboard in Resources */,
 				C8E9B3A11D02A96300B57DB9 /* webViewController.storyboard in Resources */,
 				C893F2AF1D055D8100E96398 /* MLSelectPhoto.bundle in Resources */,
+				C867EEFD1D2E2A1300CC4C6A /* IQAudioPickerController.xcassets in Resources */,
 				C8E5B7E71D1A7EA000350FB9 /* welcome9@2x.png in Resources */,
 				C893F2651D0518A000E96398 /* travelInformationSto.storyboard in Resources */,
 				C8E5B7D71D1A7EA000350FB9 /* welcome1@2x.png in Resources */,
@@ -1657,6 +2027,7 @@
 				C8A3C4B71CFE5D2200E741BC /* Main.storyboard in Resources */,
 				C8E5B7D81D1A7EA000350FB9 /* welcome2.png in Resources */,
 				C8E5B7BF1D1A657F00350FB9 /* UserGuidViewController.storyboard in Resources */,
+				C867EF0B1D2E2A1300CC4C6A /* IQMediaCaptureController.xcassets in Resources */,
 				C8E5B7DF1D1A7EA000350FB9 /* welcome5@2x.png in Resources */,
 				C8E5B7DB1D1A7EA000350FB9 /* welcome3@2x.png in Resources */,
 				C8E5B7E51D1A7EA000350FB9 /* welcome8@2x.png in Resources */,
@@ -1763,10 +2134,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C867EF051D2E2A1300CC4C6A /* IQSongsCompilationsViewController.m in Sources */,
 				C8A3C5191CFEB4C500E741BC /* UIImage+Ex.m in Sources */,
 				C84A74351D010AA300CA4CFD /* QualificationsApplicationVC.m in Sources */,
+				C867EF0D1D2E2A1300CC4C6A /* IQCaptureSession.m in Sources */,
 				C80009841D20FCF000A527C0 /* QualificationsApplicationModel.m in Sources */,
 				C8000A6F1D21042A00A527C0 /* UIView+MJExtension.m in Sources */,
+				C867EF041D2E2A1300CC4C6A /* IQSongsArtistListViewController.m in Sources */,
 				C8000A681D21042A00A527C0 /* MJRefreshNormalHeader.m in Sources */,
 				C80A88591D0CECAE003801CB /* MMZCHMViewController.m in Sources */,
 				C893F2AD1D055D8100E96398 /* MLSelectPhotoPickerFooterCollectionReusableView.m in Sources */,
@@ -1779,10 +2153,14 @@
 				C8FD3E9D1D2BA926004629F4 /* CZToolBar.m in Sources */,
 				C8A3C51A1CFEB4C500E741BC /* UIView+Ex.m in Sources */,
 				C893F2A41D055D8100E96398 /* MLSelectPhotoPickerAssetsViewController.m in Sources */,
+				C867EF061D2E2A1300CC4C6A /* IQSongsComposersViewController.m in Sources */,
+				C867EF1F1D2E2A6200CC4C6A /* AudioTableViewCell.m in Sources */,
 				C8000A661D21042A00A527C0 /* MJRefreshBackStateFooter.m in Sources */,
 				C853FB3A1D1D166500ECF8D2 /* CylViewController.m in Sources */,
+				C867EEF61D2E2A1300CC4C6A /* IQAlbumAssetsViewController.m in Sources */,
 				C8E5989E1D0FEBD300D58C64 /* PlayBackRecordedScreen.m in Sources */,
 				C8000A691D21042A00A527C0 /* MJRefreshStateHeader.m in Sources */,
+				C867EF001D2E2A1300CC4C6A /* IQSongsAlbumViewCell.m in Sources */,
 				C893F29C1D055D8100E96398 /* UIImage+MLTint.m in Sources */,
 				C8A3C4B41CFE5D2100E741BC /* ViewController.m in Sources */,
 				C84A74441D016A1C00CA4CFD /* travelInformationTableCell.m in Sources */,
@@ -1790,23 +2168,30 @@
 				C893F2BE1D05777000E96398 /* UIView+Extension.m in Sources */,
 				C893F2A31D055D8100E96398 /* MLSelectPhotoNavigationViewController.m in Sources */,
 				C893F25C1D050F0000E96398 /* DZCTabBarController.m in Sources */,
+				C867EEFC1D2E2A1300CC4C6A /* IQAudioPickerController.m in Sources */,
 				C8E9B38F1D02572500B57DB9 /* MJPropertyType.m in Sources */,
 				C893F2B81D055DE300E96398 /* ALActionSheetView.m in Sources */,
 				C8FC2B4A1D0E5D4D00C561C0 /* breakRulusSelectPhotoCell.m in Sources */,
+				C867EF101D2E2A1300CC4C6A /* IQFeatureOverlay.m in Sources */,
 				C80A885C1D0CECAE003801CB /* settingPassWardViewController.m in Sources */,
+				C867EF081D2E2A1300CC4C6A /* IQSongsListViewController.m in Sources */,
 				C84A74321D010A6100CA4CFD /* writeAgreementVC.m in Sources */,
+				C867EEF91D2E2A1300CC4C6A /* IQAssetsPickerShadowView.m in Sources */,
 				C8E9B39F1D02A94F00B57DB9 /* webViewController.m in Sources */,
 				C8000A7B1D21165500A527C0 /* horizontalModel.m in Sources */,
 				C848DD3E1D2CAC4900DA4AB7 /* CarHomePageVC.m in Sources */,
+				C867EF161D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.m in Sources */,
 				C893F29F1D055D8100E96398 /* MLSelectPhotoPickerBrowserPhoto.m in Sources */,
 				C893F2A71D055D8100E96398 /* MLPhotoPickerImageView.m in Sources */,
 				C893F2BB1D05773C00E96398 /* UIBarButtonItem+Extension.m in Sources */,
+				C867EF071D2E2A1300CC4C6A /* IQSongsGenreViewController.m in Sources */,
 				C8E9B3921D02572500B57DB9 /* NSObject+MJKeyValue.m in Sources */,
 				C8FCFA8E1D24C791004FBADE /* QRViewController.m in Sources */,
 				C8E9B3981D02592E00B57DB9 /* NetWorkTool.m in Sources */,
 				C8E9B39B1D025C9400B57DB9 /* travelInformationTableCellModel.m in Sources */,
 				C893F2A91D055D8100E96398 /* MLSelectPhotoPickerBrowserPhotoScrollView.m in Sources */,
 				C8000A5C1D21042A00A527C0 /* MJRefreshAutoFooter.m in Sources */,
+				C867EEFE1D2E2A1300CC4C6A /* IQAudioPickerUtility.m in Sources */,
 				C8000A6E1D21042A00A527C0 /* UIScrollView+MJRefresh.m in Sources */,
 				C8000A5D1D21042A00A527C0 /* MJRefreshBackFooter.m in Sources */,
 				C893F2A51D055D8100E96398 /* MLSelectPhotoPickerGroupViewController.m in Sources */,
@@ -1819,8 +2204,10 @@
 				C893F29D1D055D8100E96398 /* UIView+MLExtension.m in Sources */,
 				C8000A6B1D21042A00A527C0 /* MJRefreshConst.m in Sources */,
 				C8FC2B4D1D0EA38E00C561C0 /* CarHomePageModel.m in Sources */,
+				C867EF201D2E2A6200CC4C6A /* PhotoTableViewCell.m in Sources */,
 				C883469A1D0D104800E5ABE9 /* logWinDiTuViewController.m in Sources */,
 				C8E9B3941D02572500B57DB9 /* NSString+MJExtension.m in Sources */,
+				C867EF121D2E2A1300CC4C6A /* IQPartitionBar.m in Sources */,
 				C8E9B3E51D02C46500B57DB9 /* LoginViewController.m in Sources */,
 				C80A885A1D0CECAE003801CB /* MMZCViewController.m in Sources */,
 				C893F2A81D055D8100E96398 /* MLSelectPhotoPickerBrowserPhotoImageView.m in Sources */,
@@ -1829,29 +2216,41 @@
 				C80A885D1D0CECAE003801CB /* settinhHeaderViewController.m in Sources */,
 				C8FCFA8D1D24C791004FBADE /* QRView.m in Sources */,
 				C84A74201D01039B00CA4CFD /* BusInquiryViewController.m in Sources */,
+				C867EEF71D2E2A1300CC4C6A /* IQAssetsAlbumViewCell.m in Sources */,
 				C893F2A61D055D8100E96398 /* MLSelectPhotoPickerViewController.m in Sources */,
 				C8536D561D06A7360044BEC8 /* LuYinViewController.m in Sources */,
 				C8E5B7C21D1A7D1200350FB9 /* UserGuidViewController.m in Sources */,
 				C893F2AE1D055D8100E96398 /* MLSelectPhotoPickerGroupTableViewCell.m in Sources */,
 				C8000A601D21042A00A527C0 /* MJRefreshHeader.m in Sources */,
+				C867EEF81D2E2A1300CC4C6A /* IQAssetsCell.m in Sources */,
+				C867EF0C1D2E2A1300CC4C6A /* IQAudioSession.m in Sources */,
+				C867EF131D2E2A1300CC4C6A /* IQPartitionView.m in Sources */,
+				C867EF151D2E2A1300CC4C6A /* IQMediaPickerController.m in Sources */,
 				C893F2AA1D055D8100E96398 /* MLSelectPhotoPickerBrowserPhotoView.m in Sources */,
+				C867EEFA1D2E2A1300CC4C6A /* IQCheckmarkView.m in Sources */,
 				C893F2A11D055D8100E96398 /* MLSelectPhotoPickerGroup.m in Sources */,
+				C867EF0E1D2E2A1300CC4C6A /* IQFileManager.m in Sources */,
 				C8536D581D06A7360044BEC8 /* LVRecordView.m in Sources */,
 				C8E9B38C1D02572500B57DB9 /* MJFoundation.m in Sources */,
 				C8000A5F1D21042A00A527C0 /* MJRefreshFooter.m in Sources */,
 				C8A3C4B11CFE5D2100E741BC /* AppDelegate.m in Sources */,
 				C8E9B38B1D02572500B57DB9 /* MJExtensionConst.m in Sources */,
 				C893F29E1D055D8100E96398 /* MLSelectPhotoAssets.m in Sources */,
+				C867EF141D2E2A1300CC4C6A /* IQ_SCSiriWaveformView.m in Sources */,
 				C8000A651D21042A00A527C0 /* MJRefreshBackNormalFooter.m in Sources */,
 				C893F2AB1D055D8100E96398 /* MLSelectPhotoPickerCollectionView.m in Sources */,
 				C893F2501D050D7B00E96398 /* DZCNavigationController.m in Sources */,
 				C8E9B3911D02572500B57DB9 /* NSObject+MJCoding.m in Sources */,
+				C867EF221D2E2A6200CC4C6A /* DZCIQViewController.m in Sources */,
+				C867EF021D2E2A1300CC4C6A /* IQSongsListTableHeaderView.m in Sources */,
 				C848DD381D2CA3AC00DA4AB7 /* goReportingVC.m in Sources */,
 				C8A3C4AE1CFE5D2100E741BC /* main.m in Sources */,
 				C893F2591D050E3500E96398 /* DZCTabBarButton.m in Sources */,
 				C8000A731D21154400A527C0 /* horizontalCollecVC.m in Sources */,
 				C893F2A21D055D8100E96398 /* MLSelectPhotoBrowserViewController.m in Sources */,
 				C893F2B51D055DD400E96398 /* SCPhotoHelper.m in Sources */,
+				C867EF091D2E2A1300CC4C6A /* IQSongsPlaylistViewController.m in Sources */,
+				C867EF031D2E2A1300CC4C6A /* IQSongsAlbumListViewController.m in Sources */,
 				C8000A671D21042A00A527C0 /* MJRefreshGifHeader.m in Sources */,
 				C8E9B3931D02572500B57DB9 /* NSObject+MJProperty.m in Sources */,
 				C8000A6D1D21042A00A527C0 /* UIScrollView+MJExtension.m in Sources */,
@@ -1860,13 +2259,20 @@
 				C84A742C1D01096B00CA4CFD /* selectPhotoVC.m in Sources */,
 				C8E9B3901D02572500B57DB9 /* NSObject+MJClass.m in Sources */,
 				C807A25F1D128E8D00482FA6 /* DOPScrollableActionSheet.m in Sources */,
+				C867EEFB1D2E2A1300CC4C6A /* IQAssetsPickerController.m in Sources */,
 				C8000A781D21163100A527C0 /* horizontalCell.m in Sources */,
+				C867EF0A1D2E2A1300CC4C6A /* IQMediaCaptureController.m in Sources */,
+				C867EEFF1D2E2A1300CC4C6A /* IQAudioPickerShadowView.m in Sources */,
 				C85A262B1D23651C008FAC98 /* businquiryViewController.m in Sources */,
+				C867EF211D2E2A6200CC4C6A /* VideoTableViewCell.m in Sources */,
+				C867EF011D2E2A1300CC4C6A /* IQSongsCell.m in Sources */,
 				C8E5989F1D0FEBD300D58C64 /* PlayBackViewController.m in Sources */,
 				C893F2AC1D055D8100E96398 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */,
 				C817D40F1D2B3E8400AF319A /* travelInformationVC.m in Sources */,
 				C8000A631D21042A00A527C0 /* MJRefreshAutoStateFooter.m in Sources */,
 				C8E9B38D1D02572500B57DB9 /* MJProperty.m in Sources */,
+				C867EF0F1D2E2A1300CC4C6A /* IQBottomContainerView.m in Sources */,
+				C867EF111D2E2A1300CC4C6A /* IQMediaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *destinationField;
 @property (weak, nonatomic) IBOutlet UITextField *startNameField;
 @property (strong ,nonatomic) MKMapItem * startMapItemNameField;
+@property (strong, nonatomic) IBOutlet UIButton *shunFengCarBtn;
+@property (strong, nonatomic) IBOutlet UIButton *selectEvidenceBtn;
+@property (strong, nonatomic) IBOutlet UIButton *sanLunCarBtn;
+@property (strong, nonatomic) IBOutlet UIButton *bigCarBtn;
 
 @end
 
@@ -29,6 +33,7 @@
     testVc.view.backgroundColor = [UIColor yellowColor];
     [self.navigationController pushViewController:testVc animated:YES];
 
+    
 }
 -(void)leftbtnClick {
     NSLog(@"leftbtnClick");
@@ -37,6 +42,12 @@
 
 
 - (IBAction)huoCar:(id)sender {
+    
+    UIStoryboard * iqViewStroyBoard = [UIStoryboard storyboardWithName:@"DZCIQViewController" bundle:nil];
+ 
+    DZCIQViewController *iqViewController = [iqViewStroyBoard instantiateInitialViewController];
+    
+    [self.navigationController pushViewController:iqViewController animated:YES];
     
 }
 - (IBAction)sanLunCar:(id)sender {
@@ -64,7 +75,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self settingDiTuBtnStyl];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(BreakDiTuClick) name:@"mainDiTuClickBtn" object:nil];
     
@@ -89,6 +101,34 @@
     self.mapView.delegate = self;
    
 }
+
+-(void)settingDiTuBtnStyl{
+
+
+    self.shunFengCarBtn.layer.cornerRadius = 35.0;
+    self.shunFengCarBtn.layer.borderColor = [[UIColor redColor] CGColor];
+    self.shunFengCarBtn.layer.borderWidth = 2.0;
+    self.shunFengCarBtn.layer.masksToBounds = YES;
+    
+    self.selectEvidenceBtn.layer.cornerRadius = 35.0;
+    self.selectEvidenceBtn.layer.borderWidth = 2.0;
+    self.selectEvidenceBtn.layer.borderColor = [[UIColor grayColor] CGColor];
+    self.selectEvidenceBtn.layer.masksToBounds = YES;
+    
+    self.sanLunCarBtn.layer.cornerRadius = 35.0;
+    self.sanLunCarBtn.layer.borderColor = [[UIColor blueColor] CGColor];
+    self.sanLunCarBtn.layer.borderWidth = 2.0;
+    self.sanLunCarBtn.layer.masksToBounds = YES;
+    
+    self.bigCarBtn.layer.cornerRadius = 35.0;
+    self.bigCarBtn.layer.borderWidth = 2.0;
+    self.bigCarBtn.layer.borderColor = [[UIColor yellowColor] CGColor];
+    self.bigCarBtn.layer.masksToBounds = YES;
+    
+    
+
+}
+
 -(void)BreakDiTuClick{
 
 
