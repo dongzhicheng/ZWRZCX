@@ -45,7 +45,7 @@
 
 - (IBAction)pickAction:(UIBarButtonItem *)sender
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Media Picker Controller Media Types" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Photo Library", @"Video Library", @"Audio Library", @"Capture Photo", @"Capture Video", @"Capture Audio", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"取证的类型" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"取本地图片", @"取本地视频", @"取本地音频", @"拍图片取证", @"拍视频取证", @"拍音频取证", nil];
     actionSheet.tag = 1;
     [actionSheet showInView:self.view];
 }
