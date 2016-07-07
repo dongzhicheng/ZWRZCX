@@ -1,10 +1,3 @@
-//
-//  SCSiriWaveformView.m
-//  SCSiriWaveformView
-//
-//  Created by Stefan Ceriu on 12/04/2014.
-//  Copyright (c) 2014 Stefan Ceriu. All rights reserved.
-//
 
 #import "IQ_SCSiriWaveformView.h"
 

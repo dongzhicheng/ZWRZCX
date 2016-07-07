@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-OF-sac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1459.5" y="1462.5"/>
+            <point key="canvasLocation" x="-1184.5" y="1485.5"/>
         </scene>
         <!--Select PhotoVC-->
         <scene sceneID="VXw-xx-AKn">
@@ -201,7 +201,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0L9-EC-eh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-975.5" y="1498.5"/>
+            <point key="canvasLocation" x="-690.5" y="1867.5"/>
         </scene>
         <!--运营资格申请-->
         <scene sceneID="gsq-ni-C2K">
@@ -504,7 +504,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvl-zW-vv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2550.5" y="1310.5"/>
+            <point key="canvasLocation" x="-2416.5" y="1194.5"/>
         </scene>
         <!--举报界面-->
         <scene sceneID="0TY-1m-WB6">
@@ -570,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8l-gI-CyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2024.5" y="1316.5"/>
+            <point key="canvasLocation" x="-2016.5" y="1194.5"/>
         </scene>
         <!--签署协议-->
         <scene sceneID="ppM-vc-XDf">
@@ -610,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgS-Vp-JBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2961.5" y="1310.5"/>
+            <point key="canvasLocation" x="-2837.5" y="1194.5"/>
         </scene>
         <!--车主界面-->
         <scene sceneID="8rg-sz-pLb">
@@ -687,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dxs-L9-AWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2222.5" y="312.5"/>
+            <point key="canvasLocation" x="-2206.5" y="312.5"/>
         </scene>
         <!--车主界面-->
         <scene sceneID="BvO-0g-HfK">
@@ -726,7 +726,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvp-Pz-90u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1542.5" y="2150.5"/>
+            <point key="canvasLocation" x="-1184.5" y="2248.5"/>
         </scene>
         <!--Cyl View Controller-->
         <scene sceneID="J56-L6-7de">
@@ -758,7 +758,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fi-pg-qru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1682" y="58.5"/>
+            <point key="canvasLocation" x="-1533" y="58.5"/>
         </scene>
         <!--证据获取界面-->
         <scene sceneID="Ks0-bO-BgU">
@@ -903,7 +903,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSP-8k-LRJ">
                                 <rect key="frame" x="41" y="443" width="242" height="30"/>
                                 <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="Button"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="提交点击选择后的内容"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -929,7 +930,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQ7-r3-zXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1449.5" y="560.5"/>
+            <point key="canvasLocation" x="-1529.5" y="552.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gBN-fz-Wr2">
@@ -944,7 +945,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okJ-Bv-Lw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1047" y="675.5"/>
+            <point key="canvasLocation" x="-712" y="1363.5"/>
         </scene>
     </scenes>
     <resources>
@@ -952,6 +953,6 @@
         <image name="welcome6" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XaR-yJ-ge8"/>
+        <segue reference="42O-fr-2LX"/>
     </inferredMetricsTieBreakers>
 </document>
