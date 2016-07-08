@@ -69,8 +69,6 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.startNameField resignFirstResponder];
     [self.destinationField resignFirstResponder];
-    
-    
 }
 
 - (void)viewDidLoad {
@@ -103,7 +101,6 @@
 }
 
 -(void)settingDiTuBtnStyl{
-
 
     self.shunFengCarBtn.layer.cornerRadius = 35.0;
     self.shunFengCarBtn.layer.borderColor = [[UIColor redColor] CGColor];

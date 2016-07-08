@@ -951,7 +951,7 @@
 			path = "../busInquiry(司机界面)";
 			sourceTree = "<group>";
 		};
-		C867EEA01D2E2A1300CC4C6A /* IQMediaPickerController */ = {
+		C867EEA01D2E2A1300CC4C6A /* DZCIQMediaPickerController */ = {
 			isa = PBXGroup;
 			children = (
 				C867EF1D1D2E2A6200CC4C6A /* DZCIQViewController.h */,
@@ -960,14 +960,15 @@
 				C867EEF31D2E2A1300CC4C6A /* IQMediaPickerController.m */,
 				C867EEF41D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.h */,
 				C867EEF51D2E2A1300CC4C6A /* IQMediaPickerControllerConstants.m */,
-				C867EEA11D2E2A1300CC4C6A /* IQAssetsPickerController */,
-				C867EEB01D2E2A1300CC4C6A /* IQAudioPickerController */,
-				C867EED11D2E2A1300CC4C6A /* IQMediaCaptureController */,
+				C867EEA11D2E2A1300CC4C6A /* DZCIQAssetsPickerController */,
+				C867EEB01D2E2A1300CC4C6A /* DZCIQAudioPickerController */,
+				C867EED11D2E2A1300CC4C6A /* DZCIQMediaCaptureController */,
 			);
+			name = DZCIQMediaPickerController;
 			path = IQMediaPickerController;
 			sourceTree = "<group>";
 		};
-		C867EEA11D2E2A1300CC4C6A /* IQAssetsPickerController */ = {
+		C867EEA11D2E2A1300CC4C6A /* DZCIQAssetsPickerController */ = {
 			isa = PBXGroup;
 			children = (
 				C867EEA21D2E2A1300CC4C6A /* IQAlbumAssetsViewController.h */,
@@ -977,6 +978,7 @@
 				C867EEAE1D2E2A1300CC4C6A /* IQAssetsPickerController.h */,
 				C867EEAF1D2E2A1300CC4C6A /* IQAssetsPickerController.m */,
 			);
+			name = DZCIQAssetsPickerController;
 			path = IQAssetsPickerController;
 			sourceTree = "<group>";
 		};
@@ -1002,7 +1004,7 @@
 			path = IQAssetPickerView;
 			sourceTree = "<group>";
 		};
-		C867EEB01D2E2A1300CC4C6A /* IQAudioPickerController */ = {
+		C867EEB01D2E2A1300CC4C6A /* DZCIQAudioPickerController */ = {
 			isa = PBXGroup;
 			children = (
 				C867EEB11D2E2A1300CC4C6A /* IQAudioPickerController.h */,
@@ -1011,6 +1013,7 @@
 				C867EEB41D2E2A1300CC4C6A /* IQAudioPickerUtility */,
 				C867EEB71D2E2A1300CC4C6A /* IQAudioPIckerViewControllers */,
 			);
+			name = DZCIQAudioPickerController;
 			path = IQAudioPickerController;
 			sourceTree = "<group>";
 		};
@@ -1076,7 +1079,7 @@
 			path = IQAudioPickerTableViewHeader;
 			sourceTree = "<group>";
 		};
-		C867EED11D2E2A1300CC4C6A /* IQMediaCaptureController */ = {
+		C867EED11D2E2A1300CC4C6A /* DZCIQMediaCaptureController */ = {
 			isa = PBXGroup;
 			children = (
 				C867EED21D2E2A1300CC4C6A /* IQMediaCaptureController.h */,
@@ -1086,6 +1089,7 @@
 				C867EEDF1D2E2A1300CC4C6A /* IQMediaCaptureView */,
 				C867EEEE1D2E2A1300CC4C6A /* Third Party */,
 			);
+			name = DZCIQMediaCaptureController;
 			path = IQMediaCaptureController;
 			sourceTree = "<group>";
 		};
@@ -1192,7 +1196,7 @@
 			path = SCSiriWaveformView;
 			sourceTree = "<group>";
 		};
-		C867EF231D2E2AE000CC4C6A /* IQMediaPickerView */ = {
+		C867EF231D2E2AE000CC4C6A /* DZCIQMediaPickerView */ = {
 			isa = PBXGroup;
 			children = (
 				C867EF171D2E2A6200CC4C6A /* AudioTableViewCell.h */,
@@ -1203,7 +1207,7 @@
 				C867EF1C1D2E2A6200CC4C6A /* VideoTableViewCell.m */,
 				C867EF241D2E2AF600CC4C6A /* DZCIQViewController.storyboard */,
 			);
-			name = IQMediaPickerView;
+			name = DZCIQMediaPickerView;
 			path = IQMediaPickerController/IQMediaPickerView;
 			sourceTree = "<group>";
 		};
@@ -1569,8 +1573,8 @@
 				C84A74221D01042000CA4CFD /* breakRulusNotesViewController.m */,
 				C84A742A1D01096B00CA4CFD /* selectPhotoVC.h */,
 				C84A742B1D01096B00CA4CFD /* selectPhotoVC.m */,
-				C867EEA01D2E2A1300CC4C6A /* IQMediaPickerController */,
-				C867EF231D2E2AE000CC4C6A /* IQMediaPickerView */,
+				C867EEA01D2E2A1300CC4C6A /* DZCIQMediaPickerController */,
+				C867EF231D2E2AE000CC4C6A /* DZCIQMediaPickerView */,
 			);
 			name = breakRulusNotesController;
 			path = Controller;

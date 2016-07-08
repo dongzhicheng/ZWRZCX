@@ -18,9 +18,16 @@
 @property (strong, nonatomic) IBOutlet UILabel *Textbouds;
 @property (strong, nonatomic) IBOutlet UITextField *repordTestField;
 @property (strong, nonatomic) IBOutlet UITextField *detailRepordTestField;
+
 @property (assign, nonatomic)NSInteger row;
+@property (assign, nonatomic)NSInteger section;
+
 @property (strong, nonatomic) NSArray *foods;
 @property (nonatomic, weak) CZToolBar* toolBar;
+@property (strong, nonatomic) IBOutlet UITableView *reportTabelView;
+@property (strong,nonatomic)NSMutableDictionary *cellContentDict;
+@property (strong,nonatomic) NSMutableArray * imageArray;
+
 
 
 @end
@@ -30,9 +37,44 @@
 
 {
     IBOutlet UITableView *tableViewMedia;
-    NSDictionary *mediaInfo;
+    NSMutableDictionary *mediaInfo;
     
     IQMediaPickerControllerMediaType mediaType;
+}
+
+-(NSMutableArray *)iamgeArray {
+
+    if (!_imageArray) {
+        
+            _imageArray = [NSMutableArray array];
+        
+            NSString *key = [[mediaInfo allKeys] objectAtIndex:self.section];
+        
+            NSMutableDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:self.row];
+        
+        if ([dict objectForKey:IQMediaImage])
+        {
+            
+            UIImage *image = [dict objectForKey:IQMediaImage];
+
+            [_imageArray addObject:image];
+            
+        }
+        
+       
+    }
+
+    
+    return _imageArray;
+}
+
+-(NSMutableDictionary *)cellContentDict{
+
+    if (!_cellContentDict) {
+
+        _cellContentDict = [[NSMutableDictionary alloc] init];
+    }
+    return _cellContentDict;
 }
 
 -(NSArray *)foods{ 
@@ -57,11 +99,13 @@
     CZToolBar* toolBar = [CZToolBar toolBar];
     toolBar.toolBarDelegate = self;
     self.toolBar = toolBar;
-    
+
     self.repordTestField.inputView = self.pickView;
     [self.pickView removeFromSuperview];
     self.repordTestField.inputAccessoryView = toolBar;
-    
+
+    self.reportTabelView.delegate = self;
+    self.reportTabelView.dataSource = self;
     
 }
 
@@ -117,10 +161,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     [self.view setNeedsLayout];
     [self.view layoutIfNeeded];
-    
     [tableViewMedia reloadData];
 }
 
@@ -131,7 +173,7 @@
 
 - (IBAction)pickAction:(UIBarButtonItem *)sender
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"取证的类型" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"取本地图片", @"取本地视频", @"取本地音频", @"拍图片取证", @"录视频取证", @"录音频取证", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"慎重选取返回后不能删除" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"取本地图片", @"取本地视频", @"取本地音频", @"拍图片取证", @"录视频取证", @"录音频取证", nil];
     actionSheet.tag = 1;
     [actionSheet showInView:self.view];
 }
@@ -180,39 +222,47 @@
 //{
 //    return [[mediaInfo allKeys] objectAtIndex:section]; //组头
 //}
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
 
-    return @"如下是获取到的图片和音视频证据:";
-
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    NSString *key = [[mediaInfo allKeys] objectAtIndex:section];
-    return [[mediaInfo objectForKey:key] count];
-}
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *key = [[mediaInfo allKeys] objectAtIndex:indexPath.section];
-
-    if ([key isEqualToString:IQMediaTypeImage])
-    {
-        return 80;
-    }
-    else
-    {
-        return tableView.rowHeight;
-    }
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+
+        
+        NSString *key = [[mediaInfo allKeys] objectAtIndex:indexPath.section];
+        
+        NSMutableDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:indexPath.row];
+        
+        self.cellContentDict = dict; //记录字典内容
+        
+        if ([dict objectForKey:IQMediaImage])
+        {
+
+            [self.imageArray removeObjectAtIndex:indexPath.row];
+   
+            [self.reportTabelView reloadData];
+        }
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    self.row = indexPath.row;
+    self.section = indexPath.section;
+    
     NSString *key = [[mediaInfo allKeys] objectAtIndex:indexPath.section];
     
-    NSDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:indexPath.row];
+    NSMutableDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:indexPath.row];
     
+    self.cellContentDict = dict; //记录字典内容
+
     if ([dict objectForKey:IQMediaItem])
     {
         MPMediaItem *item = [dict objectForKey:IQMediaItem];
@@ -239,10 +289,13 @@
     }
     else if ([dict objectForKey:IQMediaImage])
     {
-        UIImage *image = [dict objectForKey:IQMediaImage];
-        
+    
+       UIImage *image = [dict objectForKey:IQMediaImage];
+    
         PhotoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([PhotoTableViewCell class])];
         
+       [self.imageArray addObject:image];
+    
         cell.imageViewPhoto.image = image;
         
         return cell;
@@ -268,6 +321,40 @@
         return nil;
     }
 }
+
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return YES;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    return @"如下是获取到的图片和音视频证据:";
+    
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    NSString *key = [[mediaInfo allKeys] objectAtIndex:section];
+    return [[mediaInfo objectForKey:key] count];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *key = [[mediaInfo allKeys] objectAtIndex:indexPath.section];
+    
+    if ([key isEqualToString:IQMediaTypeImage])
+    {
+        return 80;
+    }
+    else
+    {
+        return tableView.rowHeight;
+    }
+    
+}
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
