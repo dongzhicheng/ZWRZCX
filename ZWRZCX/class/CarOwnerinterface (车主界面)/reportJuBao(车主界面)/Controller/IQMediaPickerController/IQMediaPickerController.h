@@ -2,6 +2,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IQMediaPickerControllerConstants.h"
+#import "DZCNavigationController.h"
 
 typedef NS_ENUM(NSInteger, IQMediaPickerControllerMediaType) {
     IQMediaPickerControllerMediaTypePhotoLibrary,
@@ -14,7 +15,7 @@ typedef NS_ENUM(NSInteger, IQMediaPickerControllerMediaType) {
 
 @protocol IQMediaPickerControllerDelegate;
 
-@interface IQMediaPickerController : UINavigationController
+@interface IQMediaPickerController : DZCNavigationController
 
 @property(nonatomic, assign) id<IQMediaPickerControllerDelegate,UINavigationControllerDelegate> delegate;
 @property (nonatomic, assign) BOOL allowsPickingMultipleItems; // default is NO. Currently only applicable for IQMediaPickerControllerMediaTypePhotoLibrary, IQMediaPickerControllerMediaTypeVideoLibrary, IQMediaPickerControllerMediaTypeAudioLibrary;

@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-OF-sac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1184.5" y="1485.5"/>
+            <point key="canvasLocation" x="-1296.5" y="1291.5"/>
         </scene>
         <!--Select PhotoVC-->
         <scene sceneID="VXw-xx-AKn">
@@ -201,7 +201,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0L9-EC-eh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-690.5" y="1867.5"/>
+            <point key="canvasLocation" x="-802.5" y="1673.5"/>
         </scene>
         <!--运营资格申请-->
         <scene sceneID="gsq-ni-C2K">
@@ -726,7 +726,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvp-Pz-90u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1184.5" y="2248.5"/>
+            <point key="canvasLocation" x="-1296.5" y="2054.5"/>
         </scene>
         <!--Cyl View Controller-->
         <scene sceneID="J56-L6-7de">
@@ -830,7 +830,7 @@
                                             <outlet property="labelTitle" destination="Br2-lJ-qVy" id="f3a-bE-5ug"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoTableViewCell" rowHeight="204" id="Xva-2O-ocW" customClass="PhotoTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoTableViewCelll" rowHeight="204" id="Xva-2O-ocW" customClass="PhotoTableViewCell">
                                         <rect key="frame" x="0.0" y="155" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xva-2O-ocW" id="Rms-hd-l7G">
@@ -959,7 +959,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okJ-Bv-Lw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-712" y="1363.5"/>
+            <point key="canvasLocation" x="-824" y="1169.5"/>
         </scene>
     </scenes>
     <resources>
