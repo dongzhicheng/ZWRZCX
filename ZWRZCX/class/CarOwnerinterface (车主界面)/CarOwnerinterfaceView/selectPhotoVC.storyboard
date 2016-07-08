@@ -161,7 +161,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-OF-sac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-1200.5" y="1265.5"/>
+=======
+            <point key="canvasLocation" x="-1296.5" y="1291.5"/>
+>>>>>>> 29e600bef201150c391257fb0fd26387a2985f16
         </scene>
         <!--Select PhotoVC-->
         <scene sceneID="VXw-xx-AKn">
@@ -201,7 +205,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0L9-EC-eh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-706.5" y="1647.5"/>
+=======
+            <point key="canvasLocation" x="-802.5" y="1673.5"/>
+>>>>>>> 29e600bef201150c391257fb0fd26387a2985f16
         </scene>
         <!--运营资格申请-->
         <scene sceneID="gsq-ni-C2K">
@@ -726,7 +734,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvp-Pz-90u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-1200.5" y="2028.5"/>
+=======
+            <point key="canvasLocation" x="-1296.5" y="2054.5"/>
+>>>>>>> 29e600bef201150c391257fb0fd26387a2985f16
         </scene>
         <!--Cyl View Controller-->
         <scene sceneID="J56-L6-7de">
@@ -830,7 +842,7 @@
                                             <outlet property="labelTitle" destination="Br2-lJ-qVy" id="f3a-bE-5ug"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoTableViewCell" rowHeight="204" id="Xva-2O-ocW" customClass="PhotoTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoTableViewCelll" rowHeight="204" id="Xva-2O-ocW" customClass="PhotoTableViewCell">
                                         <rect key="frame" x="0.0" y="155" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xva-2O-ocW" id="Rms-hd-l7G">
@@ -959,7 +971,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okJ-Bv-Lw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-728" y="1143.5"/>
+=======
+            <point key="canvasLocation" x="-824" y="1169.5"/>
+>>>>>>> 29e600bef201150c391257fb0fd26387a2985f16
         </scene>
     </scenes>
     <resources>

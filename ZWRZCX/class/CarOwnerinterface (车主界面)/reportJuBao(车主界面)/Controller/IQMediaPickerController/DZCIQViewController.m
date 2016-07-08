@@ -48,18 +48,18 @@
         
             _imageArray = [NSMutableArray array];
         
-            NSString *key = [[mediaInfo allKeys] objectAtIndex:self.section];
-        
-            NSMutableDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:self.row];
-        
-        if ([dict objectForKey:IQMediaImage])
-        {
-            
-            UIImage *image = [dict objectForKey:IQMediaImage];
-
-            [_imageArray addObject:image];
-            
-        }
+//            NSString *key = [[mediaInfo allKeys] objectAtIndex:self.section];
+//        
+//            NSMutableDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:self.row];
+//        
+//        if ([dict objectForKey:IQMediaImage])
+//        {
+//            
+//            UIImage *image = [dict objectForKey:IQMediaImage];
+//
+//            [_imageArray addObject:image];
+//            
+//        }
         
        
     }
@@ -218,6 +218,17 @@
 }
 
 
+
+-(void)testCellContent{
+    
+    NSString *key = [[mediaInfo allKeys] objectAtIndex:self.section];
+    
+    NSDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:self.row];
+    
+    [self.iamgeArray addObject:dict];
+    
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -236,7 +247,6 @@
         
         MPMediaItemArtwork *artwork = [item valueForProperty:MPMediaItemPropertyArtwork];
         UIImage *image = [artwork imageWithSize:artwork.bounds.size];
-        
         AudioTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([AudioTableViewCell class])];
 
         cell.imageViewAudio.image = image;
