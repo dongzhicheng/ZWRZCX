@@ -64,7 +64,7 @@
                            }
 
                            [self.tableView reloadData];
-                           [self.navigationItem setTitle:@"Albums"];
+                           [self.navigationItem setTitle:@"图库"];
 
                        };
         
@@ -177,12 +177,18 @@
 
 #pragma mark - Table view delegate methods
 
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     IQAlbumAssetsViewController *assetsVC = [[IQAlbumAssetsViewController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]];
+    
     assetsVC.pickerType = self.pickerType;
+    
     assetsVC.assetsGroup = [_assetGroups objectAtIndex:indexPath.row];
+    
     assetsVC.assetController = self;
+    
     [self.navigationController pushViewController:assetsVC animated:YES];
 }
 

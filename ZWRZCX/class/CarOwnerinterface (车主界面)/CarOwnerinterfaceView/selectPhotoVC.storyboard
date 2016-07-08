@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-OF-sac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1184.5" y="1485.5"/>
+            <point key="canvasLocation" x="-1200.5" y="1265.5"/>
         </scene>
         <!--Select PhotoVC-->
         <scene sceneID="VXw-xx-AKn">
@@ -201,7 +201,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0L9-EC-eh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-690.5" y="1867.5"/>
+            <point key="canvasLocation" x="-706.5" y="1647.5"/>
         </scene>
         <!--运营资格申请-->
         <scene sceneID="gsq-ni-C2K">
@@ -726,7 +726,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvp-Pz-90u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1184.5" y="2248.5"/>
+            <point key="canvasLocation" x="-1200.5" y="2028.5"/>
         </scene>
         <!--Cyl View Controller-->
         <scene sceneID="J56-L6-7de">
@@ -864,7 +864,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29L-uA-f0k">
-                                <rect key="frame" x="51" y="128" width="202" height="31"/>
+                                <rect key="frame" x="51" y="137" width="202" height="22"/>
                                 <color key="backgroundColor" red="0.97647064920000004" green="0.09803922474" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="确认投诉文字">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -959,7 +959,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okJ-Bv-Lw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-712" y="1363.5"/>
+            <point key="canvasLocation" x="-728" y="1143.5"/>
         </scene>
     </scenes>
     <resources>

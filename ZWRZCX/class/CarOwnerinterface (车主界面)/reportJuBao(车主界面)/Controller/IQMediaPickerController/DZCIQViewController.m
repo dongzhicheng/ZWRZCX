@@ -133,7 +133,6 @@
 
 }
 
-
 - (void)toolBar:(CZToolBar*)toolBar withButtonType:(CZToolBarButtonType)type
 {
     switch (type) {
@@ -173,7 +172,7 @@
 
 - (IBAction)pickAction:(UIBarButtonItem *)sender
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"慎重选取返回后不能删除" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"取本地图片", @"取本地视频", @"取本地音频", @"拍图片取证", @"录视频取证", @"录音频取证", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"慎重-取证返回后-想删除点击返回按钮" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"取本地图片", @"取本地视频", @"取本地音频", @"拍图片取证", @"录视频取证", @"录音频取证", nil];
     actionSheet.tag = 1;
     [actionSheet showInView:self.view];
 }
@@ -218,38 +217,6 @@
     return [mediaInfo count];
 }
 
-//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-//{
-//    return [[mediaInfo allKeys] objectAtIndex:section]; //组头
-//}
-
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return UITableViewCellEditingStyleDelete;
-}
-
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-
-        
-        NSString *key = [[mediaInfo allKeys] objectAtIndex:indexPath.section];
-        
-        NSMutableDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:indexPath.row];
-        
-        self.cellContentDict = dict; //记录字典内容
-        
-        if ([dict objectForKey:IQMediaImage])
-        {
-
-            [self.imageArray removeObjectAtIndex:indexPath.row];
-   
-            [self.reportTabelView reloadData];
-        }
-    }
-}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -412,4 +379,39 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 @end
+//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return [[mediaInfo allKeys] objectAtIndex:section]; //组头
+//}
+
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return UITableViewCellEditingStyleDelete;
+//}
+//
+//
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+//
+//
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//
+//
+//        NSString *key = [[mediaInfo allKeys] objectAtIndex:indexPath.section];
+//
+//        NSMutableDictionary *dict = [[mediaInfo objectForKey:key] objectAtIndex:indexPath.row];
+//
+//        self.cellContentDict = dict; //记录字典内容
+//
+//        if ([dict objectForKey:IQMediaImage])
+//        {
+//
+//            [self.imageArray removeObjectAtIndex:indexPath.row];
+//
+//            [self.reportTabelView reloadData];
+//        }
+//    }
+//}
+
+
+
 

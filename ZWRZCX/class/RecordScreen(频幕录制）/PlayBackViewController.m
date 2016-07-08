@@ -112,12 +112,12 @@
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
 	
     picker.mailComposeDelegate = self;
-	
+    
 	[picker setSubject:@"Hello from California!"];
 	
 	NSArray *toRecipients = [NSArray arrayWithObject:@"rhlnair@gmail.com"];
 //	NSArray *ccRecipients = [NSArray arrayWithObjects:@"second@example.com", @"third@example.com", nil];
-//NSArray *bccRecipients = [NSArray arrayWithObject:@"fourth@example.com"];
+//  NSArray *bccRecipients = [NSArray arrayWithObject:@"fourth@example.com"];
 	
 	[picker setToRecipients:toRecipients];
 //	[picker setCcRecipients:ccRecipients];

@@ -207,6 +207,7 @@
     return cell;
 }
 
+
 #pragma mark - UICollectionViewDelegate methods
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -228,6 +229,7 @@
     if (self.assetController.allowsPickingMultipleItems == NO)
     {
         NSMutableArray *selectedVideo = [[NSMutableArray alloc] init];
+        
         NSMutableArray *selectedImages = [[NSMutableArray alloc] init];
         
         [self.assetsGroup enumerateAssetsAtIndexes:self.selectedAssets options:NSEnumerationConcurrent usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {

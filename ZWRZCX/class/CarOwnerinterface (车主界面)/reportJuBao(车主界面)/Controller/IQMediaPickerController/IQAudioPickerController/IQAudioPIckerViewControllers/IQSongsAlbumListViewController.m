@@ -74,7 +74,6 @@
     [self.audioPickerController dismissViewControllerAnimated:YES completion:nil];
 }
 
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return collections.count;
@@ -101,7 +100,6 @@
         NSUInteger totalMinutes = [IQAudioPickerUtility mediaCollectionDuration:item];
         cell.labelSubSubTitle.text = [NSString stringWithFormat:@"%lu %@, %lu %@",(unsigned long)item.count,(item.count>1?@"songs":@"song"),(unsigned long)totalMinutes,(totalMinutes>1?@"mins":@"min")];
     }
-
     return cell;
 }
 

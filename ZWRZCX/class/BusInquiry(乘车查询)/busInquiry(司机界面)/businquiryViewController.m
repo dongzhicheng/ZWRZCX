@@ -1,10 +1,3 @@
-//
-//  businquiryViewController.m
-//  ZWRZCX
-//
-//  Created by 董志成 on 16/6/29.
-//  Copyright © 2016年 董志成. All rights reserved.
-//
 
 #import "businquiryViewController.h"
 #import <UIImageView+AFNetworking.h>

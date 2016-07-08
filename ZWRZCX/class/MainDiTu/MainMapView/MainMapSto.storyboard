@@ -6,79 +6,6 @@
     </dependencies>
     <scenes>
         <!--地图界面-->
-        <scene sceneID="Cc2-ck-M7W">
-            <objects>
-                <viewController id="lkg-mx-fFF" customClass="MainDiTuViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="deU-O9-v1B"/>
-                        <viewControllerLayoutGuide type="bottom" id="l1f-Bh-k2N"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="W0P-Bh-MR2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome9" translatesAutoresizingMaskIntoConstraints="NO" id="oMN-C0-Be1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击进入高德去导航会产生数据流量的使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-Dx-PeF">
-                                <rect key="frame" x="36" y="265" width="304" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="LTZ-dt-Bpe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEw-hS-Kwh">
-                                <rect key="frame" x="75" y="308" width="226" height="51"/>
-                                <color key="backgroundColor" red="0.067683580630000004" green="0.47450980390000003" blue="0.15645466390000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="RM0-X0-Ut2"/>
-                                    <constraint firstAttribute="width" constant="226" id="ewJ-Qf-6eS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="进入高德点击左下角图标定位">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="start:" destination="lkg-mx-fFF" eventType="touchUpInside" id="CVB-zP-3ev"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="TEw-hS-Kwh" firstAttribute="top" secondItem="3Pp-Dx-PeF" secondAttribute="bottom" constant="22" id="2eH-Cg-NL2"/>
-                            <constraint firstItem="3Pp-Dx-PeF" firstAttribute="centerX" secondItem="W0P-Bh-MR2" secondAttribute="centerX" id="ENy-Cf-tMB"/>
-                            <constraint firstItem="TEw-hS-Kwh" firstAttribute="centerX" secondItem="W0P-Bh-MR2" secondAttribute="centerX" id="fj7-61-NM9"/>
-                            <constraint firstItem="TEw-hS-Kwh" firstAttribute="centerY" secondItem="W0P-Bh-MR2" secondAttribute="centerY" id="k4F-gk-4HC"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="地图界面" id="Qn1-ed-KI0"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gFa-JP-lON" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="294.5" y="249.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="9aV-Ec-hnl">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xNl-sV-shG" customClass="DZCNavigationController" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RX1-5w-2av">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lkg-mx-fFF" kind="relationship" relationship="rootViewController" id="HQJ-7Y-iPW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qrp-DZ-Du8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-152.5" y="263.5"/>
-        </scene>
-        <!--地图界面-->
         <scene sceneID="i9Z-ny-MTt">
             <objects>
                 <viewController id="vWC-8i-Bb6" customClass="MainDiTuViewController" sceneMemberID="viewController">
@@ -162,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TR-5e-53X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214.5" y="-564.5"/>
+            <point key="canvasLocation" x="394.5" y="-591.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aRY-5R-9gY">
@@ -181,13 +108,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy9-PR-T7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-289.5" y="-564.5"/>
+            <point key="canvasLocation" x="-109.5" y="-591.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="welcome6" width="320" height="568"/>
         <image name="welcome7" width="320" height="568"/>
         <image name="welcome8" width="320" height="568"/>
-        <image name="welcome9" width="320" height="568"/>
     </resources>
 </document>
